@@ -6,14 +6,14 @@
 
 | 项目 | 证据 |
 | --- | --- |
-| 公开 GitHub 仓库 | [nefeed/PhoneticSymbolsLearner](https://github.com/nefeed/PhoneticSymbolsLearner) 已创建；最终提交/推送证据待回执 |
-| 验收的 Git 提交 | 待本轮最终提交回执，未填入未经验证的 SHA |
-| 公开 Sites 地址 | 预定 [yinji-phonetics.nefeed.chatgpt.site](https://yinji-phonetics.nefeed.chatgpt.site)，尚未发布 |
+| 公开 GitHub 仓库 | [nefeed/PhoneticSymbolsLearner](https://github.com/nefeed/PhoneticSymbolsLearner)，公开仓库，`main` 推送成功 |
+| 验收的 Git 提交 | 首次发布：`4aa0f3776249f89f5ff8a6947051198e25701f2f`，Sites 源码回执与 GitHub 推送一致；本文件后续补充发布记录形成文档提交 |
+| 公开 Sites 地址 | [yinji-phonetics.nefeed.chatgpt.site](https://yinji-phonetics.nefeed.chatgpt.site)，Sites 首次部署在 2026-10-04 10:10:45 UTC 返回 `succeeded` |
 | 验收日期 | 2026-10-04（Asia/Shanghai）；命令完成的精确时刻未单独记录 |
 | 静态/单元检查 | `npm run typecheck` 通过；`npm test` 5 项通过，见 [内容测试](../tests/content.test.mjs) 与 [学习算法测试](../tests/learning.test.mjs) |
-| 浏览器测试 | `tests/app.spec.ts` 首批 9 场景 × Chromium / WebKit，18 项通过（21.5 秒）；新增拼句场景另行执行两引擎 2 项通过。两批共 20 项通过，未一次执行完整 20 项；远程 CI 待回执。[配置](../playwright.config.ts) 使用 Playwright、单 worker、无重试、本地 `127.0.0.1:5173`；浏览器确切版本未单独记录 |
+| 浏览器测试 | `tests/app.spec.ts` 首批 9 场景 × Chromium / WebKit，18 项通过（21.5 秒）；新增拼句场景另行执行两引擎 2 项通过。两批共 20 项通过，未一次执行完整 20 项；远程 CI 按本次提交的运行记录核对。[配置](../playwright.config.ts) 使用 Playwright、单 worker、无重试、本地 `127.0.0.1:5173`；浏览器确切版本未单独记录 |
 | CSS 视口 | 402×874、820×1180、1180×820、792×900、360×740；检查范围见下表，不包含系统字号/缩放变化 |
-| 生产构建与远程 CI | 待本轮回执，当前本地测试结果不证明生产构建/远程 CI 已完成 |
+| 生产构建与远程 CI | 首次发布生产构建、类型与 5 项单元/内容测试通过；远程运行见 [GitHub Actions](https://github.com/nefeed/PhoneticSymbolsLearner/actions/workflows/ci.yml)，按对应提交 SHA 查看 |
 | 实机验证 | 未执行：iPhone 16 Pro、iPad、vivo X Fold5 |
 | 语音技术检查 | [机器报告](./AUDIO-VERIFICATION.json)：345 词句 + 41 单音 = 386 MP3，4,920,088 字节、581.06 秒；缺失 0、解码/非静音失败 0；覆盖 30 个基础词词音，未朗读释义正文 |
 | 声音人工审校 | 未执行；技术解码和音素输入检查不代表真人听审或专业发音认证 |
@@ -22,15 +22,15 @@
 
 | 证据编号 | 已通过的本地自动场景 |
 | --- | --- |
-| B1 | [首课与错题](../tests/app.spec.ts#L16)：完成首课、80% 得分、错题显示、回练 100%、结果页切英文后 Sounds 导航存在 |
-| B2 | [声音与词卡](../tests/app.spec.ts#L49)：41 张卡、首张单音 MP3 的 200/206 音频响应、访客收藏/编辑、JSON 下载文件名、打印媒体隐藏应用并显示册子 |
-| B3 | [五视口布局](../tests/app.spec.ts#L83)：首页与首课讲解无横向溢出、继续按钮边界在视口内；截图位于 `outputs/{chromium,webkit}-{iphone16pro,ipad-portrait,ipad-landscape,fold-inner,small-phone}.png` |
-| B4 | [继续学习恢复](../tests/app.spec.ts#L118)：模拟 SIWC 登录保存首题答案，复制登录 cookie 到新 browser context 后恢复已答题并进入下一题 |
-| B5 | [失败重试](../tests/app.spec.ts#L151)：答题保存返回 503，其他功能尝试保存不会丢失待重试答案，重试后可以继续 |
-| B6 | [接口拒绝](../tests/app.spec.ts#L187)：匿名读取 401、跨来源写入 403、没有已记录答案的伪造完成请求 400 |
-| B7 | [不同 run 的继续位置](../tests/app.spec.ts#L213)：完成 run A 后，服务器仍保留另一 run B 的继续位置 |
-| B8 | [延迟麦克风授权](../tests/app.spec.ts#L251)：模拟未决权限请求时按钮禁用；关闭弹窗后授权，轨道被停止、不构造 recorder；不支持浏览器走说明分支 |
-| B9 | [基础词典](../tests/app.spec.ts#L314)：不依赖外部服务查询 apple，展示中文义项和 noun，并存为词卡 |
+| B1 | [首课与错题](../tests/app.spec.ts)：完成首课、80% 得分、错题显示、回练 100%、结果页切英文后 Sounds 导航存在 |
+| B2 | [声音与词卡](../tests/app.spec.ts)：41 张卡、首张单音真实解码并播放（时长有效且播放时间推进），同一音频 URL 独立 HTTP 200 / audio MIME / 非空内容、访客收藏/编辑、JSON 下载文件名及词条/中文笔记内容、打印媒体隐藏应用并显示册子 |
+| B3 | [五视口布局](../tests/app.spec.ts)：首页与首课讲解无横向溢出、继续按钮边界在视口内；截图位于 `outputs/{chromium,webkit}-{iphone16pro,ipad-portrait,ipad-landscape,fold-inner,small-phone}.png` |
+| B4 | [继续学习恢复](../tests/app.spec.ts)：模拟 SIWC 登录保存首题答案，复制登录 cookie 到新 browser context 后恢复已答题并进入下一题 |
+| B5 | [失败重试](../tests/app.spec.ts)：答题保存返回 503，其他功能尝试保存不会丢失待重试答案，重试后可以继续 |
+| B6 | [接口拒绝](../tests/app.spec.ts)：匿名读取 401、跨来源写入 403、没有已记录答案的伪造完成请求 400 |
+| B7 | [不同 run 的继续位置](../tests/app.spec.ts)：完成 run A 后，服务器仍保留另一 run B 的继续位置 |
+| B8 | [延迟麦克风授权](../tests/app.spec.ts)：模拟未决权限请求时按钮禁用；关闭弹窗后授权，轨道被停止、不构造 recorder；不支持浏览器走说明分支 |
+| B9 | [基础词典](../tests/app.spec.ts)：不依赖外部服务查询 apple，展示中文义项和 noun，并存为词卡 |
 | B10 | [拼句操作](../tests/app.spec.ts)：通过继续位置进入 reading-03 排序题，先选 `song.` 再撤销，完整组成 `Please record a song.` 并判对；此场景为后续单独运行的两引擎 2 项 |
 
 ## 2. 明确的首版边界
@@ -92,7 +92,7 @@
 
 | ID | 操作/检查 | 通过条件 | 结果 |
 | --- | --- | --- | --- |
-| A01 | 对照课程可朗读文本与 manifest | 所有声称已缓存的文本存在有效文件；无空文件/404/解码失败，缺失有明确提示 | 通过（本地资源技术检查）：386 MP3 全量覆盖/解码/非静音通过，B2 验证一个单音的真实 HTTP 音频响应；生产资源访问待发布 |
+| A01 | 对照课程可朗读文本与 manifest | 所有声称已缓存的文本存在有效文件；无空文件/404/解码失败，缺失有明确提示 | 通过（本地资源技术检查）：386 MP3 全量覆盖/解码/非静音通过，B2 验证一个单音的真实播放与独立 HTTP 音频响应；生产资源访问尚未实测 |
 | A02 | 抽听 ship/sheep、/θ ð/、/r l/、重音与连读句 | 示范内容与目标一致，无明显读错、断尾、噪声或重复；失败素材不可上线充当正确示范 | 未执行 |
 | A03 | 查看声音卡并分别播放目标音/例词 | 标签与素材对应；目标音使用原始音素生成，例词不冒充孤立音素 | 部分通过：B2 点击首卡“听单音”并验证 MP3 响应；生成输入有机器记录，未逐卡试听比较 |
 | A04 | 重复快速点播放、换课、离开页面 | 不产生多段失控叠播，停止/切换符合界面状态 | 未执行 |
@@ -140,17 +140,23 @@
 
 | ID | 操作/检查 | 通过条件 | 结果 |
 | --- | --- | --- | --- |
-| S01 | 生产构建与类型检查 | 命令完成，无被忽略的关键编译错误；记录精确输出 | 部分通过：`npm run typecheck` 通过；生产构建与远程 CI 待回执 |
+| S01 | 生产构建与类型检查 | 命令完成，无被忽略的关键编译错误；记录精确输出 | 通过：首次发布构建退出 0，类型检查与 5 项单元/内容测试通过；构建产物经 Sites 打包保存 |
 | S02 | 公开部署后访问 HTTPS 地址 | 页面和音频资源正常，关键路由可刷新，未依赖开发服务器 | 未执行 |
 | S03 | 在公开地址完成登录、保存、退出再恢复 | 生产登录头和数据库正常；本地模拟身份不当作生产通过证据 | 未执行 |
 | S04 | 检查个人 API 缓存响应头 | 不使用公共共享缓存，其他账号无法收到旧个人响应 | 未执行 |
-| S05 | 检查公开 Git 文件及构建资源 | 无密钥、`.env`、数据库、录音、账号信息或运行缓存 | 未执行 |
+| S05 | 检查公开 Git 文件及构建资源 | 无密钥、`.env`、数据库、录音、账号信息或运行缓存 | 通过源码检查：528 个跟踪文件；模型、venv、运行数据库、输出和环境文件均被忽略；密钥模式扫描无命中。公开音频为生成的课程 MP3 |
 | S06 | 保存含 HTML/脚本的词条笔记 | 按文本显示，不执行脚本，数据库查询参数化 | 未执行 |
 | S07 | 对照 LICENSE 与第三方归属 | 本项目非商业限制明确，第三方许可保留，不自称 OSI 开源 | 通过（文档检查）：[LICENSE](../LICENSE) 与 [第三方说明](../THIRD_PARTY_NOTICES.md) 明示上述边界；不构成法律效力保证 |
-| S08 | GitHub SHA、发布内容及音频清单 | 指向本次真实交付，链接可访问，没有把旧构建当作新发布 | 未执行 |
+| S08 | GitHub SHA、发布内容及音频清单 | 指向本次真实交付，链接可访问，没有把旧构建当作新发布 | 部分通过：首次发布 GitHub 与 Sites 源码 SHA 均为 `4aa0f3776249f89f5ff8a6947051198e25701f2f`，原生部署回执成功，386 段音频清单随源码发布；生产浏览器学习与登录仍待实测 |
 
 ## 10. 如何记录结果
 
 将“未执行”替换为 `通过 / 未通过 / 部分通过 / 阻塞`，并附实际命令、浏览器步骤或日志/截图路径。失败项应记录复现条件、用户影响和下一步，不因构建成功或截图美观而移除。仅在实际证据充分时更新发布结论。
 
 文档日期：2026-10-04（Asia/Shanghai）。
+
+## 11. 首次 CI 差异与修正
+
+首次 GitHub Linux 运行 [37194480295](https://github.com/nefeed/PhoneticSymbolsLearner/actions/runs/37194480295) 为 19/20 通过。WebKit 音频测试的 `waitForResponse` 首先收到 status=0、空 headers 的媒体事件；同一 MP3 在 219ms 后有第二条真实 200 响应，Content-Type 为 audio/mpeg，10028 字节，trace 保留完整内容。失败原因是断言抢先读取第一条媒体网络事件，不是观察到服务端返回 HTTP 0。
+
+修正后的测试保留浏览器原始播放行为，实际等待媒体解码成功、有限时长和播放时间推进；再独立请求同一个 currentSrc，严格验证 HTTP 200、audio MIME 与非空字节，不把 0 当作成功。另验证 JSON 下载中的实际词条和中文笔记。修正后的两浏览器本地测试通过（2 项，6.1 秒），类型检查通过；最终远程结果以对应 SHA 的 Actions 运行记录为准。失败证据下载保留在本地忽略目录 `outputs/ci-37194480295`。

@@ -4,7 +4,9 @@
 
 音记是面向英文初学者的非商业学习应用。默认中文，可随时切换基础英文。项目名：**PhoneticSymbolsLearner**。
 
-[GitHub 仓库](https://github.com/nefeed/PhoneticSymbolsLearner)已创建。公开站点预定为 [yinji-phonetics.nefeed.chatgpt.site](https://yinji-phonetics.nefeed.chatgpt.site)，**当前尚未发布**；生产登录、最终提交 SHA 和远程 CI 结果等待发布回执，不能由本地测试结果代替。
+[打开音记](https://yinji-phonetics.nefeed.chatgpt.site) · [GitHub 仓库](https://github.com/nefeed/PhoneticSymbolsLearner) · [自动检查](https://github.com/nefeed/PhoneticSymbolsLearner/actions/workflows/ci.yml)
+
+2026-10-04 已公开发布，Sites 返回部署成功；源码已推送。首次发布提交为 `4aa0f3776249f89f5ff8a6947051198e25701f2f`。后续提交及其自动检查以 GitHub 对应 SHA 的运行记录为准。生产账号登录和实机体验尚未人工验收。
 
 ## 你可以做什么
 
@@ -47,9 +49,9 @@ npm run test:e2e
 npm run build
 ```
 
-2026-10-04 本地验证：`npm run typecheck` 通过，`npm test` **5 项通过**（含 30 个基础词的音频覆盖）。`tests/app.spec.ts` 首批 **9 个场景 × Chromium / WebKit = 18 项通过**（21.5 秒）；随后新增拼句场景在两引擎中 **另有 2 项通过**，验证选词、撤销及组成 `Please record a song.` 后判对。这是两批共 20 项通过，未声称已一次执行完整 20 项；远程 CI 尚待回执。首批覆盖第一课错题讲解与回练、静态音频响应、词条收藏/笔记、JSON 下载触发和打印样式、基础词 apple 查询，以及保存失败重试和接口访问边界。
+2026-10-04 本地验证：`npm run typecheck` 通过，`npm test` **5 项通过**（含 30 个基础词的音频覆盖）。`tests/app.spec.ts` 首批 **9 个场景 × Chromium / WebKit = 18 项通过**（21.5 秒）；随后新增拼句场景在两引擎中 **另有 2 项通过**，验证选词、撤销及组成 `Please record a song.` 后判对。这是两批共 20 项通过，未声称已一次执行完整 20 项；远程 CI 以同 SHA 的 Actions 记录为准。首批覆盖第一课错题讲解与回练、静态音频响应、词条收藏/笔记、JSON 下载触发和打印样式、基础词 apple 查询，以及保存失败重试和接口访问边界。
 
-跨浏览器上下文恢复使用本地模拟 SIWC 账号与复制的登录 cookie，证实服务器保存的当前题和答案可恢复，**未验证生产登录或真实设备间登录**。布局检查覆盖 402×874、820×1180、1180×820、792×900、360×740 五个 CSS 视口中的首页、第一课讲解与继续按钮；不等同于全部页面或实机测试。延迟麦克风授权释放使用模拟轨道验证，未验证真实麦克风录音回听。JSON 内容、Markdown 文件和多页 PDF 排版也尚未完整验收。详见 [验收记录](docs/ACCEPTANCE.md)。
+跨浏览器上下文恢复使用本地模拟 SIWC 账号与复制的登录 cookie，证实服务器保存的当前题和答案可恢复，**未验证生产登录或真实设备间登录**。布局检查覆盖 402×874、820×1180、1180×820、792×900、360×740 五个 CSS 视口中的首页、第一课讲解与继续按钮；不等同于全部页面或实机测试。延迟麦克风授权释放使用模拟轨道验证，未验证真实麦克风录音回听。JSON 已验证导出的词条与中文笔记内容；Markdown 文件和多页 PDF 排版尚未完整验收。详见 [验收记录](docs/ACCEPTANCE.md)。
 
 ## 工程
 

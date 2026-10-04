@@ -49,18 +49,31 @@ test("guest can finish a lesson, understand mistakes, review and switch language
 test("sound cards have real audio and words can be saved, edited and exported", async ({
   page,
 }) => {
+  await page.addInitScript(() => {
+    const original = HTMLMediaElement.prototype.play;
+    (window as any).__playedMedia = [];
+    HTMLMediaElement.prototype.play = function () {
+      (window as any).__playedMedia.push(this);
+      return original.call(this);
+    };
+  });
   await page.goto("/");
   await page.getByRole("tab", { name: "声音图鉴" }).click();
   await expect(page.locator(".sound-tile")).toHaveCount(41);
   await page.locator(".sound-tile").first().click();
   await expect(page.getByRole("dialog")).toBeVisible();
-  const response = page.waitForResponse(
-    (r) => r.url().includes("/audio/") && r.url().endsWith(".mp3"),
-  );
   await page.getByRole("button", { name: "听单音", exact: true }).click();
-  const audioResponse = await response;
-  expect([200, 206]).toContain(audioResponse.status());
+  // Verify real decoding/playback independently of WebKit's media-network events.
+  await expect.poll(() => page.evaluate(() => {
+    const audio = (window as any).__playedMedia.at(-1) as HTMLMediaElement | undefined;
+    return Boolean(audio && !audio.error && Number.isFinite(audio.duration) && audio.duration > 0 && audio.currentTime > 0);
+  })).toBe(true);
+  const audioUrl = await page.evaluate(() => ((window as any).__playedMedia.at(-1) as HTMLMediaElement).currentSrc);
+  expect(audioUrl).toMatch(/\/audio\/.+\.mp3$/);
+  const audioResponse = await page.request.get(audioUrl);
+  expect(audioResponse.status()).toBe(200);
   expect(audioResponse.headers()["content-type"]).toContain("audio/");
+  expect((await audioResponse.body()).byteLength).toBeGreaterThan(128);
   await page
     .getByRole("button", { name: /^收藏 / })
     .first()
@@ -75,7 +88,11 @@ test("sound cards have real audio and words can be saved, edited and exported", 
   await page.getByRole("tab", { name: "复习册" }).click();
   const download = page.waitForEvent("download");
   await page.getByRole("button", { name: "JSON", exact: true }).click();
-  expect((await download).suggestedFilename()).toMatch(/yinji-review.*json/);
+  const downloaded = await download;
+  expect(downloaded.suggestedFilename()).toMatch(/yinji-review.*json/);
+  const book = JSON.parse(readFileSync((await downloaded.path())!, "utf8"));
+  expect(book.words).toHaveLength(1);
+  expect(book.words[0].note).toBe("My own example. 我的例句。");
   await page.emulateMedia({ media: "print" });
   await expect(page.locator(".print-book")).toBeVisible();
   await expect(page.locator(".app-shell")).toBeHidden();
