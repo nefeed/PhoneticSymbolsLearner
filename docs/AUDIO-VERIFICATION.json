@@ -1,0 +1,16 @@
+{
+  "requestedSpeechClips": 345,
+  "publishedSpeechClips": 345,
+  "phonemeClips": 41,
+  "missingClips": 0,
+  "missingPhonemes": 0,
+  "decodedClips": 386,
+  "totalBytes": 4920088,
+  "totalSeconds": 581.06,
+  "failures": [],
+  "note": "Technical integrity and text coverage only; listening review is separate.",
+  "verifiedAt": "2026-10-04",
+  "readHomographs": "Present /riːd/ and past /rɛd/ explicitly controlled and model input sequences checked. Standalone read demonstrates the present form only.",
+  "coreWordsCovered": 30,
+  "coreWordDefinitionsNarrated": false
+}

@@ -1,0 +1,1355 @@
+[
+  {
+    "id": "sound-i",
+    "symbol": "/i/",
+    "group": "vowel",
+    "name": {
+      "zh": "高前元音",
+      "en": "High front vowel"
+    },
+    "tip": {
+      "zh": "舌位高、靠前，唇自然展开；与 /ɪ/ 区别不只在长度。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Keep the tongue high and forward. The difference from /ɪ/ is not just length. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "see",
+        "ipa": "si",
+        "meaning": "看见"
+      },
+      {
+        "word": "green",
+        "ipa": "ɡrin",
+        "meaning": "绿色的"
+      },
+      {
+        "word": "team",
+        "ipa": "tim",
+        "meaning": "队伍"
+      }
+    ],
+    "contrast": "/ɪ/",
+    "voiced": true,
+    "audioText": "see, green, team"
+  },
+  {
+    "id": "sound-ih",
+    "symbol": "/ɪ/",
+    "group": "vowel",
+    "name": {
+      "zh": "放松的前元音",
+      "en": "Relaxed front vowel"
+    },
+    "tip": {
+      "zh": "舌位比 /i/ 稍低，口腔放松；不要把 sit 念成 seat。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Relax the tongue a little lower than /i/. Compare sit and seat. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "sit",
+        "ipa": "sɪt",
+        "meaning": "坐"
+      },
+      {
+        "word": "ship",
+        "ipa": "ʃɪp",
+        "meaning": "船"
+      },
+      {
+        "word": "fish",
+        "ipa": "fɪʃ",
+        "meaning": "鱼"
+      }
+    ],
+    "contrast": "/i/",
+    "voiced": true,
+    "audioText": "sit, ship, fish"
+  },
+  {
+    "id": "sound-eh",
+    "symbol": "/ɛ/",
+    "group": "vowel",
+    "name": {
+      "zh": "中前元音",
+      "en": "Middle front vowel"
+    },
+    "tip": {
+      "zh": "开口比 /ɪ/ 大，舌前部略降；部分词典以 /e/ 表示同类英语音。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Open more than for /ɪ/. Some dictionaries use /e/ for this English sound. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "bed",
+        "ipa": "bɛd",
+        "meaning": "床"
+      },
+      {
+        "word": "pen",
+        "ipa": "pɛn",
+        "meaning": "笔"
+      },
+      {
+        "word": "red",
+        "ipa": "rɛd",
+        "meaning": "红色的"
+      }
+    ],
+    "contrast": "/æ/",
+    "voiced": true,
+    "audioText": "bed, pen, red"
+  },
+  {
+    "id": "sound-ae",
+    "symbol": "/æ/",
+    "group": "vowel",
+    "name": {
+      "zh": "低前元音",
+      "en": "Low front vowel"
+    },
+    "tip": {
+      "zh": "下巴放低、舌前部较低；在 /m n/ 前美式读法常略有变化。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Lower your jaw and the front of your tongue. It can change a little before m or n. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "cat",
+        "ipa": "kæt",
+        "meaning": "猫"
+      },
+      {
+        "word": "bag",
+        "ipa": "bæɡ",
+        "meaning": "包"
+      },
+      {
+        "word": "hat",
+        "ipa": "hæt",
+        "meaning": "帽子"
+      }
+    ],
+    "contrast": "/ɛ/",
+    "voiced": true,
+    "audioText": "cat, bag, hat"
+  },
+  {
+    "id": "sound-aa",
+    "symbol": "/ɑ/",
+    "group": "vowel",
+    "name": {
+      "zh": "开口后元音",
+      "en": "Open back vowel"
+    },
+    "tip": {
+      "zh": "口腔较开，舌靠后；部分美式口音把 /ɑ/ 与 /ɔ/ 合并。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Open your mouth and keep the tongue back. Some US speakers merge this with /ɔ/. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "hot",
+        "ipa": "hɑt",
+        "meaning": "热的"
+      },
+      {
+        "word": "father",
+        "ipa": "ˈfɑðɚ",
+        "meaning": "父亲"
+      },
+      {
+        "word": "stop",
+        "ipa": "stɑp",
+        "meaning": "停止"
+      }
+    ],
+    "contrast": "/ɔ/",
+    "voiced": true,
+    "audioText": "hot, father, stop"
+  },
+  {
+    "id": "sound-ao",
+    "symbol": "/ɔ/",
+    "group": "vowel",
+    "name": {
+      "zh": "圆唇后元音",
+      "en": "Rounded back vowel"
+    },
+    "tip": {
+      "zh": "口腔较开并圆唇；cot/caught 合并口音可能用接近 /ɑ/ 的音，属常见变体。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Open and round your lips. Some US accents use the same vowel as cot; this is a common pattern. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "caught",
+        "ipa": "kɔt",
+        "meaning": "抓住的过去式"
+      },
+      {
+        "word": "law",
+        "ipa": "lɔ",
+        "meaning": "法律"
+      },
+      {
+        "word": "thought",
+        "ipa": "θɔt",
+        "meaning": "想的过去式"
+      }
+    ],
+    "contrast": "/ɑ/",
+    "voiced": true,
+    "audioText": "caught, law, thought"
+  },
+  {
+    "id": "sound-uh",
+    "symbol": "/ʊ/",
+    "group": "vowel",
+    "name": {
+      "zh": "放松的后元音",
+      "en": "Relaxed back vowel"
+    },
+    "tip": {
+      "zh": "舌位比 /u/ 较低且放松，唇轻圆。不要把 good 念成 gooed。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Relax the tongue a little lower than /u/. Round the lips gently. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "good",
+        "ipa": "ɡʊd",
+        "meaning": "好的"
+      },
+      {
+        "word": "book",
+        "ipa": "bʊk",
+        "meaning": "书"
+      },
+      {
+        "word": "foot",
+        "ipa": "fʊt",
+        "meaning": "脚"
+      }
+    ],
+    "contrast": "/u/",
+    "voiced": true,
+    "audioText": "good, book, foot"
+  },
+  {
+    "id": "sound-uw",
+    "symbol": "/u/",
+    "group": "vowel",
+    "name": {
+      "zh": "高位圆唇元音",
+      "en": "High rounded vowel"
+    },
+    "tip": {
+      "zh": "舌位较高，嘴唇轻圆；美式舌位可偏中前，不需要极度撅嘴。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Keep the tongue high and round the lips gently. US tongue position varies. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "food",
+        "ipa": "fud",
+        "meaning": "食物"
+      },
+      {
+        "word": "blue",
+        "ipa": "blu",
+        "meaning": "蓝色的"
+      },
+      {
+        "word": "moon",
+        "ipa": "mun",
+        "meaning": "月亮"
+      }
+    ],
+    "contrast": "/ʊ/",
+    "voiced": true,
+    "audioText": "food, blue, moon"
+  },
+  {
+    "id": "sound-ah",
+    "symbol": "/ʌ/",
+    "group": "vowel",
+    "name": {
+      "zh": "重读中元音",
+      "en": "Stressed center vowel"
+    },
+    "tip": {
+      "zh": "口腔放松、舌位居中，常见于重读音节；不要直接套用汉语“啊”。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Relax the mouth with the tongue near the center. This vowel is often stressed. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "cup",
+        "ipa": "kʌp",
+        "meaning": "杯子"
+      },
+      {
+        "word": "sun",
+        "ipa": "sʌn",
+        "meaning": "太阳"
+      },
+      {
+        "word": "love",
+        "ipa": "lʌv",
+        "meaning": "爱"
+      }
+    ],
+    "contrast": "/æ/",
+    "voiced": true,
+    "audioText": "cup, sun, love"
+  },
+  {
+    "id": "sound-schwa",
+    "symbol": "/ə/",
+    "group": "vowel",
+    "name": {
+      "zh": "弱读元音",
+      "en": "Schwa"
+    },
+    "tip": {
+      "zh": "舌头与嘴唇放松，短而轻；是常见弱读音，不能把所有元音都读成它。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Relax the tongue and lips. Keep this weak vowel light. Do not replace every vowel with it. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "about",
+        "ipa": "əˈbaʊt",
+        "meaning": "关于"
+      },
+      {
+        "word": "banana",
+        "ipa": "bəˈnænə",
+        "meaning": "香蕉"
+      },
+      {
+        "word": "sofa",
+        "ipa": "ˈsoʊfə",
+        "meaning": "沙发"
+      }
+    ],
+    "contrast": "/ʌ/",
+    "voiced": true,
+    "audioText": "about, banana, sofa"
+  },
+  {
+    "id": "sound-ey",
+    "symbol": "/eɪ/",
+    "group": "diphthong",
+    "name": {
+      "zh": "day 的滑动元音",
+      "en": "The vowel in day"
+    },
+    "tip": {
+      "zh": "从较开前舌位滑向较高位置，一拍完成，不拆成两拍。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Move toward a higher front tongue position. Keep it in one beat. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "day",
+        "ipa": "deɪ",
+        "meaning": "白天"
+      },
+      {
+        "word": "name",
+        "ipa": "neɪm",
+        "meaning": "名字"
+      },
+      {
+        "word": "rain",
+        "ipa": "reɪn",
+        "meaning": "雨"
+      }
+    ],
+    "contrast": "/ɛ/",
+    "voiced": true,
+    "audioText": "day, name, rain"
+  },
+  {
+    "id": "sound-ay",
+    "symbol": "/aɪ/",
+    "group": "diphthong",
+    "name": {
+      "zh": "my 的滑动元音",
+      "en": "The vowel in my"
+    },
+    "tip": {
+      "zh": "由开口位置滑向高前位置，声音连续。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Start open and move toward a high front position without a break. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "my",
+        "ipa": "maɪ",
+        "meaning": "我的"
+      },
+      {
+        "word": "time",
+        "ipa": "taɪm",
+        "meaning": "时间"
+      },
+      {
+        "word": "light",
+        "ipa": "laɪt",
+        "meaning": "光"
+      }
+    ],
+    "contrast": "/eɪ/",
+    "voiced": true,
+    "audioText": "my, time, light"
+  },
+  {
+    "id": "sound-oy",
+    "symbol": "/ɔɪ/",
+    "group": "diphthong",
+    "name": {
+      "zh": "boy 的滑动元音",
+      "en": "The vowel in boy"
+    },
+    "tip": {
+      "zh": "从较圆唇的后部元音滑向前部，不要误成 /aɪ/。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Start rounded and move forward. Keep it different from /aɪ/. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "boy",
+        "ipa": "bɔɪ",
+        "meaning": "男孩"
+      },
+      {
+        "word": "toy",
+        "ipa": "tɔɪ",
+        "meaning": "玩具"
+      },
+      {
+        "word": "coin",
+        "ipa": "kɔɪn",
+        "meaning": "硬币"
+      }
+    ],
+    "contrast": "/aɪ/",
+    "voiced": true,
+    "audioText": "boy, toy, coin"
+  },
+  {
+    "id": "sound-aw",
+    "symbol": "/aʊ/",
+    "group": "diphthong",
+    "name": {
+      "zh": "now 的滑动元音",
+      "en": "The vowel in now"
+    },
+    "tip": {
+      "zh": "从开口向较圆唇位置滑动，末尾不另加音节。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Start open and move toward rounded lips in one beat. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "now",
+        "ipa": "naʊ",
+        "meaning": "现在"
+      },
+      {
+        "word": "house",
+        "ipa": "haʊs",
+        "meaning": "房屋"
+      },
+      {
+        "word": "out",
+        "ipa": "aʊt",
+        "meaning": "外面"
+      }
+    ],
+    "contrast": "/oʊ/",
+    "voiced": true,
+    "audioText": "now, house, out"
+  },
+  {
+    "id": "sound-ow",
+    "symbol": "/oʊ/",
+    "group": "diphthong",
+    "name": {
+      "zh": "go 的美式元音",
+      "en": "The US vowel in go"
+    },
+    "tip": {
+      "zh": "从较圆的中后舌位滑向更高位置；本课程使用美式 /oʊ/。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Start rounded and move a little higher. This course uses US /oʊ/. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "go",
+        "ipa": "ɡoʊ",
+        "meaning": "去"
+      },
+      {
+        "word": "home",
+        "ipa": "hoʊm",
+        "meaning": "家"
+      },
+      {
+        "word": "nose",
+        "ipa": "noʊz",
+        "meaning": "鼻子"
+      }
+    ],
+    "contrast": "/aʊ/",
+    "voiced": true,
+    "audioText": "go, home, nose"
+  },
+  {
+    "id": "sound-er",
+    "symbol": "/ɝ/",
+    "group": "rhotic",
+    "name": {
+      "zh": "重读 r 音元音",
+      "en": "Strong r vowel"
+    },
+    "tip": {
+      "zh": "保持 r 色彩，舌尖不必触上腭；也常见 /ɜr/、/ɜːr/ 的词典标法。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Keep the r sound inside the vowel. Your tongue need not touch the roof. Other dictionaries may write /ɜr/. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "bird",
+        "ipa": "bɝd",
+        "meaning": "鸟"
+      },
+      {
+        "word": "girl",
+        "ipa": "ɡɝl",
+        "meaning": "女孩"
+      },
+      {
+        "word": "her",
+        "ipa": "hɝ",
+        "meaning": "她的/她"
+      }
+    ],
+    "contrast": "/ɚ/",
+    "voiced": true,
+    "audioText": "bird, girl, her"
+  },
+  {
+    "id": "sound-er-weak",
+    "symbol": "/ɚ/",
+    "group": "rhotic",
+    "name": {
+      "zh": "弱读 r 音元音",
+      "en": "Light r vowel"
+    },
+    "tip": {
+      "zh": "非重读位置保留 r 色彩，轻读，不要拖得和前面重音一样强。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Keep the r sound in this light ending. Do not make it as strong as the stressed beat. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "teacher",
+        "ipa": "ˈtitʃɚ",
+        "meaning": "教师"
+      },
+      {
+        "word": "sister",
+        "ipa": "ˈsɪstɚ",
+        "meaning": "姐妹"
+      },
+      {
+        "word": "water",
+        "ipa": "ˈwɔtɚ",
+        "meaning": "水"
+      }
+    ],
+    "contrast": "/ɝ/",
+    "voiced": true,
+    "audioText": "teacher, sister, water"
+  },
+  {
+    "id": "sound-p",
+    "symbol": "/p/",
+    "group": "consonant",
+    "name": {
+      "zh": "双唇清塞音",
+      "en": "Quiet lip stop"
+    },
+    "tip": {
+      "zh": "闭双唇，再放开；重读开头常有送气，词尾不要加元音。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Close both lips, then release. Do not add a vowel at the end. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "pen",
+        "ipa": "pɛn",
+        "meaning": "笔"
+      },
+      {
+        "word": "cup",
+        "ipa": "kʌp",
+        "meaning": "杯子"
+      },
+      {
+        "word": "paper",
+        "ipa": "ˈpeɪpɚ",
+        "meaning": "纸"
+      }
+    ],
+    "contrast": "/b/",
+    "voiced": false,
+    "audioText": "pen, cup, paper"
+  },
+  {
+    "id": "sound-b",
+    "symbol": "/b/",
+    "group": "consonant",
+    "name": {
+      "zh": "双唇浊塞音",
+      "en": "Voiced lip stop"
+    },
+    "tip": {
+      "zh": "闭双唇后释放，带清楚的浊音线索；避免念成 /p/。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Close and release both lips. Use voice and compare with p. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "bag",
+        "ipa": "bæɡ",
+        "meaning": "包"
+      },
+      {
+        "word": "boy",
+        "ipa": "bɔɪ",
+        "meaning": "男孩"
+      },
+      {
+        "word": "cab",
+        "ipa": "kæb",
+        "meaning": "出租车"
+      }
+    ],
+    "contrast": "/p/",
+    "voiced": true,
+    "audioText": "bag, boy, cab"
+  },
+  {
+    "id": "sound-t",
+    "symbol": "/t/",
+    "group": "consonant",
+    "name": {
+      "zh": "齿龈清塞音",
+      "en": "Quiet tongue-tip stop"
+    },
+    "tip": {
+      "zh": "舌端在上齿龈形成阻塞再释放；自然美式中会有轻拍等变体。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Stop the air at the ridge behind your upper teeth. Natural US speech has several forms of t. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "ten",
+        "ipa": "tɛn",
+        "meaning": "十"
+      },
+      {
+        "word": "cat",
+        "ipa": "kæt",
+        "meaning": "猫"
+      },
+      {
+        "word": "top",
+        "ipa": "tɑp",
+        "meaning": "顶部"
+      }
+    ],
+    "contrast": "/d/",
+    "voiced": false,
+    "audioText": "ten, cat, top"
+  },
+  {
+    "id": "sound-d",
+    "symbol": "/d/",
+    "group": "consonant",
+    "name": {
+      "zh": "齿龈浊塞音",
+      "en": "Voiced tongue-tip stop"
+    },
+    "tip": {
+      "zh": "与 /t/ 部位相近，注意浊音和前面元音的差别；末尾别加“呃”。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Use the same place as t with voice. Do not add a final vowel. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "day",
+        "ipa": "deɪ",
+        "meaning": "白天"
+      },
+      {
+        "word": "red",
+        "ipa": "rɛd",
+        "meaning": "红色的"
+      },
+      {
+        "word": "door",
+        "ipa": "dɔr",
+        "meaning": "门"
+      }
+    ],
+    "contrast": "/t/",
+    "voiced": true,
+    "audioText": "day, red, door"
+  },
+  {
+    "id": "sound-k",
+    "symbol": "/k/",
+    "group": "consonant",
+    "name": {
+      "zh": "软腭清塞音",
+      "en": "Quiet tongue-back stop"
+    },
+    "tip": {
+      "zh": "舌后部抬起短暂挡住气流，再松开。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Lift the back of your tongue to stop the air, then release. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "cat",
+        "ipa": "kæt",
+        "meaning": "猫"
+      },
+      {
+        "word": "key",
+        "ipa": "ki",
+        "meaning": "钥匙"
+      },
+      {
+        "word": "book",
+        "ipa": "bʊk",
+        "meaning": "书"
+      }
+    ],
+    "contrast": "/ɡ/",
+    "voiced": false,
+    "audioText": "cat, key, book"
+  },
+  {
+    "id": "sound-g",
+    "symbol": "/ɡ/",
+    "group": "consonant",
+    "name": {
+      "zh": "软腭浊塞音",
+      "en": "Voiced tongue-back stop"
+    },
+    "tip": {
+      "zh": "舌后部形成阻塞，加入浊音，不要用汉语声母 g 直接替代。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Use the back of your tongue with voice. Compare goat and coat. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "go",
+        "ipa": "ɡoʊ",
+        "meaning": "去"
+      },
+      {
+        "word": "good",
+        "ipa": "ɡʊd",
+        "meaning": "好的"
+      },
+      {
+        "word": "bag",
+        "ipa": "bæɡ",
+        "meaning": "包"
+      }
+    ],
+    "contrast": "/k/",
+    "voiced": true,
+    "audioText": "go, good, bag"
+  },
+  {
+    "id": "sound-f",
+    "symbol": "/f/",
+    "group": "consonant",
+    "name": {
+      "zh": "唇齿清擦音",
+      "en": "Quiet lip-and-teeth sound"
+    },
+    "tip": {
+      "zh": "上齿轻触下唇，让气流持续通过，喉部不主动发声。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Touch the lower lip with the upper teeth and let quiet air pass. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "fan",
+        "ipa": "fæn",
+        "meaning": "风扇"
+      },
+      {
+        "word": "fish",
+        "ipa": "fɪʃ",
+        "meaning": "鱼"
+      },
+      {
+        "word": "leaf",
+        "ipa": "lif",
+        "meaning": "叶子"
+      }
+    ],
+    "contrast": "/v/",
+    "voiced": false,
+    "audioText": "fan, fish, leaf"
+  },
+  {
+    "id": "sound-v",
+    "symbol": "/v/",
+    "group": "consonant",
+    "name": {
+      "zh": "唇齿浊擦音",
+      "en": "Voiced lip-and-teeth sound"
+    },
+    "tip": {
+      "zh": "上齿轻触下唇并发声；不是双唇圆起的 /w/。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Touch the lower lip with the upper teeth and add voice. Do not round both lips as for w. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "van",
+        "ipa": "væn",
+        "meaning": "厢式车"
+      },
+      {
+        "word": "very",
+        "ipa": "ˈvɛri",
+        "meaning": "非常"
+      },
+      {
+        "word": "leave",
+        "ipa": "liv",
+        "meaning": "离开"
+      }
+    ],
+    "contrast": "/f/",
+    "voiced": true,
+    "audioText": "van, very, leave"
+  },
+  {
+    "id": "sound-th",
+    "symbol": "/θ/",
+    "group": "consonant",
+    "name": {
+      "zh": "舌齿清擦音",
+      "en": "Quiet th"
+    },
+    "tip": {
+      "zh": "舌尖轻靠或略伸在上下齿间，让气流通过，不完全堵住。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Place the tongue tip lightly at or between the teeth. Let quiet air pass. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "thin",
+        "ipa": "θɪn",
+        "meaning": "瘦的"
+      },
+      {
+        "word": "three",
+        "ipa": "θri",
+        "meaning": "三"
+      },
+      {
+        "word": "bath",
+        "ipa": "bæθ",
+        "meaning": "洗澡"
+      }
+    ],
+    "contrast": "/ð/",
+    "voiced": false,
+    "audioText": "thin, three, bath"
+  },
+  {
+    "id": "sound-dh",
+    "symbol": "/ð/",
+    "group": "consonant",
+    "name": {
+      "zh": "舌齿浊擦音",
+      "en": "Voiced th"
+    },
+    "tip": {
+      "zh": "舌尖轻靠牙齿并发声，不变成 /z/ 或 /d/。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Keep the tongue near the teeth and add voice. Avoid replacing it with z or d. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "this",
+        "ipa": "ðɪs",
+        "meaning": "这个"
+      },
+      {
+        "word": "they",
+        "ipa": "ðeɪ",
+        "meaning": "他们"
+      },
+      {
+        "word": "mother",
+        "ipa": "ˈmʌðɚ",
+        "meaning": "母亲"
+      }
+    ],
+    "contrast": "/θ/",
+    "voiced": true,
+    "audioText": "this, they, mother"
+  },
+  {
+    "id": "sound-s",
+    "symbol": "/s/",
+    "group": "consonant",
+    "name": {
+      "zh": "齿龈清擦音",
+      "en": "Quiet s"
+    },
+    "tip": {
+      "zh": "舌端接近齿龈，留窄缝让气流通过，不要附加“丝”的元音。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Keep a narrow air path near the ridge. Do not add a vowel after s. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "see",
+        "ipa": "si",
+        "meaning": "看见"
+      },
+      {
+        "word": "sun",
+        "ipa": "sʌn",
+        "meaning": "太阳"
+      },
+      {
+        "word": "bus",
+        "ipa": "bʌs",
+        "meaning": "公交车"
+      }
+    ],
+    "contrast": "/z/",
+    "voiced": false,
+    "audioText": "see, sun, bus"
+  },
+  {
+    "id": "sound-z",
+    "symbol": "/z/",
+    "group": "consonant",
+    "name": {
+      "zh": "齿龈浊擦音",
+      "en": "Voiced z"
+    },
+    "tip": {
+      "zh": "保持与 /s/ 相近的气流通道，同时加入声带振动。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Keep the same narrow air path as s and add voice. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "zip",
+        "ipa": "zɪp",
+        "meaning": "拉链"
+      },
+      {
+        "word": "zoo",
+        "ipa": "zu",
+        "meaning": "动物园"
+      },
+      {
+        "word": "nose",
+        "ipa": "noʊz",
+        "meaning": "鼻子"
+      }
+    ],
+    "contrast": "/s/",
+    "voiced": true,
+    "audioText": "zip, zoo, nose"
+  },
+  {
+    "id": "sound-sh",
+    "symbol": "/ʃ/",
+    "group": "consonant",
+    "name": {
+      "zh": "龈后清擦音",
+      "en": "Quiet sh"
+    },
+    "tip": {
+      "zh": "舌位比 /s/ 稍后，唇可略圆，持续送气。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Move a little back from s, round the lips slightly, and let air pass. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "ship",
+        "ipa": "ʃɪp",
+        "meaning": "船"
+      },
+      {
+        "word": "she",
+        "ipa": "ʃi",
+        "meaning": "她"
+      },
+      {
+        "word": "fish",
+        "ipa": "fɪʃ",
+        "meaning": "鱼"
+      }
+    ],
+    "contrast": "/ʒ/",
+    "voiced": false,
+    "audioText": "ship, she, fish"
+  },
+  {
+    "id": "sound-zh",
+    "symbol": "/ʒ/",
+    "group": "consonant",
+    "name": {
+      "zh": "龈后浊擦音",
+      "en": "Voiced zh"
+    },
+    "tip": {
+      "zh": "位置接近 /ʃ/，加入声带振动；常在词中出现。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Use the same place as sh with voice. This sound often appears inside a word. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "vision",
+        "ipa": "ˈvɪʒən",
+        "meaning": "视力"
+      },
+      {
+        "word": "measure",
+        "ipa": "ˈmɛʒɚ",
+        "meaning": "测量"
+      },
+      {
+        "word": "usual",
+        "ipa": "ˈjuʒuəl",
+        "meaning": "通常的"
+      }
+    ],
+    "contrast": "/ʃ/",
+    "voiced": true,
+    "audioText": "vision, measure, usual"
+  },
+  {
+    "id": "sound-h",
+    "symbol": "/h/",
+    "group": "consonant",
+    "name": {
+      "zh": "声门清擦音",
+      "en": "Light h"
+    },
+    "tip": {
+      "zh": "轻轻呼气并接后面的元音，不挤压喉部。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Breathe gently into the following vowel. Do not tighten your throat. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "hat",
+        "ipa": "hæt",
+        "meaning": "帽子"
+      },
+      {
+        "word": "home",
+        "ipa": "hoʊm",
+        "meaning": "家"
+      },
+      {
+        "word": "hand",
+        "ipa": "hænd",
+        "meaning": "手"
+      }
+    ],
+    "contrast": null,
+    "voiced": false,
+    "audioText": "hat, home, hand"
+  },
+  {
+    "id": "sound-ch",
+    "symbol": "/tʃ/",
+    "group": "consonant",
+    "name": {
+      "zh": "清塞擦音",
+      "en": "Quiet ch"
+    },
+    "tip": {
+      "zh": "先短暂阻塞，再释放成 /ʃ/ 一类摩擦，一次连贯完成。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Start with a short stop, then release into an air sound. Keep it joined. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "chair",
+        "ipa": "tʃɛr",
+        "meaning": "椅子"
+      },
+      {
+        "word": "cheese",
+        "ipa": "tʃiz",
+        "meaning": "奶酪"
+      },
+      {
+        "word": "watch",
+        "ipa": "wɑtʃ",
+        "meaning": "手表/观看"
+      }
+    ],
+    "contrast": "/dʒ/",
+    "voiced": false,
+    "audioText": "chair, cheese, watch"
+  },
+  {
+    "id": "sound-jh",
+    "symbol": "/dʒ/",
+    "group": "consonant",
+    "name": {
+      "zh": "浊塞擦音",
+      "en": "Voiced j"
+    },
+    "tip": {
+      "zh": "与 /tʃ/ 类似，但加入浊音；不要混淆音标 /j/。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Use a stop plus an air sound with voice. This is not IPA /j/. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "jam",
+        "ipa": "dʒæm",
+        "meaning": "果酱"
+      },
+      {
+        "word": "June",
+        "ipa": "dʒun",
+        "meaning": "六月"
+      },
+      {
+        "word": "judge",
+        "ipa": "dʒʌdʒ",
+        "meaning": "法官/判断"
+      }
+    ],
+    "contrast": "/tʃ/",
+    "voiced": true,
+    "audioText": "jam, June, judge"
+  },
+  {
+    "id": "sound-m",
+    "symbol": "/m/",
+    "group": "consonant",
+    "name": {
+      "zh": "双唇鼻音",
+      "en": "Lip nose sound"
+    },
+    "tip": {
+      "zh": "闭双唇，让声音从鼻腔通过；不要在末尾加元音。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Close both lips and let air pass through the nose. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "man",
+        "ipa": "mæn",
+        "meaning": "男人"
+      },
+      {
+        "word": "moon",
+        "ipa": "mun",
+        "meaning": "月亮"
+      },
+      {
+        "word": "sum",
+        "ipa": "sʌm",
+        "meaning": "总和"
+      }
+    ],
+    "contrast": "/n/",
+    "voiced": true,
+    "audioText": "man, moon, sum"
+  },
+  {
+    "id": "sound-n",
+    "symbol": "/n/",
+    "group": "consonant",
+    "name": {
+      "zh": "齿龈鼻音",
+      "en": "Tongue-tip nose sound"
+    },
+    "tip": {
+      "zh": "舌端抵近上齿龈，让气流经过鼻腔。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Use the tongue tip at the ridge while air passes through the nose. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "no",
+        "ipa": "noʊ",
+        "meaning": "不"
+      },
+      {
+        "word": "sun",
+        "ipa": "sʌn",
+        "meaning": "太阳"
+      },
+      {
+        "word": "name",
+        "ipa": "neɪm",
+        "meaning": "名字"
+      }
+    ],
+    "contrast": "/ŋ/",
+    "voiced": true,
+    "audioText": "no, sun, name"
+  },
+  {
+    "id": "sound-ng",
+    "symbol": "/ŋ/",
+    "group": "consonant",
+    "name": {
+      "zh": "软腭鼻音",
+      "en": "Tongue-back nose sound"
+    },
+    "tip": {
+      "zh": "舌后部抬起，让气流经鼻腔；sing 末尾不必加 /ɡ/。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Use the back of the tongue and let air pass through the nose. Do not add g after sing. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "sing",
+        "ipa": "sɪŋ",
+        "meaning": "唱"
+      },
+      {
+        "word": "long",
+        "ipa": "lɔŋ",
+        "meaning": "长的"
+      },
+      {
+        "word": "ring",
+        "ipa": "rɪŋ",
+        "meaning": "戒指/响铃"
+      }
+    ],
+    "contrast": "/n/",
+    "voiced": true,
+    "audioText": "sing, long, ring"
+  },
+  {
+    "id": "sound-l",
+    "symbol": "/l/",
+    "group": "consonant",
+    "name": {
+      "zh": "舌侧音",
+      "en": "L sound"
+    },
+    "tip": {
+      "zh": "舌尖常接触齿龈，气流从舌侧通过；词尾 l 常较暗。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Touch the ridge with the tongue tip and let air pass at the sides. Final l is often darker. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "light",
+        "ipa": "laɪt",
+        "meaning": "光"
+      },
+      {
+        "word": "leaf",
+        "ipa": "lif",
+        "meaning": "叶子"
+      },
+      {
+        "word": "feel",
+        "ipa": "fil",
+        "meaning": "感觉"
+      }
+    ],
+    "contrast": "/r/",
+    "voiced": true,
+    "audioText": "light, leaf, feel"
+  },
+  {
+    "id": "sound-r",
+    "symbol": "/r/",
+    "group": "consonant",
+    "name": {
+      "zh": "美式 r 辅音",
+      "en": "US r sound"
+    },
+    "tip": {
+      "zh": "宽式记作 /r/，常接近 [ɹ]；舌不接触上腭，不要颤动舌尖。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "We write /r/ for the usual US sound. Keep the tongue off the roof and do not trill. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "red",
+        "ipa": "rɛd",
+        "meaning": "红色的"
+      },
+      {
+        "word": "right",
+        "ipa": "raɪt",
+        "meaning": "右边/正确的"
+      },
+      {
+        "word": "rain",
+        "ipa": "reɪn",
+        "meaning": "雨"
+      }
+    ],
+    "contrast": "/l/",
+    "voiced": true,
+    "audioText": "red, right, rain"
+  },
+  {
+    "id": "sound-w",
+    "symbol": "/w/",
+    "group": "consonant",
+    "name": {
+      "zh": "圆唇滑音",
+      "en": "W sound"
+    },
+    "tip": {
+      "zh": "先收圆双唇，再迅速滑向元音；不同于上齿轻碰下唇的 /v/。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Start with rounded lips and move into the vowel. Do not touch the lip with your teeth. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "we",
+        "ipa": "wi",
+        "meaning": "我们"
+      },
+      {
+        "word": "west",
+        "ipa": "wɛst",
+        "meaning": "西方"
+      },
+      {
+        "word": "one",
+        "ipa": "wʌn",
+        "meaning": "一"
+      }
+    ],
+    "contrast": "/v/",
+    "voiced": true,
+    "audioText": "we, west, one"
+  },
+  {
+    "id": "sound-y",
+    "symbol": "/j/",
+    "group": "consonant",
+    "name": {
+      "zh": "前舌滑音",
+      "en": "Y sound"
+    },
+    "tip": {
+      "zh": "舌位高且靠前，再滑向元音；它是 yes 的首音，不是 jam 的首音。 先听单音，再用例词确认这个音在单词中的样子。",
+      "en": "Start high and forward, then move into the vowel. This is the first sound of yes, not jam. Audio plays example words containing this sound."
+    },
+    "examples": [
+      {
+        "word": "yes",
+        "ipa": "jɛs",
+        "meaning": "是的"
+      },
+      {
+        "word": "you",
+        "ipa": "ju",
+        "meaning": "你/你们"
+      },
+      {
+        "word": "yellow",
+        "ipa": "ˈjɛloʊ",
+        "meaning": "黄色的"
+      }
+    ],
+    "contrast": "/dʒ/",
+    "voiced": true,
+    "audioText": "yes, you, yellow"
+  }
+]

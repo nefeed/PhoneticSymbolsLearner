@@ -1,0 +1,9 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {checkAnswer,gradeLesson,reviewItems} from '../lib/learning.ts';
+const curriculum=JSON.parse(readFileSync(new URL('../content/curriculum.json',import.meta.url)));
+const lesson=curriculum.stages[0].lessons[0];
+test('80% requires four of five objective answers, and a recording cannot inflate the score',()=>{const objective=lesson.questions.filter(q=>q.type!=='speak');const answers=Object.fromEntries(objective.map((q,i)=>[q.id,i===0?'wrong':q.answer]));answers[lesson.questions.find(q=>q.type==='speak').id]='__practice__';const result=gradeLesson(lesson,answers);assert.deepEqual(result,{score:80,correct:4,total:5,complete:true});delete answers[objective[0].id];assert.equal(gradeLesson(lesson,answers).complete,false);assert.equal(checkAnswer(lesson.questions.at(-1),'see'),null);});
+test('new mistakes are due now; success schedules the next review and a later error resets it',()=>{const now=1800000000000;const make=(correct,time)=>({id:String(time),questionId:'q',lessonId:'l',answer:correct?'right':'wrong',correct,createdAt:time});const list=[make(0,now)];assert.equal(reviewItems(list,now)[0].due,true);list.push(make(1,now+1));let r=reviewItems(list,now+2)[0];assert.equal(r.due,false);assert.equal(r.dueAt,now+1+86400000);list.push(make(1,now+86400000+1));r=reviewItems(list,now+86400000+2)[0];assert.equal(r.streak,2);assert.equal(r.dueAt,now+4*86400000+1);list.push(make(0,now+5*86400000));r=reviewItems(list,now+5*86400000)[0];assert.equal(r.due,true);assert.equal(r.streak,0);assert.equal(r.wrongCount,2);});
+test('review derives from chronological events regardless of network arrival order',()=>{const attempts=[{id:'b',questionId:'q',lessonId:'l',answer:'ok',correct:1,createdAt:200},{id:'a',questionId:'q',lessonId:'l',answer:'bad',correct:0,createdAt:100}];assert.equal(reviewItems(attempts,300)[0].streak,1);});

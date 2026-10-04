@@ -1,0 +1,3982 @@
+{
+  "version": 1,
+  "provider": "Kokoro-82M",
+  "modelRevision": "v1.0",
+  "voice": "am_puck",
+  "locale": "en-US",
+  "speed": 0.9,
+  "sampleRate": 24000,
+  "modelLicense": "Apache-2.0",
+  "voiceDescription": "AI-generated American English male voice",
+  "disclosure": "AI-generated phoneme demonstrations and speech. Practise the sound in words too. Human listening review has not been completed.",
+  "generatedAt": "2026-10-04T10:04:32.599421+00:00",
+  "clips": {
+    "hello.": {
+      "url": "/audio/f75a363b7071abd2_1.mp3",
+      "text": "Hello.",
+      "duration": 1.275,
+      "kind": "speech",
+      "phonemes": "həlˈO.",
+      "sources": [
+        "starter-sample"
+      ]
+    },
+    "ship": {
+      "url": "/audio/ca928f43a7594376_1.mp3",
+      "text": "ship",
+      "duration": 0.975,
+      "kind": "speech",
+      "phonemes": "ʃˈɪp",
+      "sources": [
+        "starter-sample"
+      ]
+    },
+    "sheep": {
+      "url": "/audio/53489b867abd27ec_1.mp3",
+      "text": "sheep",
+      "duration": 1.1,
+      "kind": "speech",
+      "phonemes": "ʃˈip",
+      "sources": [
+        "starter-sample"
+      ]
+    },
+    "ship, sheep": {
+      "url": "/audio/7a25ac5c0c25313b_1.mp3",
+      "text": "ship, sheep",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "ʃˈɪp, ʃˈip",
+      "sources": [
+        "starter-sample"
+      ]
+    },
+    "a cat": {
+      "url": "/audio/83f5c311d214b243_1.mp3",
+      "text": "a cat",
+      "duration": 1.275,
+      "kind": "speech",
+      "phonemes": "ɐ kˈæt",
+      "sources": [
+        "starter-sample"
+      ]
+    },
+    "an apple": {
+      "url": "/audio/deddad38131f173f_1.mp3",
+      "text": "an apple",
+      "duration": 1.425,
+      "kind": "speech",
+      "phonemes": "ɐn ˈæpᵊl",
+      "sources": [
+        "starter-sample"
+      ]
+    },
+    "see": {
+      "url": "/audio/ea1f3ffa71569430_1.mp3",
+      "text": "see",
+      "duration": 1.0,
+      "kind": "speech",
+      "phonemes": "sˈi",
+      "sources": [
+        "content/sounds.json[0].examples[0].word",
+        "content/sounds.json[27].examples[0].word"
+      ]
+    },
+    "green": {
+      "url": "/audio/0acfb9c491242224_1.mp3",
+      "text": "green",
+      "duration": 1.325,
+      "kind": "speech",
+      "phonemes": "ɡɹˈin",
+      "sources": [
+        "content/sounds.json[0].examples[1].word"
+      ]
+    },
+    "team": {
+      "url": "/audio/04fb67c83110ba54_1.mp3",
+      "text": "team",
+      "duration": 1.2,
+      "kind": "speech",
+      "phonemes": "tˈim",
+      "sources": [
+        "content/sounds.json[0].examples[2].word"
+      ]
+    },
+    "see, green, team": {
+      "url": "/audio/bc37bfe77bd8fafa_1.mp3",
+      "text": "see, green, team",
+      "duration": 1.775,
+      "kind": "speech",
+      "phonemes": "sˈi, ɡɹˈin, tˈim",
+      "sources": [
+        "content/sounds.json[0].audioText"
+      ]
+    },
+    "sit": {
+      "url": "/audio/c5cc5382757ce11f_1.mp3",
+      "text": "sit",
+      "duration": 1.075,
+      "kind": "speech",
+      "phonemes": "sˈɪt",
+      "sources": [
+        "content/sounds.json[1].examples[0].word"
+      ]
+    },
+    "fish": {
+      "url": "/audio/8bcb22618e0fc5bf_1.mp3",
+      "text": "fish",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "fˈɪʃ",
+      "sources": [
+        "content/sounds.json[1].examples[2].word",
+        "content/sounds.json[23].examples[1].word",
+        "content/sounds.json[29].examples[2].word"
+      ]
+    },
+    "sit, ship, fish": {
+      "url": "/audio/58c7a30c42f254c2_1.mp3",
+      "text": "sit, ship, fish",
+      "duration": 1.7,
+      "kind": "speech",
+      "phonemes": "sˈɪt, ʃˈɪp, fˈɪʃ",
+      "sources": [
+        "content/sounds.json[1].audioText"
+      ]
+    },
+    "bed": {
+      "url": "/audio/25ecaa280f91c4fa_1.mp3",
+      "text": "bed",
+      "duration": 0.725,
+      "kind": "speech",
+      "phonemes": "bˈɛd",
+      "sources": [
+        "content/sounds.json[2].examples[0].word"
+      ]
+    },
+    "pen": {
+      "url": "/audio/0c314bfbfe5b469b_1.mp3",
+      "text": "pen",
+      "duration": 1.025,
+      "kind": "speech",
+      "phonemes": "pˈɛn",
+      "sources": [
+        "content/sounds.json[2].examples[1].word",
+        "content/sounds.json[17].examples[0].word"
+      ]
+    },
+    "red": {
+      "url": "/audio/c44686b23c29efaf_1.mp3",
+      "text": "red",
+      "duration": 1.0,
+      "kind": "speech",
+      "phonemes": "ɹˈɛd",
+      "sources": [
+        "content/sounds.json[2].examples[2].word",
+        "content/sounds.json[20].examples[1].word",
+        "content/sounds.json[38].examples[0].word"
+      ]
+    },
+    "bed, pen, red": {
+      "url": "/audio/f73a905fc37496c5_1.mp3",
+      "text": "bed, pen, red",
+      "duration": 1.3,
+      "kind": "speech",
+      "phonemes": "bˈɛd, pˈɛn, ɹˈɛd",
+      "sources": [
+        "content/sounds.json[2].audioText"
+      ]
+    },
+    "cat": {
+      "url": "/audio/a084fca6d3725cab_1.mp3",
+      "text": "cat",
+      "duration": 1.15,
+      "kind": "speech",
+      "phonemes": "kˈæt",
+      "sources": [
+        "content/sounds.json[3].examples[0].word",
+        "content/sounds.json[19].examples[1].word",
+        "content/sounds.json[21].examples[0].word"
+      ]
+    },
+    "bag": {
+      "url": "/audio/cd936fe93c0fe1d3_1.mp3",
+      "text": "bag",
+      "duration": 1.2,
+      "kind": "speech",
+      "phonemes": "bˈæɡ",
+      "sources": [
+        "content/sounds.json[3].examples[1].word",
+        "content/sounds.json[18].examples[0].word",
+        "content/sounds.json[22].examples[2].word"
+      ]
+    },
+    "hat": {
+      "url": "/audio/126a065b30b55418_1.mp3",
+      "text": "hat",
+      "duration": 1.15,
+      "kind": "speech",
+      "phonemes": "hˈæt",
+      "sources": [
+        "content/sounds.json[3].examples[2].word",
+        "content/sounds.json[31].examples[0].word"
+      ]
+    },
+    "cat, bag, hat": {
+      "url": "/audio/51339d7e643205e2_1.mp3",
+      "text": "cat, bag, hat",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "kˈæt, bˈæɡ, hˈæt",
+      "sources": [
+        "content/sounds.json[3].audioText"
+      ]
+    },
+    "hot": {
+      "url": "/audio/eedcc9dc00c2b76f_1.mp3",
+      "text": "hot",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "hˈɑt",
+      "sources": [
+        "content/sounds.json[4].examples[0].word"
+      ]
+    },
+    "father": {
+      "url": "/audio/2dd13b3a08583108_1.mp3",
+      "text": "father",
+      "duration": 1.35,
+      "kind": "speech",
+      "phonemes": "fˈɑðəɹ",
+      "sources": [
+        "content/sounds.json[4].examples[1].word"
+      ]
+    },
+    "stop": {
+      "url": "/audio/bf8cd647aacd206f_1.mp3",
+      "text": "stop",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "stˈɑp",
+      "sources": [
+        "content/sounds.json[4].examples[2].word"
+      ]
+    },
+    "hot, father, stop": {
+      "url": "/audio/9e2e77a0ee80c9be_1.mp3",
+      "text": "hot, father, stop",
+      "duration": 1.775,
+      "kind": "speech",
+      "phonemes": "hˈɑt, fˈɑðəɹ, stˈɑp",
+      "sources": [
+        "content/sounds.json[4].audioText"
+      ]
+    },
+    "caught": {
+      "url": "/audio/0509d8ad6533b11a_1.mp3",
+      "text": "caught",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "kˈɔt",
+      "sources": [
+        "content/sounds.json[5].examples[0].word"
+      ]
+    },
+    "law": {
+      "url": "/audio/7d03caef2b8a5a78_1.mp3",
+      "text": "law",
+      "duration": 1.1,
+      "kind": "speech",
+      "phonemes": "lˈɔ",
+      "sources": [
+        "content/sounds.json[5].examples[1].word"
+      ]
+    },
+    "thought": {
+      "url": "/audio/ce994d97547e4717_1.mp3",
+      "text": "thought",
+      "duration": 1.15,
+      "kind": "speech",
+      "phonemes": "θˈɔt",
+      "sources": [
+        "content/sounds.json[5].examples[2].word"
+      ]
+    },
+    "caught, law, thought": {
+      "url": "/audio/43871492bce792f0_1.mp3",
+      "text": "caught, law, thought",
+      "duration": 1.675,
+      "kind": "speech",
+      "phonemes": "kˈɔt, lˈɔ, θˈɔt",
+      "sources": [
+        "content/sounds.json[5].audioText"
+      ]
+    },
+    "good": {
+      "url": "/audio/cbfc359e0976451f_1.mp3",
+      "text": "good",
+      "duration": 0.975,
+      "kind": "speech",
+      "phonemes": "ɡˈʊd",
+      "sources": [
+        "content/sounds.json[6].examples[0].word",
+        "content/sounds.json[22].examples[1].word"
+      ]
+    },
+    "book": {
+      "url": "/audio/5801bb604b480162_1.mp3",
+      "text": "book",
+      "duration": 1.025,
+      "kind": "speech",
+      "phonemes": "bˈʊk",
+      "sources": [
+        "content/sounds.json[6].examples[1].word",
+        "content/sounds.json[21].examples[2].word"
+      ]
+    },
+    "foot": {
+      "url": "/audio/b85a33238a6c4c8f_1.mp3",
+      "text": "foot",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "fˈʊt",
+      "sources": [
+        "content/sounds.json[6].examples[2].word"
+      ]
+    },
+    "good, book, foot": {
+      "url": "/audio/f5bf1e4c811be5b3_1.mp3",
+      "text": "good, book, foot",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "ɡˈʊd, bˈʊk, fˈʊt",
+      "sources": [
+        "content/sounds.json[6].audioText"
+      ]
+    },
+    "food": {
+      "url": "/audio/94ee6ddc4a1e4e28_1.mp3",
+      "text": "food",
+      "duration": 1.2,
+      "kind": "speech",
+      "phonemes": "fˈud",
+      "sources": [
+        "content/sounds.json[7].examples[0].word"
+      ]
+    },
+    "blue": {
+      "url": "/audio/546af72556e52026_1.mp3",
+      "text": "blue",
+      "duration": 1.05,
+      "kind": "speech",
+      "phonemes": "blˈu",
+      "sources": [
+        "content/sounds.json[7].examples[1].word"
+      ]
+    },
+    "moon": {
+      "url": "/audio/b8067436607ddc85_1.mp3",
+      "text": "moon",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "mˈun",
+      "sources": [
+        "content/sounds.json[7].examples[2].word",
+        "content/sounds.json[34].examples[1].word"
+      ]
+    },
+    "food, blue, moon": {
+      "url": "/audio/7e7cb118974ae2fa_1.mp3",
+      "text": "food, blue, moon",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "fˈud, blˈu, mˈun",
+      "sources": [
+        "content/sounds.json[7].audioText"
+      ]
+    },
+    "cup": {
+      "url": "/audio/bbdc058c94090716_1.mp3",
+      "text": "cup",
+      "duration": 1.0,
+      "kind": "speech",
+      "phonemes": "kˈʌp",
+      "sources": [
+        "content/sounds.json[8].examples[0].word",
+        "content/sounds.json[17].examples[1].word"
+      ]
+    },
+    "sun": {
+      "url": "/audio/14ae3db6ea6637e9_1.mp3",
+      "text": "sun",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "sˈʌn",
+      "sources": [
+        "content/sounds.json[8].examples[1].word",
+        "content/sounds.json[27].examples[1].word",
+        "content/sounds.json[35].examples[1].word"
+      ]
+    },
+    "love": {
+      "url": "/audio/272223abfe30261b_1.mp3",
+      "text": "love",
+      "duration": 1.225,
+      "kind": "speech",
+      "phonemes": "lˈʌv",
+      "sources": [
+        "content/sounds.json[8].examples[2].word"
+      ]
+    },
+    "cup, sun, love": {
+      "url": "/audio/0738b8dde0511f41_1.mp3",
+      "text": "cup, sun, love",
+      "duration": 1.525,
+      "kind": "speech",
+      "phonemes": "kˈʌp, sˈʌn, lˈʌv",
+      "sources": [
+        "content/sounds.json[8].audioText"
+      ]
+    },
+    "about": {
+      "url": "/audio/987e4d519dc0b910_1.mp3",
+      "text": "about",
+      "duration": 1.2,
+      "kind": "speech",
+      "phonemes": "əbˈWt",
+      "sources": [
+        "content/sounds.json[9].examples[0].word"
+      ]
+    },
+    "banana": {
+      "url": "/audio/f73f1430bf54157a_1.mp3",
+      "text": "banana",
+      "duration": 1.4,
+      "kind": "speech",
+      "phonemes": "bənˈænə",
+      "sources": [
+        "content/sounds.json[9].examples[1].word"
+      ]
+    },
+    "sofa": {
+      "url": "/audio/6a21b644a90cb9ca_1.mp3",
+      "text": "sofa",
+      "duration": 1.375,
+      "kind": "speech",
+      "phonemes": "sˈOfə",
+      "sources": [
+        "content/sounds.json[9].examples[2].word"
+      ]
+    },
+    "about, banana, sofa": {
+      "url": "/audio/df1af7508aeb6abb_1.mp3",
+      "text": "about, banana, sofa",
+      "duration": 2.15,
+      "kind": "speech",
+      "phonemes": "əbˈWt, bənˈænə, sˈOfə",
+      "sources": [
+        "content/sounds.json[9].audioText"
+      ]
+    },
+    "day": {
+      "url": "/audio/afbf4463b036ddfb_1.mp3",
+      "text": "day",
+      "duration": 1.075,
+      "kind": "speech",
+      "phonemes": "dˈA",
+      "sources": [
+        "content/sounds.json[10].examples[0].word",
+        "content/sounds.json[20].examples[0].word"
+      ]
+    },
+    "name": {
+      "url": "/audio/639dacd3ff6c8cd4_1.mp3",
+      "text": "name",
+      "duration": 1.3,
+      "kind": "speech",
+      "phonemes": "nˈAm",
+      "sources": [
+        "content/sounds.json[10].examples[1].word",
+        "content/sounds.json[35].examples[2].word"
+      ]
+    },
+    "rain": {
+      "url": "/audio/923916780050c1da_1.mp3",
+      "text": "rain",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "ɹˈAn",
+      "sources": [
+        "content/sounds.json[10].examples[2].word",
+        "content/sounds.json[38].examples[2].word"
+      ]
+    },
+    "day, name, rain": {
+      "url": "/audio/ab76ff5b4cee85c8_1.mp3",
+      "text": "day, name, rain",
+      "duration": 1.7,
+      "kind": "speech",
+      "phonemes": "dˈA, nˈAm, ɹˈAn",
+      "sources": [
+        "content/sounds.json[10].audioText"
+      ]
+    },
+    "my": {
+      "url": "/audio/bbce02683af8dadf_1.mp3",
+      "text": "my",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "mˈI",
+      "sources": [
+        "content/sounds.json[11].examples[0].word"
+      ]
+    },
+    "time": {
+      "url": "/audio/721214dedb52ff34_1.mp3",
+      "text": "time",
+      "duration": 1.2,
+      "kind": "speech",
+      "phonemes": "tˈIm",
+      "sources": [
+        "content/sounds.json[11].examples[1].word"
+      ]
+    },
+    "light": {
+      "url": "/audio/a85ed840c1d7f8d5_1.mp3",
+      "text": "light",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "lˈIt",
+      "sources": [
+        "content/sounds.json[11].examples[2].word",
+        "content/sounds.json[37].examples[0].word"
+      ]
+    },
+    "my, time, light": {
+      "url": "/audio/dec0a758cfc29830_1.mp3",
+      "text": "my, time, light",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "mˈI, tˈIm, lˈIt",
+      "sources": [
+        "content/sounds.json[11].audioText"
+      ]
+    },
+    "boy": {
+      "url": "/audio/5cfac217e080d39e_1.mp3",
+      "text": "boy",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "bˈY",
+      "sources": [
+        "content/sounds.json[12].examples[0].word",
+        "content/sounds.json[18].examples[1].word"
+      ]
+    },
+    "toy": {
+      "url": "/audio/cb10827eab1695e9_1.mp3",
+      "text": "toy",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "tˈY",
+      "sources": [
+        "content/sounds.json[12].examples[1].word"
+      ]
+    },
+    "coin": {
+      "url": "/audio/64170ad7204ab7fc_1.mp3",
+      "text": "coin",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "kˈYn",
+      "sources": [
+        "content/sounds.json[12].examples[2].word"
+      ]
+    },
+    "boy, toy, coin": {
+      "url": "/audio/cc0a6c30795ef632_1.mp3",
+      "text": "boy, toy, coin",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "bˈY, tˈY, kˈYn",
+      "sources": [
+        "content/sounds.json[12].audioText"
+      ]
+    },
+    "now": {
+      "url": "/audio/b21a7b058fd17f64_1.mp3",
+      "text": "now",
+      "duration": 1.15,
+      "kind": "speech",
+      "phonemes": "nˈW",
+      "sources": [
+        "content/sounds.json[13].examples[0].word"
+      ]
+    },
+    "house": {
+      "url": "/audio/cbb052e738e33b4b_1.mp3",
+      "text": "house",
+      "duration": 1.225,
+      "kind": "speech",
+      "phonemes": "hˈWs",
+      "sources": [
+        "content/sounds.json[13].examples[1].word"
+      ]
+    },
+    "out": {
+      "url": "/audio/8f1fb6b059b8d298_1.mp3",
+      "text": "out",
+      "duration": 1.075,
+      "kind": "speech",
+      "phonemes": "ˈWt",
+      "sources": [
+        "content/sounds.json[13].examples[2].word"
+      ]
+    },
+    "now, house, out": {
+      "url": "/audio/9989c93f6aad2eb1_1.mp3",
+      "text": "now, house, out",
+      "duration": 1.625,
+      "kind": "speech",
+      "phonemes": "nˈW, hˈWs, ˈWt",
+      "sources": [
+        "content/sounds.json[13].audioText"
+      ]
+    },
+    "go": {
+      "url": "/audio/949e57ae9b18bd4a_1.mp3",
+      "text": "go",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "ɡˌO",
+      "sources": [
+        "content/sounds.json[14].examples[0].word",
+        "content/sounds.json[22].examples[0].word"
+      ]
+    },
+    "home": {
+      "url": "/audio/a788f67add4f0b29_1.mp3",
+      "text": "home",
+      "duration": 1.2,
+      "kind": "speech",
+      "phonemes": "hˈOm",
+      "sources": [
+        "content/sounds.json[14].examples[1].word",
+        "content/sounds.json[31].examples[1].word"
+      ]
+    },
+    "nose": {
+      "url": "/audio/38e14a2439bcdb73_1.mp3",
+      "text": "nose",
+      "duration": 1.3,
+      "kind": "speech",
+      "phonemes": "nˈOz",
+      "sources": [
+        "content/sounds.json[14].examples[2].word",
+        "content/sounds.json[28].examples[2].word"
+      ]
+    },
+    "go, home, nose": {
+      "url": "/audio/61ff72ff8747790b_1.mp3",
+      "text": "go, home, nose",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "ɡˌO, hˈOm, nˈOz",
+      "sources": [
+        "content/sounds.json[14].audioText"
+      ]
+    },
+    "bird": {
+      "url": "/audio/5894c9bb7ec47078_1.mp3",
+      "text": "bird",
+      "duration": 1.0,
+      "kind": "speech",
+      "phonemes": "bˈɜɹd",
+      "sources": [
+        "content/sounds.json[15].examples[0].word"
+      ]
+    },
+    "girl": {
+      "url": "/audio/8a6445054b44421d_1.mp3",
+      "text": "girl",
+      "duration": 0.775,
+      "kind": "speech",
+      "phonemes": "ɡˈɜɹl",
+      "sources": [
+        "content/sounds.json[15].examples[1].word"
+      ]
+    },
+    "her": {
+      "url": "/audio/7b97db0cc07acff9_1.mp3",
+      "text": "her",
+      "duration": 0.9,
+      "kind": "speech",
+      "phonemes": "hˌɜɹ",
+      "sources": [
+        "content/sounds.json[15].examples[2].word"
+      ]
+    },
+    "bird, girl, her": {
+      "url": "/audio/6df2874836827836_1.mp3",
+      "text": "bird, girl, her",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "bˈɜɹd, ɡˈɜɹl, hˌɜɹ",
+      "sources": [
+        "content/sounds.json[15].audioText"
+      ]
+    },
+    "teacher": {
+      "url": "/audio/d7c5b06fdd684674_1.mp3",
+      "text": "teacher",
+      "duration": 1.425,
+      "kind": "speech",
+      "phonemes": "tˈiʧəɹ",
+      "sources": [
+        "content/sounds.json[16].examples[0].word"
+      ]
+    },
+    "sister": {
+      "url": "/audio/c956397955efeb68_1.mp3",
+      "text": "sister",
+      "duration": 1.375,
+      "kind": "speech",
+      "phonemes": "sˈɪstəɹ",
+      "sources": [
+        "content/sounds.json[16].examples[1].word"
+      ]
+    },
+    "water": {
+      "url": "/audio/c7435420e5447767_1.mp3",
+      "text": "water",
+      "duration": 1.35,
+      "kind": "speech",
+      "phonemes": "wˈɔTəɹ",
+      "sources": [
+        "content/sounds.json[16].examples[2].word"
+      ]
+    },
+    "teacher, sister, water": {
+      "url": "/audio/75d3bf3e17581ce9_1.mp3",
+      "text": "teacher, sister, water",
+      "duration": 2.075,
+      "kind": "speech",
+      "phonemes": "tˈiʧəɹ, sˈɪstəɹ, wˈɔTəɹ",
+      "sources": [
+        "content/sounds.json[16].audioText"
+      ]
+    },
+    "paper": {
+      "url": "/audio/341b5c5efd0cfe78_1.mp3",
+      "text": "paper",
+      "duration": 1.4,
+      "kind": "speech",
+      "phonemes": "pˈApəɹ",
+      "sources": [
+        "content/sounds.json[17].examples[2].word"
+      ]
+    },
+    "pen, cup, paper": {
+      "url": "/audio/7a373b0160afa8a3_1.mp3",
+      "text": "pen, cup, paper",
+      "duration": 1.7,
+      "kind": "speech",
+      "phonemes": "pˈɛn, kˈʌp, pˈApəɹ",
+      "sources": [
+        "content/sounds.json[17].audioText"
+      ]
+    },
+    "cab": {
+      "url": "/audio/5b03cb3fe5201019_1.mp3",
+      "text": "cab",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "kˈæb",
+      "sources": [
+        "content/sounds.json[18].examples[2].word"
+      ]
+    },
+    "bag, boy, cab": {
+      "url": "/audio/bd55b40b2ecd6e18_1.mp3",
+      "text": "bag, boy, cab",
+      "duration": 1.675,
+      "kind": "speech",
+      "phonemes": "bˈæɡ, bˈY, kˈæb",
+      "sources": [
+        "content/sounds.json[18].audioText"
+      ]
+    },
+    "ten": {
+      "url": "/audio/322db900dec09699_1.mp3",
+      "text": "ten",
+      "duration": 1.1,
+      "kind": "speech",
+      "phonemes": "tˈɛn",
+      "sources": [
+        "content/sounds.json[19].examples[0].word"
+      ]
+    },
+    "top": {
+      "url": "/audio/3f3ae32712f15928_1.mp3",
+      "text": "top",
+      "duration": 1.1,
+      "kind": "speech",
+      "phonemes": "tˈɑp",
+      "sources": [
+        "content/sounds.json[19].examples[2].word"
+      ]
+    },
+    "ten, cat, top": {
+      "url": "/audio/4964b010ca5d04dc_1.mp3",
+      "text": "ten, cat, top",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "tˈɛn, kˈæt, tˈɑp",
+      "sources": [
+        "content/sounds.json[19].audioText"
+      ]
+    },
+    "door": {
+      "url": "/audio/bffe7a589a9a4d93_1.mp3",
+      "text": "door",
+      "duration": 1.0,
+      "kind": "speech",
+      "phonemes": "dˈɔɹ",
+      "sources": [
+        "content/sounds.json[20].examples[2].word"
+      ]
+    },
+    "day, red, door": {
+      "url": "/audio/0bcd39b9c37ccea8_1.mp3",
+      "text": "day, red, door",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "dˈA, ɹˈɛd, dˈɔɹ",
+      "sources": [
+        "content/sounds.json[20].audioText"
+      ]
+    },
+    "key": {
+      "url": "/audio/4b0f65c992b678de_1.mp3",
+      "text": "key",
+      "duration": 1.075,
+      "kind": "speech",
+      "phonemes": "kˈi",
+      "sources": [
+        "content/sounds.json[21].examples[1].word"
+      ]
+    },
+    "cat, key, book": {
+      "url": "/audio/08b93275a14e80c7_1.mp3",
+      "text": "cat, key, book",
+      "duration": 1.5,
+      "kind": "speech",
+      "phonemes": "kˈæt, kˈi, bˈʊk",
+      "sources": [
+        "content/sounds.json[21].audioText"
+      ]
+    },
+    "go, good, bag": {
+      "url": "/audio/7701e7a52a697466_1.mp3",
+      "text": "go, good, bag",
+      "duration": 1.55,
+      "kind": "speech",
+      "phonemes": "ɡˌO, ɡˈʊd, bˈæɡ",
+      "sources": [
+        "content/sounds.json[22].audioText"
+      ]
+    },
+    "fan": {
+      "url": "/audio/2bb5a27625d43f51_1.mp3",
+      "text": "fan",
+      "duration": 1.2,
+      "kind": "speech",
+      "phonemes": "fˈæn",
+      "sources": [
+        "content/sounds.json[23].examples[0].word"
+      ]
+    },
+    "leaf": {
+      "url": "/audio/b785e6917d608ff5_1.mp3",
+      "text": "leaf",
+      "duration": 1.2,
+      "kind": "speech",
+      "phonemes": "lˈif",
+      "sources": [
+        "content/sounds.json[23].examples[2].word",
+        "content/sounds.json[37].examples[1].word"
+      ]
+    },
+    "fan, fish, leaf": {
+      "url": "/audio/65b2f1b9a970b1b3_1.mp3",
+      "text": "fan, fish, leaf",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "fˈæn, fˈɪʃ, lˈif",
+      "sources": [
+        "content/sounds.json[23].audioText"
+      ]
+    },
+    "van": {
+      "url": "/audio/32b0f4b40b6f398a_1.mp3",
+      "text": "van",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "vˈæn",
+      "sources": [
+        "content/sounds.json[24].examples[0].word"
+      ]
+    },
+    "very": {
+      "url": "/audio/5d3649c2be4b4f08_1.mp3",
+      "text": "very",
+      "duration": 1.325,
+      "kind": "speech",
+      "phonemes": "vˈɛɹi",
+      "sources": [
+        "content/sounds.json[24].examples[1].word"
+      ]
+    },
+    "leave": {
+      "url": "/audio/5fa50a5082c3f6fa_1.mp3",
+      "text": "leave",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "lˈiv",
+      "sources": [
+        "content/sounds.json[24].examples[2].word"
+      ]
+    },
+    "van, very, leave": {
+      "url": "/audio/3200b070c5a15a15_1.mp3",
+      "text": "van, very, leave",
+      "duration": 1.85,
+      "kind": "speech",
+      "phonemes": "vˈæn, vˈɛɹi, lˈiv",
+      "sources": [
+        "content/sounds.json[24].audioText"
+      ]
+    },
+    "thin": {
+      "url": "/audio/df7c59da088da050_1.mp3",
+      "text": "thin",
+      "duration": 0.975,
+      "kind": "speech",
+      "phonemes": "θˈɪn",
+      "sources": [
+        "content/sounds.json[25].examples[0].word"
+      ]
+    },
+    "three": {
+      "url": "/audio/fa6b564db461b786_1.mp3",
+      "text": "three",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "θɹˈi",
+      "sources": [
+        "content/sounds.json[25].examples[1].word"
+      ]
+    },
+    "bath": {
+      "url": "/audio/a6273d763433649a_1.mp3",
+      "text": "bath",
+      "duration": 1.1,
+      "kind": "speech",
+      "phonemes": "bˈæθ",
+      "sources": [
+        "content/sounds.json[25].examples[2].word"
+      ]
+    },
+    "thin, three, bath": {
+      "url": "/audio/1646ab934fd104ef_1.mp3",
+      "text": "thin, three, bath",
+      "duration": 1.725,
+      "kind": "speech",
+      "phonemes": "θˈɪn, θɹˈi, bˈæθ",
+      "sources": [
+        "content/sounds.json[25].audioText"
+      ]
+    },
+    "this": {
+      "url": "/audio/0f8ec280dd65e7f8_1.mp3",
+      "text": "this",
+      "duration": 1.075,
+      "kind": "speech",
+      "phonemes": "ðˈɪs",
+      "sources": [
+        "content/sounds.json[26].examples[0].word"
+      ]
+    },
+    "they": {
+      "url": "/audio/47e0c20bc4a0579d_1.mp3",
+      "text": "they",
+      "duration": 0.925,
+      "kind": "speech",
+      "phonemes": "ðA",
+      "sources": [
+        "content/sounds.json[26].examples[1].word"
+      ]
+    },
+    "mother": {
+      "url": "/audio/fb4f651f995243f3_1.mp3",
+      "text": "mother",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "mˈʌðəɹ",
+      "sources": [
+        "content/sounds.json[26].examples[2].word"
+      ]
+    },
+    "this, they, mother": {
+      "url": "/audio/2b7dc305c6e60525_1.mp3",
+      "text": "this, they, mother",
+      "duration": 1.7,
+      "kind": "speech",
+      "phonemes": "ðˈɪs, ðA, mˈʌðəɹ",
+      "sources": [
+        "content/sounds.json[26].audioText"
+      ]
+    },
+    "bus": {
+      "url": "/audio/d3e810e33170f850_1.mp3",
+      "text": "bus",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "bˈʌs",
+      "sources": [
+        "content/sounds.json[27].examples[2].word"
+      ]
+    },
+    "see, sun, bus": {
+      "url": "/audio/486e9523f63e4a61_1.mp3",
+      "text": "see, sun, bus",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "sˈi, sˈʌn, bˈʌs",
+      "sources": [
+        "content/sounds.json[27].audioText"
+      ]
+    },
+    "zip": {
+      "url": "/audio/743b2a6af2d6da28_1.mp3",
+      "text": "zip",
+      "duration": 1.1,
+      "kind": "speech",
+      "phonemes": "zˈɪp",
+      "sources": [
+        "content/sounds.json[28].examples[0].word"
+      ]
+    },
+    "zoo": {
+      "url": "/audio/87aabc45ed9fc05b_1.mp3",
+      "text": "zoo",
+      "duration": 0.95,
+      "kind": "speech",
+      "phonemes": "zˈu",
+      "sources": [
+        "content/sounds.json[28].examples[1].word"
+      ]
+    },
+    "zip, zoo, nose": {
+      "url": "/audio/c75d54be5c710550_1.mp3",
+      "text": "zip, zoo, nose",
+      "duration": 1.675,
+      "kind": "speech",
+      "phonemes": "zˈɪp, zˈu, nˈOz",
+      "sources": [
+        "content/sounds.json[28].audioText"
+      ]
+    },
+    "she": {
+      "url": "/audio/088c6a21e99a3f9e_1.mp3",
+      "text": "she",
+      "duration": 1.025,
+      "kind": "speech",
+      "phonemes": "ʃi",
+      "sources": [
+        "content/sounds.json[29].examples[1].word"
+      ]
+    },
+    "ship, she, fish": {
+      "url": "/audio/1c19097e0d3faedd_1.mp3",
+      "text": "ship, she, fish",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "ʃˈɪp, ʃi, fˈɪʃ",
+      "sources": [
+        "content/sounds.json[29].audioText"
+      ]
+    },
+    "vision": {
+      "url": "/audio/032144591b873dda_1.mp3",
+      "text": "vision",
+      "duration": 1.35,
+      "kind": "speech",
+      "phonemes": "vˈɪʒən",
+      "sources": [
+        "content/sounds.json[30].examples[0].word"
+      ]
+    },
+    "measure": {
+      "url": "/audio/592f0d68857230e7_1.mp3",
+      "text": "measure",
+      "duration": 1.425,
+      "kind": "speech",
+      "phonemes": "mˈɛʒəɹ",
+      "sources": [
+        "content/sounds.json[30].examples[1].word"
+      ]
+    },
+    "usual": {
+      "url": "/audio/b3346ca5186dd442_1.mp3",
+      "text": "usual",
+      "duration": 1.425,
+      "kind": "speech",
+      "phonemes": "jˈuʒəwəl",
+      "sources": [
+        "content/sounds.json[30].examples[2].word"
+      ]
+    },
+    "vision, measure, usual": {
+      "url": "/audio/4c183b3e40e68257_1.mp3",
+      "text": "vision, measure, usual",
+      "duration": 2.1,
+      "kind": "speech",
+      "phonemes": "vˈɪʒən, mˈɛʒəɹ, jˈuʒəwəl",
+      "sources": [
+        "content/sounds.json[30].audioText"
+      ]
+    },
+    "hand": {
+      "url": "/audio/880ddf4ab4466f13_1.mp3",
+      "text": "hand",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "hˈænd",
+      "sources": [
+        "content/sounds.json[31].examples[2].word"
+      ]
+    },
+    "hat, home, hand": {
+      "url": "/audio/c89ef557d8c81e8a_1.mp3",
+      "text": "hat, home, hand",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "hˈæt, hˈOm, hˈænd",
+      "sources": [
+        "content/sounds.json[31].audioText"
+      ]
+    },
+    "chair": {
+      "url": "/audio/b662f179fb71e091_1.mp3",
+      "text": "chair",
+      "duration": 1.1,
+      "kind": "speech",
+      "phonemes": "ʧˈɛɹ",
+      "sources": [
+        "content/sounds.json[32].examples[0].word"
+      ]
+    },
+    "cheese": {
+      "url": "/audio/460941918927c396_1.mp3",
+      "text": "cheese",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "ʧˈiz",
+      "sources": [
+        "content/sounds.json[32].examples[1].word"
+      ]
+    },
+    "watch": {
+      "url": "/audio/70ebf40068c57e5c_1.mp3",
+      "text": "watch",
+      "duration": 1.375,
+      "kind": "speech",
+      "phonemes": "wˈɑʧ",
+      "sources": [
+        "content/sounds.json[32].examples[2].word"
+      ]
+    },
+    "chair, cheese, watch": {
+      "url": "/audio/5710178f3c9a5a93_1.mp3",
+      "text": "chair, cheese, watch",
+      "duration": 1.85,
+      "kind": "speech",
+      "phonemes": "ʧˈɛɹ, ʧˈiz, wˈɑʧ",
+      "sources": [
+        "content/sounds.json[32].audioText"
+      ]
+    },
+    "jam": {
+      "url": "/audio/33338224ed481527_1.mp3",
+      "text": "jam",
+      "duration": 1.225,
+      "kind": "speech",
+      "phonemes": "ʤˈæm",
+      "sources": [
+        "content/sounds.json[33].examples[0].word"
+      ]
+    },
+    "june": {
+      "url": "/audio/e48065a706172ef3_1.mp3",
+      "text": "June",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "ʤˈun",
+      "sources": [
+        "content/sounds.json[33].examples[1].word"
+      ]
+    },
+    "judge": {
+      "url": "/audio/3db404bbc92d987d_1.mp3",
+      "text": "judge",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "ʤˈʌʤ",
+      "sources": [
+        "content/sounds.json[33].examples[2].word"
+      ]
+    },
+    "jam, june, judge": {
+      "url": "/audio/6b4d92ca2121d8b6_1.mp3",
+      "text": "jam, June, judge",
+      "duration": 1.9,
+      "kind": "speech",
+      "phonemes": "ʤˈæm, ʤˈun, ʤˈʌʤ",
+      "sources": [
+        "content/sounds.json[33].audioText"
+      ]
+    },
+    "man": {
+      "url": "/audio/312464bece3453f2_1.mp3",
+      "text": "man",
+      "duration": 1.2,
+      "kind": "speech",
+      "phonemes": "mˈæn",
+      "sources": [
+        "content/sounds.json[34].examples[0].word"
+      ]
+    },
+    "sum": {
+      "url": "/audio/61b04b520e947546_1.mp3",
+      "text": "sum",
+      "duration": 1.15,
+      "kind": "speech",
+      "phonemes": "sˈʌm",
+      "sources": [
+        "content/sounds.json[34].examples[2].word"
+      ]
+    },
+    "man, moon, sum": {
+      "url": "/audio/5fbf73a2c0c82827_1.mp3",
+      "text": "man, moon, sum",
+      "duration": 1.725,
+      "kind": "speech",
+      "phonemes": "mˈæn, mˈun, sˈʌm",
+      "sources": [
+        "content/sounds.json[34].audioText"
+      ]
+    },
+    "no": {
+      "url": "/audio/947d2ccebd89411b_1.mp3",
+      "text": "no",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "nˈO",
+      "sources": [
+        "content/sounds.json[35].examples[0].word"
+      ]
+    },
+    "no, sun, name": {
+      "url": "/audio/7d815f339dc6c662_1.mp3",
+      "text": "no, sun, name",
+      "duration": 1.725,
+      "kind": "speech",
+      "phonemes": "nˈO, sˈʌn, nˈAm",
+      "sources": [
+        "content/sounds.json[35].audioText"
+      ]
+    },
+    "sing": {
+      "url": "/audio/7f496f80b5ce6cab_1.mp3",
+      "text": "sing",
+      "duration": 1.2,
+      "kind": "speech",
+      "phonemes": "sˈɪŋ",
+      "sources": [
+        "content/sounds.json[36].examples[0].word"
+      ]
+    },
+    "long": {
+      "url": "/audio/2fb9bd39c47fa0b2_1.mp3",
+      "text": "long",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "lˈɔŋ",
+      "sources": [
+        "content/sounds.json[36].examples[1].word"
+      ]
+    },
+    "ring": {
+      "url": "/audio/cf622e89220014da_1.mp3",
+      "text": "ring",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "ɹˈɪŋ",
+      "sources": [
+        "content/sounds.json[36].examples[2].word"
+      ]
+    },
+    "sing, long, ring": {
+      "url": "/audio/d0616c39964319b4_1.mp3",
+      "text": "sing, long, ring",
+      "duration": 1.675,
+      "kind": "speech",
+      "phonemes": "sˈɪŋ, lˈɔŋ, ɹˈɪŋ",
+      "sources": [
+        "content/sounds.json[36].audioText"
+      ]
+    },
+    "feel": {
+      "url": "/audio/b3eb8671973a0625_1.mp3",
+      "text": "feel",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "fˈil",
+      "sources": [
+        "content/sounds.json[37].examples[2].word"
+      ]
+    },
+    "light, leaf, feel": {
+      "url": "/audio/323cccd8366472a3_1.mp3",
+      "text": "light, leaf, feel",
+      "duration": 1.475,
+      "kind": "speech",
+      "phonemes": "lˈIt, lˈif, fˈil",
+      "sources": [
+        "content/sounds.json[37].audioText"
+      ]
+    },
+    "right": {
+      "url": "/audio/41a297825131eb03_1.mp3",
+      "text": "right",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "ɹˈIt",
+      "sources": [
+        "content/sounds.json[38].examples[1].word"
+      ]
+    },
+    "red, right, rain": {
+      "url": "/audio/c7ea392eb3755e51_1.mp3",
+      "text": "red, right, rain",
+      "duration": 1.6,
+      "kind": "speech",
+      "phonemes": "ɹˈɛd, ɹˈIt, ɹˈAn",
+      "sources": [
+        "content/sounds.json[38].audioText"
+      ]
+    },
+    "we": {
+      "url": "/audio/74127429201f485f_1.mp3",
+      "text": "we",
+      "duration": 0.975,
+      "kind": "speech",
+      "phonemes": "wi",
+      "sources": [
+        "content/sounds.json[39].examples[0].word"
+      ]
+    },
+    "west": {
+      "url": "/audio/dc8c9196aa31f3b9_1.mp3",
+      "text": "west",
+      "duration": 1.025,
+      "kind": "speech",
+      "phonemes": "wˈɛst",
+      "sources": [
+        "content/sounds.json[39].examples[1].word"
+      ]
+    },
+    "one": {
+      "url": "/audio/b9b027a5131d256f_1.mp3",
+      "text": "one",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "wˈʌn",
+      "sources": [
+        "content/sounds.json[39].examples[2].word"
+      ]
+    },
+    "we, west, one": {
+      "url": "/audio/0e7ccdc75a87c34e_1.mp3",
+      "text": "we, west, one",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "wi, wˈɛst, wˈʌn",
+      "sources": [
+        "content/sounds.json[39].audioText"
+      ]
+    },
+    "yes": {
+      "url": "/audio/10b3e79b44c0b514_1.mp3",
+      "text": "yes",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "jˈɛs",
+      "sources": [
+        "content/sounds.json[40].examples[0].word"
+      ]
+    },
+    "you": {
+      "url": "/audio/f2d4e8487f7b75b0_1.mp3",
+      "text": "you",
+      "duration": 0.975,
+      "kind": "speech",
+      "phonemes": "ju",
+      "sources": [
+        "content/sounds.json[40].examples[1].word"
+      ]
+    },
+    "yellow": {
+      "url": "/audio/38ac9253cef95df5_1.mp3",
+      "text": "yellow",
+      "duration": 1.35,
+      "kind": "speech",
+      "phonemes": "jˈɛlO",
+      "sources": [
+        "content/sounds.json[40].examples[2].word"
+      ]
+    },
+    "yes, you, yellow": {
+      "url": "/audio/e3fb1d3f8b9a8846_1.mp3",
+      "text": "yes, you, yellow",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "jˈɛs, ju, jˈɛlO",
+      "sources": [
+        "content/sounds.json[40].audioText"
+      ]
+    },
+    "see, yes": {
+      "url": "/audio/a5040115d47b40e1_1.mp3",
+      "text": "see, yes",
+      "duration": 1.375,
+      "kind": "speech",
+      "phonemes": "sˈi, jˈɛs",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[0].concepts[1].audioText"
+      ]
+    },
+    "sip, zip": {
+      "url": "/audio/8b048091c20b1764_1.mp3",
+      "text": "sip, zip",
+      "duration": 1.2,
+      "kind": "speech",
+      "phonemes": "sˈɪp, zˈɪp",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[0].concepts[2].audioText",
+        "content/curriculum.json.stages[1].lessons[2].concepts[0].audioText"
+      ]
+    },
+    "sheep, ship": {
+      "url": "/audio/0d33a5ef7b8ec132_1.mp3",
+      "text": "sheep, ship",
+      "duration": 0.95,
+      "kind": "speech",
+      "phonemes": "ʃˈip, ʃˈɪp",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[1].concepts[0].audioText"
+      ]
+    },
+    "bed, bad": {
+      "url": "/audio/0cdc9deed2856464_1.mp3",
+      "text": "bed, bad",
+      "duration": 1.0,
+      "kind": "speech",
+      "phonemes": "bˈɛd, bˈæd",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[1].concepts[1].audioText"
+      ]
+    },
+    "pen, pan": {
+      "url": "/audio/14ac962dbed7fe19_1.mp3",
+      "text": "pen, pan",
+      "duration": 0.975,
+      "kind": "speech",
+      "phonemes": "pˈɛn, pˈæn",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[1].concepts[2].audioText"
+      ]
+    },
+    "a red bag": {
+      "url": "/audio/d73eb5b57fce3386_1.mp3",
+      "text": "a red bag",
+      "duration": 1.4,
+      "kind": "speech",
+      "phonemes": "ɐ ɹˈɛd bˈæɡ",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[1].questions[5].audioText",
+        "content/curriculum.json.stages[0].lessons[1].questions[5].target"
+      ]
+    },
+    "cot, caught": {
+      "url": "/audio/317d4e795d61fe9c_1.mp3",
+      "text": "cot, caught",
+      "duration": 1.5,
+      "kind": "speech",
+      "phonemes": "kˈɑt, kˈɔt",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[2].concepts[0].audioText"
+      ]
+    },
+    "food, good": {
+      "url": "/audio/44a8178e8e75b70e_1.mp3",
+      "text": "food, good",
+      "duration": 1.425,
+      "kind": "speech",
+      "phonemes": "fˈud, ɡˈʊd",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[2].concepts[1].audioText"
+      ]
+    },
+    "food, book": {
+      "url": "/audio/29e4616a0c85d4d6_1.mp3",
+      "text": "food, book",
+      "duration": 1.225,
+      "kind": "speech",
+      "phonemes": "fˈud, bˈʊk",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[2].concepts[2].audioText"
+      ]
+    },
+    "good food": {
+      "url": "/audio/f8bc7fd3c22c0628_1.mp3",
+      "text": "good food",
+      "duration": 1.425,
+      "kind": "speech",
+      "phonemes": "ɡˈʊd fˈud",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[2].questions[5].audioText",
+        "content/curriculum.json.stages[0].lessons[2].questions[5].target",
+        "content/curriculum.json.stages[0].lessons[5].concepts[2].audioText"
+      ]
+    },
+    "cup, about": {
+      "url": "/audio/e65cf19fbfe99432_1.mp3",
+      "text": "cup, about",
+      "duration": 1.45,
+      "kind": "speech",
+      "phonemes": "kˈʌp, əbˈWt",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[3].concepts[0].audioText"
+      ]
+    },
+    "bird, teacher": {
+      "url": "/audio/69217057aef48ab3_1.mp3",
+      "text": "bird, teacher",
+      "duration": 1.7,
+      "kind": "speech",
+      "phonemes": "bˈɜɹd, tˈiʧəɹ",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[3].concepts[1].audioText"
+      ]
+    },
+    "her, sister": {
+      "url": "/audio/b246f5f2b30165d7_1.mp3",
+      "text": "her, sister",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "hˌɜɹ, sˈɪstəɹ",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[3].concepts[2].audioText"
+      ]
+    },
+    "her teacher": {
+      "url": "/audio/eee708c831d1250b_1.mp3",
+      "text": "her teacher",
+      "duration": 1.6,
+      "kind": "speech",
+      "phonemes": "hɜɹ tˈiʧəɹ",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[3].questions[5].audioText",
+        "content/curriculum.json.stages[0].lessons[3].questions[5].target"
+      ]
+    },
+    "day, my": {
+      "url": "/audio/1c67ae5569dcbd45_1.mp3",
+      "text": "day, my",
+      "duration": 1.4,
+      "kind": "speech",
+      "phonemes": "dˈA, mˈI",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[4].concepts[0].audioText"
+      ]
+    },
+    "boy, now": {
+      "url": "/audio/e27dc2587ed9d47b_1.mp3",
+      "text": "boy, now",
+      "duration": 1.425,
+      "kind": "speech",
+      "phonemes": "bˈY, nˈW",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[4].concepts[1].audioText"
+      ]
+    },
+    "go, home": {
+      "url": "/audio/d8728b8cef803697_1.mp3",
+      "text": "go, home",
+      "duration": 1.475,
+      "kind": "speech",
+      "phonemes": "ɡˌO, hˈOm",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[4].concepts[2].audioText"
+      ]
+    },
+    "go home now": {
+      "url": "/audio/fedc3e9b9bd65575_1.mp3",
+      "text": "go home now",
+      "duration": 1.55,
+      "kind": "speech",
+      "phonemes": "ɡˌO hˈOm nˈW",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[4].questions[5].audioText",
+        "content/curriculum.json.stages[0].lessons[4].questions[5].target"
+      ]
+    },
+    "ship, sheep, bed, bad": {
+      "url": "/audio/2d309c44650abc49_1.mp3",
+      "text": "ship, sheep, bed, bad",
+      "duration": 1.9,
+      "kind": "speech",
+      "phonemes": "ʃˈɪp, ʃˈip, bˈɛd, bˈæd",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[5].concepts[0].audioText"
+      ]
+    },
+    "about, teacher": {
+      "url": "/audio/da9e5e0f1c0edde2_1.mp3",
+      "text": "about, teacher",
+      "duration": 1.725,
+      "kind": "speech",
+      "phonemes": "əbˈWt, tˈiʧəɹ",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[5].concepts[1].audioText",
+        "content/curriculum.json.stages[2].lessons[2].concepts[1].audioText"
+      ]
+    },
+    "the teacher has a good book.": {
+      "url": "/audio/f5a0d93ef1a2c49d_1.mp3",
+      "text": "The teacher has a good book.",
+      "duration": 2.075,
+      "kind": "speech",
+      "phonemes": "ðə tˈiʧəɹ hæz ɐ ɡˈʊd bˈʊk.",
+      "sources": [
+        "content/curriculum.json.stages[0].lessons[5].questions[5].audioText",
+        "content/curriculum.json.stages[0].lessons[5].questions[5].target"
+      ]
+    },
+    "pat, bat, ten, den, coat, goat": {
+      "url": "/audio/9c032e0d0e4005c5_1.mp3",
+      "text": "pat, bat, ten, den, coat, goat",
+      "duration": 2.45,
+      "kind": "speech",
+      "phonemes": "pˈæt, bˈæt, tˈɛn, dˈɛn, kˈOt, ɡˈOt",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[0].concepts[0].audioText"
+      ]
+    },
+    "pie, buy; tie, die": {
+      "url": "/audio/c5650b6b6d818f96_1.mp3",
+      "text": "pie, buy; tie, die",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "pˈI, bˈI; tˈI, dˈI",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[0].concepts[1].audioText"
+      ]
+    },
+    "cap, cat, back": {
+      "url": "/audio/f1deaceb7fa7d59e_1.mp3",
+      "text": "cap, cat, back",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "kˈæp, kˈæt, bˈæk",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[0].concepts[2].audioText"
+      ]
+    },
+    "coat": {
+      "url": "/audio/cd00741e71fc6c6c_1.mp3",
+      "text": "coat",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "kˈOt",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[0].questions[3].audioText"
+      ]
+    },
+    "bat": {
+      "url": "/audio/ec3f3cf94e23cce4_1.mp3",
+      "text": "bat",
+      "duration": 1.15,
+      "kind": "speech",
+      "phonemes": "bˈæt",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[0].questions[4].audioText"
+      ]
+    },
+    "a big cat": {
+      "url": "/audio/3372df54f4a316cf_1.mp3",
+      "text": "a big cat",
+      "duration": 1.55,
+      "kind": "speech",
+      "phonemes": "ɐ bˈɪɡ kˈæt",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[0].questions[5].audioText",
+        "content/curriculum.json.stages[1].lessons[0].questions[5].target"
+      ]
+    },
+    "fan, van": {
+      "url": "/audio/a929e88967138114_1.mp3",
+      "text": "fan, van",
+      "duration": 1.525,
+      "kind": "speech",
+      "phonemes": "fˈæn, vˈæn",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[1].concepts[0].audioText"
+      ]
+    },
+    "thin, this": {
+      "url": "/audio/130a8b66d9752690_1.mp3",
+      "text": "thin, this",
+      "duration": 1.4,
+      "kind": "speech",
+      "phonemes": "θˈɪn, ðˈɪs",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[1].concepts[1].audioText"
+      ]
+    },
+    "leaf, leave": {
+      "url": "/audio/0eee8cbfe135f8a9_1.mp3",
+      "text": "leaf, leave",
+      "duration": 1.425,
+      "kind": "speech",
+      "phonemes": "lˈif, lˈiv",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[1].concepts[2].audioText"
+      ]
+    },
+    "this thin leaf": {
+      "url": "/audio/20bcdee6003a8adc_1.mp3",
+      "text": "this thin leaf",
+      "duration": 1.675,
+      "kind": "speech",
+      "phonemes": "ðɪs θˈɪn lˈif",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[1].questions[5].audioText",
+        "content/curriculum.json.stages[1].lessons[1].questions[5].target"
+      ]
+    },
+    "ship, vision": {
+      "url": "/audio/544d093d8fe8df05_1.mp3",
+      "text": "ship, vision",
+      "duration": 1.625,
+      "kind": "speech",
+      "phonemes": "ʃˈɪp, vˈɪʒən",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[2].concepts[1].audioText"
+      ]
+    },
+    "hat, hour": {
+      "url": "/audio/0afeef9d95b9442b_1.mp3",
+      "text": "hat, hour",
+      "duration": 1.525,
+      "kind": "speech",
+      "phonemes": "hˈæt, ˈWəɹ",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[2].concepts[2].audioText"
+      ]
+    },
+    "sip": {
+      "url": "/audio/0e4ad569d6fb9787_1.mp3",
+      "text": "sip",
+      "duration": 0.925,
+      "kind": "speech",
+      "phonemes": "sˈɪp",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[2].questions[3].audioText"
+      ]
+    },
+    "she has a red hat.": {
+      "url": "/audio/acfffad3e24f4a70_1.mp3",
+      "text": "She has a red hat.",
+      "duration": 1.725,
+      "kind": "speech",
+      "phonemes": "ʃˌi hæz ɐ ɹˈɛd hˈæt.",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[2].questions[5].audioText",
+        "content/curriculum.json.stages[1].lessons[2].questions[5].target"
+      ]
+    },
+    "chair, jam": {
+      "url": "/audio/c535f1d0b863f901_1.mp3",
+      "text": "chair, jam",
+      "duration": 1.55,
+      "kind": "speech",
+      "phonemes": "ʧˈɛɹ, ʤˈæm",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[3].concepts[0].audioText"
+      ]
+    },
+    "sum, sun, sung": {
+      "url": "/audio/f7e92b176bb79a8b_1.mp3",
+      "text": "sum, sun, sung",
+      "duration": 1.85,
+      "kind": "speech",
+      "phonemes": "sˈʌm, sˈʌn, sˈʌŋ",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[3].concepts[1].audioText"
+      ]
+    },
+    "sing, finger": {
+      "url": "/audio/8ea32de02aee5629_1.mp3",
+      "text": "sing, finger",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "sˈɪŋ, fˈɪŋɡəɹ",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[3].concepts[2].audioText"
+      ]
+    },
+    "i sing in june.": {
+      "url": "/audio/9097975e96b4f74e_1.mp3",
+      "text": "I sing in June.",
+      "duration": 1.825,
+      "kind": "speech",
+      "phonemes": "ˌI sˈɪŋ ɪn ʤˈun.",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[3].questions[5].audioText",
+        "content/curriculum.json.stages[1].lessons[3].questions[5].target"
+      ]
+    },
+    "light, right": {
+      "url": "/audio/ace82c816c69a49a_1.mp3",
+      "text": "light, right",
+      "duration": 1.4,
+      "kind": "speech",
+      "phonemes": "lˈIt, ɹˈIt",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[4].concepts[0].audioText"
+      ]
+    },
+    "we, yes": {
+      "url": "/audio/bc13843a18dab8fe_1.mp3",
+      "text": "we, yes",
+      "duration": 1.375,
+      "kind": "speech",
+      "phonemes": "wi, jˈɛs",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[4].concepts[1].audioText"
+      ]
+    },
+    "stop, play, desk": {
+      "url": "/audio/00d6c37c91e9ff56_1.mp3",
+      "text": "stop, play, desk",
+      "duration": 1.325,
+      "kind": "speech",
+      "phonemes": "stˈɑp, plˈA, dˈɛsk",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[4].concepts[2].audioText"
+      ]
+    },
+    "we play in the rain.": {
+      "url": "/audio/fdef2a52cede8019_1.mp3",
+      "text": "We play in the rain.",
+      "duration": 1.775,
+      "kind": "speech",
+      "phonemes": "wˌi plˈA ɪn ðə ɹˈAn.",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[4].questions[5].audioText",
+        "content/curriculum.json.stages[1].lessons[4].questions[5].target"
+      ]
+    },
+    "fan, van, we": {
+      "url": "/audio/485879f6fd30c8ee_1.mp3",
+      "text": "fan, van, we",
+      "duration": 1.8,
+      "kind": "speech",
+      "phonemes": "fˈæn, vˈæn, wi",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[5].concepts[0].audioText"
+      ]
+    },
+    "ship, chip, sing": {
+      "url": "/audio/7c7a1de6a952948b_1.mp3",
+      "text": "ship, chip, sing",
+      "duration": 1.775,
+      "kind": "speech",
+      "phonemes": "ʃˈɪp, ʧˈɪp, sˈɪŋ",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[5].concepts[1].audioText"
+      ]
+    },
+    "we have three red pens.": {
+      "url": "/audio/6baa0892dfad0c0e_1.mp3",
+      "text": "We have three red pens.",
+      "duration": 2.15,
+      "kind": "speech",
+      "phonemes": "wˌi hæv θɹˈi ɹˈɛd pˈɛnz.",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[5].concepts[2].audioText",
+        "content/curriculum.json.stages[1].lessons[5].questions[5].audioText",
+        "content/curriculum.json.stages[1].lessons[5].questions[5].target"
+      ]
+    },
+    "chip": {
+      "url": "/audio/8c9f55a5cd2f5b52_1.mp3",
+      "text": "chip",
+      "duration": 0.975,
+      "kind": "speech",
+      "phonemes": "ʧˈɪp",
+      "sources": [
+        "content/curriculum.json.stages[1].lessons[5].questions[2].audioText"
+      ]
+    },
+    "cat, sit, hop": {
+      "url": "/audio/db54fc6110b5bd87_1.mp3",
+      "text": "cat, sit, hop",
+      "duration": 1.675,
+      "kind": "speech",
+      "phonemes": "kˈæt, sˈɪt, hˈɑp",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[0].concepts[0].audioText"
+      ]
+    },
+    "cap, cape": {
+      "url": "/audio/35a658c2c48c3043_1.mp3",
+      "text": "cap, cape",
+      "duration": 1.3,
+      "kind": "speech",
+      "phonemes": "kˈæp, kˈAp",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[0].concepts[1].audioText"
+      ]
+    },
+    "have, give, love": {
+      "url": "/audio/b8c892c8ca4c8ec8_1.mp3",
+      "text": "have, give, love",
+      "duration": 1.55,
+      "kind": "speech",
+      "phonemes": "hˈæv, ɡˈɪv, lˈʌv",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[0].concepts[2].audioText"
+      ]
+    },
+    "cape": {
+      "url": "/audio/164fa9be3e96d96d_1.mp3",
+      "text": "cape",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "kˈAp",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[0].questions[3].audioText"
+      ]
+    },
+    "kit": {
+      "url": "/audio/07e68cb9fb26ab86_1.mp3",
+      "text": "kit",
+      "duration": 1.1,
+      "kind": "speech",
+      "phonemes": "kˈɪt",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[0].questions[4].audioText"
+      ]
+    },
+    "i have a red cape.": {
+      "url": "/audio/6981d12ada60e437_1.mp3",
+      "text": "I have a red cape.",
+      "duration": 1.775,
+      "kind": "speech",
+      "phonemes": "ˌI hæv ɐ ɹˈɛd kˈAp.",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[0].questions[5].audioText",
+        "content/curriculum.json.stages[2].lessons[0].questions[5].target"
+      ]
+    },
+    "chair, school, chef": {
+      "url": "/audio/3c3976876edaa461_1.mp3",
+      "text": "chair, school, chef",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "ʧˈɛɹ, skˈul, ʃˈɛf",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[1].concepts[0].audioText"
+      ]
+    },
+    "see, team, bread": {
+      "url": "/audio/502cac7b02f4b21e_1.mp3",
+      "text": "see, team, bread",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "sˈi, tˈim, bɹˈɛd",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[1].concepts[1].audioText"
+      ]
+    },
+    "i read every day. i read yesterday.": {
+      "url": "/audio/242c10ea3f7d6e4d_1.mp3",
+      "text": "I read every day. I read yesterday.",
+      "synthesisInput": "I [read](/ɹˈid/) every day. I [read](/ɹˈɛd/) yesterday.",
+      "duration": 2.975,
+      "kind": "speech",
+      "phonemes": "ˌI ɹˈid ˈɛvəɹi dˈA. ˌI ɹˈɛd jˈɛstəɹdˌA.",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[1].concepts[2].audioText",
+        "content/curriculum.json.stages[4].lessons[5].concepts[1].audioText"
+      ]
+    },
+    "bread": {
+      "url": "/audio/558f1ab53c52c4d1_1.mp3",
+      "text": "bread",
+      "duration": 0.8,
+      "kind": "speech",
+      "phonemes": "bɹˈɛd",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[1].questions[4].audioText",
+        "content/curriculum.json.stages[2].lessons[5].questions[2].audioText"
+      ]
+    },
+    "i read a book yesterday.": {
+      "url": "/audio/3a4a012b28236ec5_1.mp3",
+      "text": "I read a book yesterday.",
+      "synthesisInput": "I [read](/ɹˈɛd/) a book yesterday.",
+      "duration": 2.125,
+      "kind": "speech",
+      "phonemes": "ˌI ɹˈɛd ɐ bˈʊk jˈɛstəɹdˌA.",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[1].questions[5].audioText",
+        "content/curriculum.json.stages[2].lessons[1].questions[5].target"
+      ]
+    },
+    "cake, teacher": {
+      "url": "/audio/b5c7aba39f654ba8_1.mp3",
+      "text": "cake, teacher",
+      "duration": 1.675,
+      "kind": "speech",
+      "phonemes": "kˈAk, tˈiʧəɹ",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[2].concepts[0].audioText"
+      ]
+    },
+    "a record, record a song": {
+      "url": "/audio/01b2bd9acb69b98d_1.mp3",
+      "text": "a record, record a song",
+      "duration": 2.075,
+      "kind": "speech",
+      "phonemes": "ɐ ɹˈɛkəɹd, ɹəkˈɔɹd ɐ sˈɔŋ",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[2].concepts[2].audioText"
+      ]
+    },
+    "please record a song.": {
+      "url": "/audio/3910163293d9b780_1.mp3",
+      "text": "Please record a song.",
+      "duration": 1.925,
+      "kind": "speech",
+      "phonemes": "plˈiz ɹəkˈɔɹd ɐ sˈɔŋ.",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[2].questions[4].audioText"
+      ]
+    },
+    "about my teacher": {
+      "url": "/audio/a0e05fc4ef5de4b2_1.mp3",
+      "text": "about my teacher",
+      "duration": 1.825,
+      "kind": "speech",
+      "phonemes": "əbˈWt mI tˈiʧəɹ",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[2].questions[5].audioText",
+        "content/curriculum.json.stages[2].lessons[2].questions[5].target"
+      ]
+    },
+    "a cup, to school": {
+      "url": "/audio/f3b0d16e0eeb3b3a_1.mp3",
+      "text": "a cup, to school",
+      "duration": 1.8,
+      "kind": "speech",
+      "phonemes": "ɐ kˈʌp, tə skˈul",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[3].concepts[1].audioText"
+      ]
+    },
+    "i want a cup.": {
+      "url": "/audio/7a2e11cd2854a0ff_1.mp3",
+      "text": "I want a cup.",
+      "duration": 1.475,
+      "kind": "speech",
+      "phonemes": "ˌI wˈɑnt ɐ kˈʌp.",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[3].concepts[2].audioText",
+        "content/curriculum.json.stages[2].lessons[3].questions[4].audioText",
+        "content/curriculum.json.stages[2].lessons[3].questions[5].audioText",
+        "content/curriculum.json.stages[2].lessons[3].questions[5].target"
+      ]
+    },
+    "one, once": {
+      "url": "/audio/6afa2e416ae37f96_1.mp3",
+      "text": "one, once",
+      "duration": 1.45,
+      "kind": "speech",
+      "phonemes": "wˈʌn, wˈʌns",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[4].concepts[0].audioText"
+      ]
+    },
+    "a river bank, a bank account": {
+      "url": "/audio/706ffb3185e8cd21_1.mp3",
+      "text": "a river bank, a bank account",
+      "duration": 2.225,
+      "kind": "speech",
+      "phonemes": "ɐ ɹˈɪvəɹ bˈæŋk, ɐ bˈæŋk əkˈWnt",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[4].concepts[1].audioText"
+      ]
+    },
+    "one book": {
+      "url": "/audio/ea587595cdc7c451_1.mp3",
+      "text": "one book",
+      "duration": 1.35,
+      "kind": "speech",
+      "phonemes": "wˈʌn bˈʊk",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[4].concepts[2].audioText",
+        "content/curriculum.json.stages[2].lessons[4].questions[3].audioText"
+      ]
+    },
+    "i have one book.": {
+      "url": "/audio/ccb736a78c8f6157_1.mp3",
+      "text": "I have one book.",
+      "duration": 1.7,
+      "kind": "speech",
+      "phonemes": "ˌI hæv wˈʌn bˈʊk.",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[4].questions[5].audioText",
+        "content/curriculum.json.stages[2].lessons[4].questions[5].target"
+      ]
+    },
+    "make, have, about": {
+      "url": "/audio/60d6fbbdfa3f5ec7_1.mp3",
+      "text": "make, have, about",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "mˌAk, hˈæv, əbˈWt",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[5].concepts[0].audioText"
+      ]
+    },
+    "have, give, team, bread": {
+      "url": "/audio/8e2ad85a7f0b6d1b_1.mp3",
+      "text": "have, give, team, bread",
+      "duration": 1.875,
+      "kind": "speech",
+      "phonemes": "hˈæv, ɡˈɪv, tˈim, bɹˈɛd",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[5].concepts[1].audioText"
+      ]
+    },
+    "i go to school.": {
+      "url": "/audio/eb43753da2faab87_1.mp3",
+      "text": "I go to school.",
+      "duration": 1.625,
+      "kind": "speech",
+      "phonemes": "ˌI ɡˌO tə skˈul.",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[5].concepts[2].audioText",
+        "content/curriculum.json.stages[2].lessons[5].questions[4].audioText"
+      ]
+    },
+    "i have a book about food.": {
+      "url": "/audio/9c014dac248d4087_1.mp3",
+      "text": "I have a book about food.",
+      "duration": 2.025,
+      "kind": "speech",
+      "phonemes": "ˌI hæv ɐ bˈʊk əbˈWt fˈud.",
+      "sources": [
+        "content/curriculum.json.stages[2].lessons[5].questions[5].audioText",
+        "content/curriculum.json.stages[2].lessons[5].questions[5].target"
+      ]
+    },
+    "unhappy, reread": {
+      "url": "/audio/5977f74e9a76299f_1.mp3",
+      "text": "unhappy, reread",
+      "duration": 1.725,
+      "kind": "speech",
+      "phonemes": "ˌʌnhˈæpi, ɹˈiɹid",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[0].concepts[0].audioText"
+      ]
+    },
+    "teach, teacher, kind, kindness": {
+      "url": "/audio/c6e6343235f4bb5c_1.mp3",
+      "text": "teach, teacher, kind, kindness",
+      "duration": 2.4,
+      "kind": "speech",
+      "phonemes": "tˈiʧ, tˈiʧəɹ, kˈInd, kˈIndnəs",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[0].concepts[1].audioText"
+      ]
+    },
+    "raincoat, butterfly": {
+      "url": "/audio/7a2bb1f30bd93e64_1.mp3",
+      "text": "raincoat, butterfly",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "ɹˈAnkˌOt, bˈʌTəɹflˌI",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[0].concepts[2].audioText"
+      ]
+    },
+    "raincoat": {
+      "url": "/audio/438e3baee6de60be_1.mp3",
+      "text": "raincoat",
+      "duration": 1.425,
+      "kind": "speech",
+      "phonemes": "ɹˈAnkˌOt",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[0].questions[4].audioText"
+      ]
+    },
+    "my teacher is kind.": {
+      "url": "/audio/d8a823e17eb1a956_1.mp3",
+      "text": "My teacher is kind.",
+      "duration": 1.975,
+      "kind": "speech",
+      "phonemes": "mˌI tˈiʧəɹ ɪz kˈInd.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[0].questions[5].audioText",
+        "content/curriculum.json.stages[3].lessons[0].questions[5].target"
+      ]
+    },
+    "the teacher has a book.": {
+      "url": "/audio/186c9aecf654b646_1.mp3",
+      "text": "The teacher has a book.",
+      "duration": 1.85,
+      "kind": "speech",
+      "phonemes": "ðə tˈiʧəɹ hæz ɐ bˈʊk.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[1].concepts[0].audioText"
+      ]
+    },
+    "i know her.": {
+      "url": "/audio/5d9c4301402640e3_1.mp3",
+      "text": "I know her.",
+      "duration": 1.525,
+      "kind": "speech",
+      "phonemes": "ˌI nˈO hˌɜɹ.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[1].concepts[1].audioText",
+        "content/curriculum.json.stages[4].lessons[2].concepts[1].audioText"
+      ]
+    },
+    "i book a room.": {
+      "url": "/audio/191ef89151bfee5e_1.mp3",
+      "text": "I book a room.",
+      "duration": 1.625,
+      "kind": "speech",
+      "phonemes": "ˌI bˈʊk ɐ ɹˈum.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[1].concepts[2].audioText",
+        "content/curriculum.json.stages[3].lessons[1].questions[5].audioText",
+        "content/curriculum.json.stages[3].lessons[1].questions[5].target"
+      ]
+    },
+    "i have a book.": {
+      "url": "/audio/16302f512fb423b9_1.mp3",
+      "text": "I have a book.",
+      "duration": 1.5,
+      "kind": "speech",
+      "phonemes": "ˌI hæv ɐ bˈʊk.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[1].questions[3].audioText"
+      ]
+    },
+    "the teacher reads a book.": {
+      "url": "/audio/7821102ff3e192bf_1.mp3",
+      "text": "The teacher reads a book.",
+      "duration": 1.925,
+      "kind": "speech",
+      "phonemes": "ðə tˈiʧəɹ ɹˈidz ɐ bˈʊk.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[1].questions[4].audioText"
+      ]
+    },
+    "a red bag, the bag is red.": {
+      "url": "/audio/14a94305a4121d28_1.mp3",
+      "text": "a red bag, The bag is red.",
+      "duration": 2.3,
+      "kind": "speech",
+      "phonemes": "ɐ ɹˈɛd bˈæɡ, ðə bˈæɡ ɪz ɹˈɛd.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[2].concepts[0].audioText"
+      ]
+    },
+    "she walks slowly.": {
+      "url": "/audio/5957e8c5a483adef_1.mp3",
+      "text": "She walks slowly.",
+      "duration": 1.775,
+      "kind": "speech",
+      "phonemes": "ʃˌi wˈɔks slˈOli.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[2].concepts[1].audioText",
+        "content/curriculum.json.stages[3].lessons[5].questions[3].audioText"
+      ]
+    },
+    "a fast car, she runs fast.": {
+      "url": "/audio/da2935c7c2295ad2_1.mp3",
+      "text": "a fast car, She runs fast.",
+      "duration": 2.375,
+      "kind": "speech",
+      "phonemes": "ɐ fˈæst kˈɑɹ, ʃˌi ɹˈʌnz fˈæst.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[2].concepts[2].audioText"
+      ]
+    },
+    "the small cat runs quickly.": {
+      "url": "/audio/8bf9548064d12379_1.mp3",
+      "text": "The small cat runs quickly.",
+      "duration": 2.25,
+      "kind": "speech",
+      "phonemes": "ðə smˈɔl kˈæt ɹˈʌnz kwˈɪkli.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[2].questions[4].audioText"
+      ]
+    },
+    "the red car is very fast.": {
+      "url": "/audio/29b80f6547290d89_1.mp3",
+      "text": "The red car is very fast.",
+      "duration": 2.3,
+      "kind": "speech",
+      "phonemes": "ðə ɹˈɛd kˈɑɹ ɪz vˈɛɹi fˈæst.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[2].questions[5].audioText",
+        "content/curriculum.json.stages[3].lessons[2].questions[5].target"
+      ]
+    },
+    "she knows him.": {
+      "url": "/audio/5c237af7322bb91c_1.mp3",
+      "text": "She knows him.",
+      "duration": 1.55,
+      "kind": "speech",
+      "phonemes": "ʃˌi nˈOz hˌɪm.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[3].concepts[0].audioText"
+      ]
+    },
+    "the book is on the desk.": {
+      "url": "/audio/ab25a316e00b3a23_1.mp3",
+      "text": "The book is on the desk.",
+      "duration": 1.9,
+      "kind": "speech",
+      "phonemes": "ðə bˈʊk ɪz ˌɔn ðə dˈɛsk.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[3].concepts[1].audioText",
+        "content/curriculum.json.stages[3].lessons[3].questions[5].audioText",
+        "content/curriculum.json.stages[3].lessons[3].questions[5].target"
+      ]
+    },
+    "we meet on monday.": {
+      "url": "/audio/2b149a1b4591cb10_1.mp3",
+      "text": "We meet on Monday.",
+      "duration": 1.8,
+      "kind": "speech",
+      "phonemes": "wˌi mˈit ˌɔn mˈʌndˌA.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[3].concepts[2].audioText"
+      ]
+    },
+    "it is in the box.": {
+      "url": "/audio/1da91ae9ff574467_1.mp3",
+      "text": "It is in the box.",
+      "duration": 1.7,
+      "kind": "speech",
+      "phonemes": "ˌɪt ɪz ɪn ðə bˈɑks.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[3].questions[3].audioText"
+      ]
+    },
+    "she gives me a book.": {
+      "url": "/audio/f945b8e6ce015df6_1.mp3",
+      "text": "She gives me a book.",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "ʃˌi ɡˈɪvz mˌi ɐ bˈʊk.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[3].questions[4].audioText"
+      ]
+    },
+    "birds fly.": {
+      "url": "/audio/7e19da15587f3b79_1.mp3",
+      "text": "Birds fly.",
+      "duration": 1.525,
+      "kind": "speech",
+      "phonemes": "bˈɜɹdz flˈI.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[4].concepts[0].audioText",
+        "content/curriculum.json.stages[3].lessons[4].questions[3].audioText"
+      ]
+    },
+    "i read a book.": {
+      "url": "/audio/0647083ea2ce6701_1.mp3",
+      "text": "I read a book.",
+      "synthesisInput": "I [read](/ɹˈid/) a book.",
+      "duration": 1.575,
+      "kind": "speech",
+      "phonemes": "ˌI ɹˈid ɐ bˈʊk.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[4].concepts[1].audioText"
+      ]
+    },
+    "the bag is red.": {
+      "url": "/audio/1927c4e5acfcceb6_1.mp3",
+      "text": "The bag is red.",
+      "duration": 1.675,
+      "kind": "speech",
+      "phonemes": "ðə bˈæɡ ɪz ɹˈɛd.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[4].concepts[2].audioText"
+      ]
+    },
+    "my teacher reads a book.": {
+      "url": "/audio/d9d6af37eedf2c1d_1.mp3",
+      "text": "My teacher reads a book.",
+      "duration": 2.0,
+      "kind": "speech",
+      "phonemes": "mˌI tˈiʧəɹ ɹˈidz ɐ bˈʊk.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[4].questions[4].audioText"
+      ]
+    },
+    "the small bag is red.": {
+      "url": "/audio/5f2fdb824fe4d384_1.mp3",
+      "text": "The small bag is red.",
+      "duration": 1.95,
+      "kind": "speech",
+      "phonemes": "ðə smˈɔl bˈæɡ ɪz ɹˈɛd.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[4].questions[5].audioText",
+        "content/curriculum.json.stages[3].lessons[4].questions[5].target"
+      ]
+    },
+    "i book a room. i read a book.": {
+      "url": "/audio/5df55a9a1e0e5c1c_1.mp3",
+      "text": "I book a room. I read a book.",
+      "synthesisInput": "I book a room. I [read](/ɹˈid/) a book.",
+      "duration": 2.275,
+      "kind": "speech",
+      "phonemes": "ˌI bˈʊk ɐ ɹˈum. ˌI ɹˈid ɐ bˈʊk.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[5].concepts[0].audioText"
+      ]
+    },
+    "unhappy, teacher, friendly": {
+      "url": "/audio/d493aacbefd598ff_1.mp3",
+      "text": "unhappy, teacher, friendly",
+      "duration": 2.225,
+      "kind": "speech",
+      "phonemes": "ˌʌnhˈæpi, tˈiʧəɹ, fɹˈɛndli",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[5].concepts[1].audioText"
+      ]
+    },
+    "the kind teacher helps me.": {
+      "url": "/audio/e340f1f67973359b_1.mp3",
+      "text": "The kind teacher helps me.",
+      "duration": 2.175,
+      "kind": "speech",
+      "phonemes": "ðə kˈInd tˈiʧəɹ hˈɛlps mˌi.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[5].concepts[2].audioText"
+      ]
+    },
+    "she puts the book on the desk.": {
+      "url": "/audio/2e509c075ed62719_1.mp3",
+      "text": "She puts the book on the desk.",
+      "duration": 2.175,
+      "kind": "speech",
+      "phonemes": "ʃˌi pˌʊts ðə bˈʊk ˌɔn ðə dˈɛsk.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[5].questions[4].audioText"
+      ]
+    },
+    "my teacher is friendly.": {
+      "url": "/audio/34e891d2b9e4bd64_1.mp3",
+      "text": "My teacher is friendly.",
+      "duration": 2.075,
+      "kind": "speech",
+      "phonemes": "mˌI tˈiʧəɹ ɪz fɹˈɛndli.",
+      "sources": [
+        "content/curriculum.json.stages[3].lessons[5].questions[5].audioText",
+        "content/curriculum.json.stages[3].lessons[5].questions[5].target"
+      ]
+    },
+    "i read every day.": {
+      "url": "/audio/4adc98cd2df443cb_1.mp3",
+      "text": "I read every day.",
+      "synthesisInput": "I [read](/ɹˈid/) every day.",
+      "duration": 1.825,
+      "kind": "speech",
+      "phonemes": "ˌI ɹˈid ˈɛvəɹi dˈA.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[0].concepts[0].audioText"
+      ]
+    },
+    "she reads. they read.": {
+      "url": "/audio/447debf19b63a652_1.mp3",
+      "text": "She reads. They read.",
+      "synthesisInput": "She reads. They [read](/ɹˈid/).",
+      "duration": 1.875,
+      "kind": "speech",
+      "phonemes": "ʃˌi ɹˈidz. ðˌA ɹˈid.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[0].concepts[1].audioText"
+      ]
+    },
+    "does she read? she does not read.": {
+      "url": "/audio/0cce1e2beb1828a9_1.mp3",
+      "text": "Does she read? She does not read.",
+      "synthesisInput": "Does she [read](/ɹˈid/)? She does not [read](/ɹˈid/).",
+      "duration": 2.325,
+      "kind": "speech",
+      "phonemes": "dˈʌz ʃi ɹˈid? ʃˌi dˈʌz nˌɑt ɹˈid.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[0].concepts[2].audioText"
+      ]
+    },
+    "she reads every day.": {
+      "url": "/audio/f7dc873d4b8c4d97_1.mp3",
+      "text": "She reads every day.",
+      "duration": 1.825,
+      "kind": "speech",
+      "phonemes": "ʃˌi ɹˈidz ˈɛvəɹi dˈA.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[0].questions[3].audioText",
+        "content/curriculum.json.stages[4].lessons[0].questions[5].audioText",
+        "content/curriculum.json.stages[4].lessons[0].questions[5].target"
+      ]
+    },
+    "they do not read at night.": {
+      "url": "/audio/bd0752cb6e0697c1_1.mp3",
+      "text": "They do not read at night.",
+      "synthesisInput": "They do not [read](/ɹˈid/) at night.",
+      "duration": 1.875,
+      "kind": "speech",
+      "phonemes": "ðˌA dˈu nˌɑt ɹˈid æt nˈIt.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[0].questions[4].audioText"
+      ]
+    },
+    "i walked home yesterday.": {
+      "url": "/audio/2bf6d4321a1a7245_1.mp3",
+      "text": "I walked home yesterday.",
+      "duration": 2.15,
+      "kind": "speech",
+      "phonemes": "ˌI wˈɔkt hˈOm jˈɛstəɹdˌA.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[1].concepts[0].audioText",
+        "content/curriculum.json.stages[4].lessons[1].questions[5].audioText",
+        "content/curriculum.json.stages[4].lessons[1].questions[5].target"
+      ]
+    },
+    "we went home.": {
+      "url": "/audio/7a315da3a94052bb_1.mp3",
+      "text": "We went home.",
+      "duration": 1.475,
+      "kind": "speech",
+      "phonemes": "wˌi wˈɛnt hˈOm.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[1].concepts[1].audioText",
+        "content/curriculum.json.stages[4].lessons[1].questions[3].audioText"
+      ]
+    },
+    "did you go? i did not go.": {
+      "url": "/audio/9c0c1056a54ddd49_1.mp3",
+      "text": "Did you go? I did not go.",
+      "duration": 2.125,
+      "kind": "speech",
+      "phonemes": "dˈɪd ju ɡˌO? ˌI dˈɪd nˌɑt ɡˌO.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[1].concepts[2].audioText"
+      ]
+    },
+    "she was at home yesterday.": {
+      "url": "/audio/918b944620af35d1_1.mp3",
+      "text": "She was at home yesterday.",
+      "duration": 2.1,
+      "kind": "speech",
+      "phonemes": "ʃˌi wʌz æt hˈOm jˈɛstəɹdˌA.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[1].questions[4].audioText"
+      ]
+    },
+    "she is reading now.": {
+      "url": "/audio/dc862ae37a45ff8c_1.mp3",
+      "text": "She is reading now.",
+      "duration": 1.775,
+      "kind": "speech",
+      "phonemes": "ʃˌi ɪz ɹˈidɪŋ nˈW.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[2].concepts[0].audioText",
+        "content/curriculum.json.stages[4].lessons[2].questions[5].audioText",
+        "content/curriculum.json.stages[4].lessons[2].questions[5].target"
+      ]
+    },
+    "i will read tomorrow. i am going to read.": {
+      "url": "/audio/5e123a71e9c1315c_1.mp3",
+      "text": "I will read tomorrow. I am going to read.",
+      "synthesisInput": "I will [read](/ɹˈid/) tomorrow. I am going to [read](/ɹˈid/).",
+      "duration": 2.7,
+      "kind": "speech",
+      "phonemes": "ˌI wɪl ɹˈid təmˈɑɹO. ˌI ɐm ɡˈOɪŋ tə ɹˈid.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[2].concepts[2].audioText"
+      ]
+    },
+    "i am reading now.": {
+      "url": "/audio/0ee4bc9498448ed1_1.mp3",
+      "text": "I am reading now.",
+      "duration": 1.775,
+      "kind": "speech",
+      "phonemes": "ˌI ɐm ɹˈidɪŋ nˈW.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[2].questions[3].audioText"
+      ]
+    },
+    "i am going to read tomorrow.": {
+      "url": "/audio/e2ca9c03400132ac_1.mp3",
+      "text": "I am going to read tomorrow.",
+      "synthesisInput": "I am going to [read](/ɹˈid/) tomorrow.",
+      "duration": 2.15,
+      "kind": "speech",
+      "phonemes": "ˌI ɐm ɡˈOɪŋ tə ɹˈid təmˈɑɹO.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[2].questions[4].audioText"
+      ]
+    },
+    "i have finished. i have a book.": {
+      "url": "/audio/c1f83805c1fad6ff_1.mp3",
+      "text": "I have finished. I have a book.",
+      "duration": 2.175,
+      "kind": "speech",
+      "phonemes": "ˌI hæv fˈɪnəʃt. ˌI hæv ɐ bˈʊk.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[3].concepts[0].audioText"
+      ]
+    },
+    "i have lost my key.": {
+      "url": "/audio/ad1446332c7854e5_1.mp3",
+      "text": "I have lost my key.",
+      "duration": 1.875,
+      "kind": "speech",
+      "phonemes": "ˌI hæv lˈɔst mI kˈi.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[3].concepts[1].audioText",
+        "content/curriculum.json.stages[4].lessons[3].questions[4].audioText"
+      ]
+    },
+    "she has eaten.": {
+      "url": "/audio/032e1f4439b38447_1.mp3",
+      "text": "She has eaten.",
+      "duration": 1.55,
+      "kind": "speech",
+      "phonemes": "ʃˌi hæz ˈitn.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[3].concepts[2].audioText",
+        "content/curriculum.json.stages[4].lessons[3].questions[3].audioText"
+      ]
+    },
+    "i have finished my work.": {
+      "url": "/audio/725182ecf2172d9b_1.mp3",
+      "text": "I have finished my work.",
+      "duration": 1.85,
+      "kind": "speech",
+      "phonemes": "ˌI hæv fˈɪnəʃt mI wˈɜɹk.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[3].questions[5].audioText",
+        "content/curriculum.json.stages[4].lessons[3].questions[5].target",
+        "content/curriculum.json.stages[4].lessons[5].questions[5].audioText",
+        "content/curriculum.json.stages[4].lessons[5].questions[5].target"
+      ]
+    },
+    "when i arrived, she had left.": {
+      "url": "/audio/4d908695d75a659b_1.mp3",
+      "text": "When I arrived, she had left.",
+      "duration": 2.125,
+      "kind": "speech",
+      "phonemes": "wˌɛn ˌI əɹˈIvd, ʃi hæd lˈɛft.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[4].concepts[0].audioText",
+        "content/curriculum.json.stages[4].lessons[4].questions[5].audioText",
+        "content/curriculum.json.stages[4].lessons[4].questions[5].target"
+      ]
+    },
+    "she had eaten before i came.": {
+      "url": "/audio/03e6fd4eaf916008_1.mp3",
+      "text": "She had eaten before I came.",
+      "duration": 2.175,
+      "kind": "speech",
+      "phonemes": "ʃˌi hæd ˈitn bəfˈɔɹ ˌI kˈAm.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[4].concepts[1].audioText",
+        "content/curriculum.json.stages[4].lessons[4].questions[4].audioText"
+      ]
+    },
+    "i had a bike. i had finished.": {
+      "url": "/audio/4710904debe589b8_1.mp3",
+      "text": "I had a bike. I had finished.",
+      "duration": 2.225,
+      "kind": "speech",
+      "phonemes": "ˌI hæd ɐ bˈIk. ˌI hæd fˈɪnəʃt.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[4].concepts[2].audioText"
+      ]
+    },
+    "she had left.": {
+      "url": "/audio/3f8b5c5e8041e478_1.mp3",
+      "text": "She had left.",
+      "duration": 1.4,
+      "kind": "speech",
+      "phonemes": "ʃˌi hæd lˈɛft.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[4].questions[3].audioText"
+      ]
+    },
+    "she reads. she is reading. she has read.": {
+      "url": "/audio/7132b1d4beef35d3_1.mp3",
+      "text": "She reads. She is reading. She has read.",
+      "synthesisInput": "She reads. She is reading. She has [read](/ɹˈɛd/).",
+      "duration": 2.8,
+      "kind": "speech",
+      "phonemes": "ʃˌi ɹˈidz. ʃˌi ɪz ɹˈidɪŋ. ʃˌi hæz ɹˈɛd.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[5].concepts[0].audioText"
+      ]
+    },
+    "she has booked a room.": {
+      "url": "/audio/184a4faa76dab6b8_1.mp3",
+      "text": "She has booked a room.",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "ʃˌi hæz bˈʊkt ɐ ɹˈum.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[5].concepts[2].audioText",
+        "content/curriculum.json.stages[4].lessons[5].questions[4].audioText"
+      ]
+    },
+    "she will read tomorrow.": {
+      "url": "/audio/250d11ee5b1c8971_1.mp3",
+      "text": "She will read tomorrow.",
+      "synthesisInput": "She will [read](/ɹˈid/) tomorrow.",
+      "duration": 1.875,
+      "kind": "speech",
+      "phonemes": "ʃˌi wɪl ɹˈid təmˈɑɹO.",
+      "sources": [
+        "content/curriculum.json.stages[4].lessons[5].questions[3].audioText"
+      ]
+    },
+    "one book, some water": {
+      "url": "/audio/e160ddef704ff058_1.mp3",
+      "text": "one book, some water",
+      "duration": 1.975,
+      "kind": "speech",
+      "phonemes": "wˈʌn bˈʊk, sˌʌm wˈɔTəɹ",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[0].concepts[0].audioText"
+      ]
+    },
+    "a book, some water": {
+      "url": "/audio/38449fdd02466394_1.mp3",
+      "text": "a book, some water",
+      "duration": 1.825,
+      "kind": "speech",
+      "phonemes": "ɐ bˈʊk, sˌʌm wˈɔTəɹ",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[0].concepts[1].audioText"
+      ]
+    },
+    "two cups of water": {
+      "url": "/audio/3dfd9eb36cd85997_1.mp3",
+      "text": "two cups of water",
+      "duration": 1.875,
+      "kind": "speech",
+      "phonemes": "tˈu kˈʌps ʌv wˈɔTəɹ",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[0].concepts[2].audioText"
+      ]
+    },
+    "a cup of water": {
+      "url": "/audio/df27b5aef5f2aa0d_1.mp3",
+      "text": "a cup of water",
+      "duration": 1.675,
+      "kind": "speech",
+      "phonemes": "ɐ kˈʌp ʌv wˈɔTəɹ",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[0].questions[3].audioText"
+      ]
+    },
+    "i want some water.": {
+      "url": "/audio/d8db5865ac941132_1.mp3",
+      "text": "I want some water.",
+      "duration": 1.7,
+      "kind": "speech",
+      "phonemes": "ˌI wˈɑnt sˌʌm wˈɔTəɹ.",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[0].questions[4].audioText"
+      ]
+    },
+    "i want a cup of water.": {
+      "url": "/audio/6d1b24998b1510ee_1.mp3",
+      "text": "I want a cup of water.",
+      "duration": 1.875,
+      "kind": "speech",
+      "phonemes": "ˌI wˈɑnt ɐ kˈʌp ʌv wˈɔTəɹ.",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[0].questions[5].audioText",
+        "content/curriculum.json.stages[5].lessons[0].questions[5].target"
+      ]
+    },
+    "an apple, a book": {
+      "url": "/audio/a7f61b77c643babd_1.mp3",
+      "text": "an apple, a book",
+      "duration": 1.6,
+      "kind": "speech",
+      "phonemes": "ɐn ˈæpᵊl, ɐ bˈʊk",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[1].concepts[0].audioText"
+      ]
+    },
+    "a university, an hour, a one-day trip": {
+      "url": "/audio/1b4ce3150b6c9204_1.mp3",
+      "text": "a university, an hour, a one-day trip",
+      "duration": 2.9,
+      "kind": "speech",
+      "phonemes": "ɐ jˌunəvˈɜɹsəTi, ɐn ˈWəɹ, ɐ wˌʌndˈA tɹˈɪp",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[1].concepts[1].audioText"
+      ]
+    },
+    "an old book, a red apple": {
+      "url": "/audio/38f2688e957c530b_1.mp3",
+      "text": "an old book, a red apple",
+      "duration": 2.175,
+      "kind": "speech",
+      "phonemes": "ɐn ˈOld bˈʊk, ɐ ɹˈɛd ˈæpᵊl",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[1].concepts[2].audioText"
+      ]
+    },
+    "an hour": {
+      "url": "/audio/c27aa3cc666d2ab8_1.mp3",
+      "text": "an hour",
+      "duration": 1.375,
+      "kind": "speech",
+      "phonemes": "ɐn ˈWəɹ",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[1].questions[4].audioText"
+      ]
+    },
+    "i have an old book.": {
+      "url": "/audio/6482abf11d4a66d1_1.mp3",
+      "text": "I have an old book.",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "ˌI hæv ɐn ˈOld bˈʊk.",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[1].questions[5].audioText",
+        "content/curriculum.json.stages[5].lessons[1].questions[5].target",
+        "content/curriculum.json.stages[6].lessons[4].concepts[1].audioText"
+      ]
+    },
+    "books, buses, boxes, faces": {
+      "url": "/audio/c62105b55ee1e8dd_1.mp3",
+      "text": "books, buses, boxes, faces",
+      "duration": 2.575,
+      "kind": "speech",
+      "phonemes": "bˈʊks, bˈʌsᵻz, bˈɑksᵻz, fˈAsᵻz",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[2].concepts[0].audioText"
+      ]
+    },
+    "baby, babies, boy, boys": {
+      "url": "/audio/0eacd6c692e72119_1.mp3",
+      "text": "baby, babies, boy, boys",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "bˈAbi, bˈAbiz, bˈY, bˈYz",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[2].concepts[1].audioText"
+      ]
+    },
+    "tomatoes, photos, leaves, roofs": {
+      "url": "/audio/6f2ab451f3894408_1.mp3",
+      "text": "tomatoes, photos, leaves, roofs",
+      "duration": 2.525,
+      "kind": "speech",
+      "phonemes": "təmˈATOz, fˈOTOz, lˈivz, ɹˈufs",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[2].concepts[2].audioText"
+      ]
+    },
+    "two boxes": {
+      "url": "/audio/2b15b396724eec2c_1.mp3",
+      "text": "two boxes",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "tˈu bˈɑksᵻz",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[2].questions[4].audioText"
+      ]
+    },
+    "i have two boxes and three books.": {
+      "url": "/audio/f7895c5dfd0b0606_1.mp3",
+      "text": "I have two boxes and three books.",
+      "duration": 2.6,
+      "kind": "speech",
+      "phonemes": "ˌI hæv tˈu bˈɑksᵻz ænd θɹˈi bˈʊks.",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[2].questions[5].audioText",
+        "content/curriculum.json.stages[5].lessons[2].questions[5].target"
+      ]
+    },
+    "one child, two children": {
+      "url": "/audio/2d81ae4bdaf76bb0_1.mp3",
+      "text": "one child, two children",
+      "duration": 2.175,
+      "kind": "speech",
+      "phonemes": "wˈʌn ʧˈIld, tˈu ʧˈɪldɹᵊn",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[3].concepts[0].audioText"
+      ]
+    },
+    "one sheep, three sheep": {
+      "url": "/audio/04b9bcaa7ae7eb13_1.mp3",
+      "text": "one sheep, three sheep",
+      "duration": 1.975,
+      "kind": "speech",
+      "phonemes": "wˈʌn ʃˈip, θɹˈi ʃˈip",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[3].concepts[1].audioText"
+      ]
+    },
+    "some information, a piece of advice": {
+      "url": "/audio/dc96a8248acc05c2_1.mp3",
+      "text": "some information, a piece of advice",
+      "duration": 2.525,
+      "kind": "speech",
+      "phonemes": "sˌʌm ˌɪnfəɹmˈAʃən, ɐ pˈis ʌv ədvˈIs",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[3].concepts[2].audioText"
+      ]
+    },
+    "two children": {
+      "url": "/audio/748cbfbf06e0ecb2_1.mp3",
+      "text": "two children",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "tˈu ʧˈɪldɹᵊn",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[3].questions[4].audioText"
+      ]
+    },
+    "two children see three sheep.": {
+      "url": "/audio/70567532e38fbe27_1.mp3",
+      "text": "Two children see three sheep.",
+      "duration": 2.3,
+      "kind": "speech",
+      "phonemes": "tˈu ʧˈɪldɹᵊn sˈi θɹˈi ʃˈip.",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[3].questions[5].audioText",
+        "content/curriculum.json.stages[5].lessons[3].questions[5].target"
+      ]
+    },
+    "buses, watches": {
+      "url": "/audio/548e7a57565699c0_1.mp3",
+      "text": "buses, watches",
+      "duration": 1.85,
+      "kind": "speech",
+      "phonemes": "bˈʌsᵻz, wˈɑʧᵻz",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[4].concepts[0].audioText"
+      ]
+    },
+    "cats, dogs, boys": {
+      "url": "/audio/9b72e4bf95cd5be9_1.mp3",
+      "text": "cats, dogs, boys",
+      "duration": 1.525,
+      "kind": "speech",
+      "phonemes": "kˈæts, dˈɔɡz, bˈYz",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[4].concepts[1].audioText"
+      ]
+    },
+    "wanted, walked, played": {
+      "url": "/audio/800b2d10535a3bf6_1.mp3",
+      "text": "wanted, walked, played",
+      "duration": 1.925,
+      "kind": "speech",
+      "phonemes": "wˈɑntᵻd, wˈɔkt, plˈAd",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[4].concepts[2].audioText"
+      ]
+    },
+    "wanted": {
+      "url": "/audio/ce079d14eaa40325_1.mp3",
+      "text": "wanted",
+      "duration": 1.375,
+      "kind": "speech",
+      "phonemes": "wˈɑntᵻd",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[4].questions[4].audioText"
+      ]
+    },
+    "she wanted three books.": {
+      "url": "/audio/8b7a4205e2e69ea2_1.mp3",
+      "text": "She wanted three books.",
+      "duration": 1.9,
+      "kind": "speech",
+      "phonemes": "ʃˌi wˈɑntᵻd θɹˈi bˈʊks.",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[4].questions[5].audioText",
+        "content/curriculum.json.stages[5].lessons[4].questions[5].target"
+      ]
+    },
+    "a university, an hour": {
+      "url": "/audio/f3c0037950c0f9db_1.mp3",
+      "text": "a university, an hour",
+      "duration": 2.05,
+      "kind": "speech",
+      "phonemes": "ɐ jˌunəvˈɜɹsəTi, ɐn ˈWəɹ",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[5].concepts[0].audioText"
+      ]
+    },
+    "babies, boxes": {
+      "url": "/audio/ede322c356ed4b4d_1.mp3",
+      "text": "babies, boxes",
+      "duration": 1.825,
+      "kind": "speech",
+      "phonemes": "bˈAbiz, bˈɑksᵻz",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[5].concepts[1].audioText"
+      ]
+    },
+    "a university, wanted": {
+      "url": "/audio/75e0873ffff8179a_1.mp3",
+      "text": "a university, wanted",
+      "duration": 2.125,
+      "kind": "speech",
+      "phonemes": "ɐ jˌunəvˈɜɹsəTi, wˈɑntᵻd",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[5].concepts[2].audioText"
+      ]
+    },
+    "three watches": {
+      "url": "/audio/f0ff836118d16bdf_1.mp3",
+      "text": "three watches",
+      "duration": 1.625,
+      "kind": "speech",
+      "phonemes": "θɹˈi wˈɑʧᵻz",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[5].questions[4].audioText"
+      ]
+    },
+    "i have an old book and two new books.": {
+      "url": "/audio/99a6eccf010203f8_1.mp3",
+      "text": "I have an old book and two new books.",
+      "duration": 2.575,
+      "kind": "speech",
+      "phonemes": "ˌI hæv ɐn ˈOld bˈʊk ænd tˈu nˈu bˈʊks.",
+      "sources": [
+        "content/curriculum.json.stages[5].lessons[5].questions[5].audioText",
+        "content/curriculum.json.stages[5].lessons[5].questions[5].target"
+      ]
+    },
+    "an apple, pick it up": {
+      "url": "/audio/c1169caf7c14a012_1.mp3",
+      "text": "an apple, pick it up",
+      "duration": 1.75,
+      "kind": "speech",
+      "phonemes": "ɐn ˈæpᵊl, pˈɪk ɪt ˌʌp",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[0].concepts[0].audioText"
+      ]
+    },
+    "take it, read it": {
+      "url": "/audio/3aa2a1a67890429d_1.mp3",
+      "text": "take it, read it",
+      "synthesisInput": "take it, [read](/ɹˈid/) it",
+      "duration": 1.625,
+      "kind": "speech",
+      "phonemes": "tˈAk ɪt, ɹˈid ɪt",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[0].concepts[1].audioText"
+      ]
+    },
+    "after lunch, i read.": {
+      "url": "/audio/24caadfb4a3509a4_1.mp3",
+      "text": "After lunch, I read.",
+      "synthesisInput": "After lunch, I [read](/ɹˈid/).",
+      "duration": 1.9,
+      "kind": "speech",
+      "phonemes": "ˈæftəɹ lˈʌnʧ, ˌI ɹˈid.",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[0].concepts[2].audioText"
+      ]
+    },
+    "pick it up": {
+      "url": "/audio/9f75a6219ab4c0ea_1.mp3",
+      "text": "pick it up",
+      "duration": 1.425,
+      "kind": "speech",
+      "phonemes": "pˈɪk ɪt ˌʌp",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[0].questions[3].audioText"
+      ]
+    },
+    "can i have an apple?": {
+      "url": "/audio/7241144e544e56d8_1.mp3",
+      "text": "Can I have an apple?",
+      "duration": 1.8,
+      "kind": "speech",
+      "phonemes": "kˌæn ˌI hæv ɐn ˈæpᵊl?",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[0].questions[4].audioText",
+        "content/curriculum.json.stages[6].lessons[0].questions[5].audioText",
+        "content/curriculum.json.stages[6].lessons[0].questions[5].target"
+      ]
+    },
+    "i want the blue one.": {
+      "url": "/audio/5799503689c235d1_1.mp3",
+      "text": "I want the blue one.",
+      "duration": 1.8,
+      "kind": "speech",
+      "phonemes": "ˌI wˈɑnt ðə blˈu wˈʌn.",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[1].concepts[0].audioText",
+        "content/curriculum.json.stages[6].lessons[1].questions[5].audioText",
+        "content/curriculum.json.stages[6].lessons[1].questions[5].target"
+      ]
+    },
+    "i can go to the store.": {
+      "url": "/audio/a9c26c566fdb71fd_1.mp3",
+      "text": "I can go to the store.",
+      "duration": 1.925,
+      "kind": "speech",
+      "phonemes": "ˌI kæn ɡˌO tə ðə stˈɔɹ.",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[1].concepts[1].audioText",
+        "content/curriculum.json.stages[6].lessons[1].questions[4].audioText"
+      ]
+    },
+    "i want to go. i am going to school.": {
+      "url": "/audio/17905ee51a8092c8_1.mp3",
+      "text": "I want to go. I am going to school.",
+      "duration": 2.35,
+      "kind": "speech",
+      "phonemes": "ˌI wˈɑnt tə ɡˌO. ˌI ɐm ɡˈOɪŋ tə skˈul.",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[1].concepts[2].audioText"
+      ]
+    },
+    "good day, black bag": {
+      "url": "/audio/fc2ad4dc1ade775c_1.mp3",
+      "text": "good day, black bag",
+      "duration": 1.8,
+      "kind": "speech",
+      "phonemes": "ɡˈʊd dˈA, blˈæk bˈæɡ",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[2].concepts[0].audioText"
+      ]
+    },
+    "city, better, water": {
+      "url": "/audio/8fd0e02f3e545f57_1.mp3",
+      "text": "city, better, water",
+      "duration": 1.95,
+      "kind": "speech",
+      "phonemes": "sˈɪTi, bˈɛTəɹ, wˈɔTəɹ",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[2].concepts[1].audioText"
+      ]
+    },
+    "a better day": {
+      "url": "/audio/63606f067bc2417e_1.mp3",
+      "text": "a better day",
+      "duration": 1.65,
+      "kind": "speech",
+      "phonemes": "ɐ bˈɛTəɹ dˈA",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[2].concepts[2].audioText"
+      ]
+    },
+    "city": {
+      "url": "/audio/f1de834bfbe594a8_1.mp3",
+      "text": "city",
+      "duration": 1.35,
+      "kind": "speech",
+      "phonemes": "sˈɪTi",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[2].questions[3].audioText"
+      ]
+    },
+    "i have a black bag.": {
+      "url": "/audio/1e17fb2f9de90596_1.mp3",
+      "text": "I have a black bag.",
+      "duration": 1.85,
+      "kind": "speech",
+      "phonemes": "ˌI hæv ɐ blˈæk bˈæɡ.",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[2].questions[4].audioText"
+      ]
+    },
+    "i want a better day.": {
+      "url": "/audio/ba63c4eb8059ed42_1.mp3",
+      "text": "I want a better day.",
+      "duration": 1.9,
+      "kind": "speech",
+      "phonemes": "ˌI wˈɑnt ɐ bˈɛTəɹ dˈA.",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[2].questions[5].audioText",
+        "content/curriculum.json.stages[6].lessons[2].questions[5].target"
+      ]
+    },
+    "ten bikes": {
+      "url": "/audio/6f4edc6bdad939cf_1.mp3",
+      "text": "ten bikes",
+      "duration": 1.4,
+      "kind": "speech",
+      "phonemes": "tˈɛn bˈIks",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[3].concepts[0].audioText"
+      ]
+    },
+    "did you go? would you like tea?": {
+      "url": "/audio/21dcc6c54fa4ae07_1.mp3",
+      "text": "Did you go? Would you like tea?",
+      "duration": 2.125,
+      "kind": "speech",
+      "phonemes": "dˈɪd ju ɡˌO? wˌʊd ju lˈIk tˈi?",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[3].concepts[1].audioText"
+      ]
+    },
+    "the next day": {
+      "url": "/audio/29da5cb7ff38ca20_1.mp3",
+      "text": "the next day",
+      "duration": 1.5,
+      "kind": "speech",
+      "phonemes": "ðə nˈɛkst dˈA",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[3].concepts[2].audioText"
+      ]
+    },
+    "did you go?": {
+      "url": "/audio/827f76beb9ae91e7_1.mp3",
+      "text": "Did you go?",
+      "duration": 1.4,
+      "kind": "speech",
+      "phonemes": "dˈɪd ju ɡˌO?",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[3].questions[4].audioText"
+      ]
+    },
+    "would you like a cup of tea?": {
+      "url": "/audio/0a4f029ee899cabf_1.mp3",
+      "text": "Would you like a cup of tea?",
+      "duration": 2.075,
+      "kind": "speech",
+      "phonemes": "wˌʊd ju lˈIk ɐ kˈʌp ʌv tˈi?",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[3].questions[5].audioText",
+        "content/curriculum.json.stages[6].lessons[3].questions[5].target"
+      ]
+    },
+    "ship, sheep, books": {
+      "url": "/audio/0cf3bfc089c32e5a_1.mp3",
+      "text": "ship, sheep, books",
+      "duration": 1.625,
+      "kind": "speech",
+      "phonemes": "ʃˈɪp, ʃˈip, bˈʊks",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[4].concepts[0].audioText"
+      ]
+    },
+    "i read a new book every week.": {
+      "url": "/audio/2a1ffe1ccde8538a_1.mp3",
+      "text": "I read a new book every week.",
+      "synthesisInput": "I [read](/ɹˈid/) a new book every week.",
+      "duration": 2.3,
+      "kind": "speech",
+      "phonemes": "ˌI ɹˈid ɐ nˈu bˈʊk ˈɛvəɹi wˈik.",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[4].concepts[2].audioText",
+        "content/curriculum.json.stages[6].lessons[4].questions[4].audioText",
+        "content/curriculum.json.stages[6].lessons[4].questions[5].audioText",
+        "content/curriculum.json.stages[6].lessons[4].questions[5].target"
+      ]
+    },
+    "she has booked an old room.": {
+      "url": "/audio/08a3f8f0fc3ea2ac_1.mp3",
+      "text": "She has booked an old room.",
+      "duration": 2.025,
+      "kind": "speech",
+      "phonemes": "ʃˌi hæz bˈʊkt ɐn ˈOld ɹˈum.",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[5].concepts[0].audioText"
+      ]
+    },
+    "a new word": {
+      "url": "/audio/32ee67171d7b71f0_1.mp3",
+      "text": "a new word",
+      "duration": 1.525,
+      "kind": "speech",
+      "phonemes": "ɐ nˈu wˈɜɹd",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[5].concepts[1].audioText"
+      ]
+    },
+    "i can learn a little every day.": {
+      "url": "/audio/4a730b721d24412a_1.mp3",
+      "text": "I can learn a little every day.",
+      "duration": 2.325,
+      "kind": "speech",
+      "phonemes": "ˌI kæn lˈɜɹn ɐ lˈɪTᵊl ˈɛvəɹi dˈA.",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[5].concepts[2].audioText",
+        "content/curriculum.json.stages[6].lessons[5].questions[5].audioText",
+        "content/curriculum.json.stages[6].lessons[5].questions[5].target"
+      ]
+    },
+    "two children have three books.": {
+      "url": "/audio/1821075a932284fc_1.mp3",
+      "text": "Two children have three books.",
+      "duration": 2.25,
+      "kind": "speech",
+      "phonemes": "tˈu ʧˈɪldɹᵊn hæv θɹˈi bˈʊks.",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[5].questions[3].audioText"
+      ]
+    },
+    "she had left before i arrived.": {
+      "url": "/audio/b58ec2c8e5e25128_1.mp3",
+      "text": "She had left before I arrived.",
+      "duration": 2.275,
+      "kind": "speech",
+      "phonemes": "ʃˌi hæd lˈɛft bəfˈɔɹ ˌI əɹˈIvd.",
+      "sources": [
+        "content/curriculum.json.stages[6].lessons[5].questions[4].audioText"
+      ]
+    },
+    "apple": {
+      "url": "/audio/7612295bf6e1b7b4_1.mp3",
+      "text": "apple",
+      "synthesisInput": "apple",
+      "duration": 1.35,
+      "kind": "speech",
+      "phonemes": "ˈæpᵊl",
+      "sources": [
+        "content/core-words.json[0].word"
+      ]
+    },
+    "hour": {
+      "url": "/audio/7244db99afb8559e_1.mp3",
+      "text": "hour",
+      "synthesisInput": "hour",
+      "duration": 1.3,
+      "kind": "speech",
+      "phonemes": "ˈWəɹ",
+      "sources": [
+        "content/core-words.json[2].word"
+      ]
+    },
+    "university": {
+      "url": "/audio/ddcae543e3b9dadb_1.mp3",
+      "text": "university",
+      "synthesisInput": "university",
+      "duration": 1.7,
+      "kind": "speech",
+      "phonemes": "jˌunəvˈɜɹsəTi",
+      "sources": [
+        "content/core-words.json[3].word"
+      ]
+    },
+    "dog": {
+      "url": "/audio/297ef3ec60a56c1d_1.mp3",
+      "text": "dog",
+      "synthesisInput": "dog",
+      "duration": 1.125,
+      "kind": "speech",
+      "phonemes": "dˈɔɡ",
+      "sources": [
+        "content/core-words.json[5].word"
+      ]
+    },
+    "read": {
+      "url": "/audio/131d7f941cec805a_1.mp3",
+      "text": "read",
+      "synthesisInput": "[read](/ɹˈid/)",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "ɹˈid",
+      "sources": [
+        "content/core-words.json[9].word"
+      ],
+      "pronunciationNote": {
+        "zh": "这里只示范原形和现在时 /riːd/。过去式与过去分词为 /rɛd/，请结合句子和词典音标判断。",
+        "en": "This is the base and present form /riːd/. The past forms use /rɛd/. Check the sentence and dictionary."
+      }
+    },
+    "work": {
+      "url": "/audio/58bf5ddba0f8fd90_1.mp3",
+      "text": "work",
+      "synthesisInput": "work",
+      "duration": 1.075,
+      "kind": "speech",
+      "phonemes": "wˈɜɹk",
+      "sources": [
+        "content/core-words.json[10].word"
+      ]
+    },
+    "come": {
+      "url": "/audio/2658fe1e15cb98a2_1.mp3",
+      "text": "come",
+      "synthesisInput": "come",
+      "duration": 1.15,
+      "kind": "speech",
+      "phonemes": "kˈʌm",
+      "sources": [
+        "content/core-words.json[12].word"
+      ]
+    },
+    "child": {
+      "url": "/audio/705372c683d9a239_1.mp3",
+      "text": "child",
+      "synthesisInput": "child",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "ʧˈIld",
+      "sources": [
+        "content/core-words.json[13].word"
+      ]
+    },
+    "person": {
+      "url": "/audio/15f55ef83bf8c4ca_1.mp3",
+      "text": "person",
+      "synthesisInput": "person",
+      "duration": 1.4,
+      "kind": "speech",
+      "phonemes": "pˈɜɹsᵊn",
+      "sources": [
+        "content/core-words.json[14].word"
+      ]
+    },
+    "mouse": {
+      "url": "/audio/a8c377c847e28104_1.mp3",
+      "text": "mouse",
+      "synthesisInput": "mouse",
+      "duration": 1.275,
+      "kind": "speech",
+      "phonemes": "mˈWs",
+      "sources": [
+        "content/core-words.json[15].word"
+      ]
+    },
+    "woman": {
+      "url": "/audio/8359ea5e102f3691_1.mp3",
+      "text": "woman",
+      "synthesisInput": "woman",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "wˈʊmən",
+      "sources": [
+        "content/core-words.json[18].word"
+      ]
+    },
+    "rice": {
+      "url": "/audio/2f7c0229b8ed02e3_1.mp3",
+      "text": "rice",
+      "synthesisInput": "rice",
+      "duration": 1.25,
+      "kind": "speech",
+      "phonemes": "ɹˈIs",
+      "sources": [
+        "content/core-words.json[20].word"
+      ]
+    },
+    "happy": {
+      "url": "/audio/307f9c45adb403aa_1.mp3",
+      "text": "happy",
+      "synthesisInput": "happy",
+      "duration": 1.475,
+      "kind": "speech",
+      "phonemes": "hˈæpi",
+      "sources": [
+        "content/core-words.json[21].word"
+      ]
+    },
+    "student": {
+      "url": "/audio/c2a4853bb35f3b62_1.mp3",
+      "text": "student",
+      "synthesisInput": "student",
+      "duration": 1.325,
+      "kind": "speech",
+      "phonemes": "stˈudᵊnt",
+      "sources": [
+        "content/core-words.json[23].word"
+      ]
+    },
+    "learn": {
+      "url": "/audio/7bd630c78ad75805_1.mp3",
+      "text": "learn",
+      "synthesisInput": "learn",
+      "duration": 1.1,
+      "kind": "speech",
+      "phonemes": "lˈɜɹn",
+      "sources": [
+        "content/core-words.json[24].word"
+      ]
+    },
+    "play": {
+      "url": "/audio/567299eaa342c0ba_1.mp3",
+      "text": "play",
+      "synthesisInput": "play",
+      "duration": 1.225,
+      "kind": "speech",
+      "phonemes": "plˈA",
+      "sources": [
+        "content/core-words.json[25].word"
+      ]
+    },
+    "write": {
+      "url": "/audio/5df1111cb8cc42ab_1.mp3",
+      "text": "write",
+      "synthesisInput": "write",
+      "duration": 1.175,
+      "kind": "speech",
+      "phonemes": "ɹˈIt",
+      "sources": [
+        "content/core-words.json[26].word"
+      ]
+    },
+    "eat": {
+      "url": "/audio/4757c63fc2dec092_1.mp3",
+      "text": "eat",
+      "synthesisInput": "eat",
+      "duration": 1.05,
+      "kind": "speech",
+      "phonemes": "ˈit",
+      "sources": [
+        "content/core-words.json[27].word"
+      ]
+    },
+    "hello": {
+      "url": "/audio/013fc09a84886fe6_1.mp3",
+      "text": "hello",
+      "synthesisInput": "hello",
+      "duration": 1.275,
+      "kind": "speech",
+      "phonemes": "həlˈO",
+      "sources": [
+        "content/core-words.json[28].word"
+      ]
+    },
+    "english": {
+      "url": "/audio/92c2921bfbfd5107_1.mp3",
+      "text": "english",
+      "synthesisInput": "english",
+      "duration": 1.325,
+      "kind": "speech",
+      "phonemes": "ˈɪŋɡlɪʃ",
+      "sources": [
+        "content/core-words.json[29].word"
+      ]
+    }
+  },
+  "phonemes": {
+    "sound-i": {
+      "url": "/audio/sound-i_09afb5d7_1.mp3",
+      "symbol": "/i/",
+      "input": "ˈi",
+      "duration": 1.175,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-ih": {
+      "url": "/audio/sound-ih_f7cb73f1_1.mp3",
+      "symbol": "/ɪ/",
+      "input": "ˈɪ",
+      "duration": 1.1,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-eh": {
+      "url": "/audio/sound-eh_2bcb2b0d_1.mp3",
+      "symbol": "/ɛ/",
+      "input": "ˈɛ",
+      "duration": 1.325,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-ae": {
+      "url": "/audio/sound-ae_d9ab1bdc_1.mp3",
+      "symbol": "/æ/",
+      "input": "ˈæ",
+      "duration": 1.375,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-aa": {
+      "url": "/audio/sound-aa_5a452387_1.mp3",
+      "symbol": "/ɑ/",
+      "input": "ˈɑ",
+      "duration": 1.475,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-ao": {
+      "url": "/audio/sound-ao_ac9e22b7_1.mp3",
+      "symbol": "/ɔ/",
+      "input": "ˈɔ",
+      "duration": 1.425,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-uh": {
+      "url": "/audio/sound-uh_23cab570_1.mp3",
+      "symbol": "/ʊ/",
+      "input": "ˈʊ",
+      "duration": 1.275,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-uw": {
+      "url": "/audio/sound-uw_3dc0c639_1.mp3",
+      "symbol": "/u/",
+      "input": "ˈu",
+      "duration": 1.225,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-ah": {
+      "url": "/audio/sound-ah_39bb8941_1.mp3",
+      "symbol": "/ʌ/",
+      "input": "ˈʌ",
+      "duration": 1.2,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-schwa": {
+      "url": "/audio/sound-schwa_88c8df58_1.mp3",
+      "symbol": "/ə/",
+      "input": "ə",
+      "duration": 0.975,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-ey": {
+      "url": "/audio/sound-ey_12f803b0_1.mp3",
+      "symbol": "/eɪ/",
+      "input": "ˈA",
+      "duration": 1.375,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-ay": {
+      "url": "/audio/sound-ay_091615eb_1.mp3",
+      "symbol": "/aɪ/",
+      "input": "ˈI",
+      "duration": 1.4,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-oy": {
+      "url": "/audio/sound-oy_e2aa841b_1.mp3",
+      "symbol": "/ɔɪ/",
+      "input": "ˈY",
+      "duration": 1.325,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-aw": {
+      "url": "/audio/sound-aw_4605393c_1.mp3",
+      "symbol": "/aʊ/",
+      "input": "ˈW",
+      "duration": 1.375,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-ow": {
+      "url": "/audio/sound-ow_1b8006ee_1.mp3",
+      "symbol": "/oʊ/",
+      "input": "ˈO",
+      "duration": 1.35,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-er": {
+      "url": "/audio/sound-er_2741c859_1.mp3",
+      "symbol": "/ɝ/",
+      "input": "ˈɜɹ",
+      "duration": 1.3,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-er-weak": {
+      "url": "/audio/sound-er-weak_d346078d_1.mp3",
+      "symbol": "/ɚ/",
+      "input": "əɹ",
+      "duration": 1.05,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-p": {
+      "url": "/audio/sound-p_504adef4_1.mp3",
+      "symbol": "/p/",
+      "input": "p",
+      "duration": 0.75,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-b": {
+      "url": "/audio/sound-b_5610c938_1.mp3",
+      "symbol": "/b/",
+      "input": "b",
+      "duration": 0.85,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-t": {
+      "url": "/audio/sound-t_91b078d0_1.mp3",
+      "symbol": "/t/",
+      "input": "t",
+      "duration": 0.725,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-d": {
+      "url": "/audio/sound-d_fba471dd_1.mp3",
+      "symbol": "/d/",
+      "input": "d",
+      "duration": 0.625,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-k": {
+      "url": "/audio/sound-k_a0bffcd6_1.mp3",
+      "symbol": "/k/",
+      "input": "k",
+      "duration": 0.575,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-g": {
+      "url": "/audio/sound-g_43f701e7_1.mp3",
+      "symbol": "/ɡ/",
+      "input": "ɡ",
+      "duration": 0.75,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-f": {
+      "url": "/audio/sound-f_8a63e649_1.mp3",
+      "symbol": "/f/",
+      "input": "f",
+      "duration": 0.7,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-v": {
+      "url": "/audio/sound-v_b9228020_1.mp3",
+      "symbol": "/v/",
+      "input": "v",
+      "duration": 0.925,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-th": {
+      "url": "/audio/sound-th_e2a3eaaf_1.mp3",
+      "symbol": "/θ/",
+      "input": "θ",
+      "duration": 0.725,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-dh": {
+      "url": "/audio/sound-dh_b161be22_1.mp3",
+      "symbol": "/ð/",
+      "input": "ð",
+      "duration": 0.8,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-s": {
+      "url": "/audio/sound-s_7826de9f_1.mp3",
+      "symbol": "/s/",
+      "input": "s",
+      "duration": 0.675,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-z": {
+      "url": "/audio/sound-z_499dc460_1.mp3",
+      "symbol": "/z/",
+      "input": "z",
+      "duration": 1.05,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-sh": {
+      "url": "/audio/sound-sh_73ec1b46_1.mp3",
+      "symbol": "/ʃ/",
+      "input": "ʃ",
+      "duration": 0.75,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-zh": {
+      "url": "/audio/sound-zh_aba27bb4_1.mp3",
+      "symbol": "/ʒ/",
+      "input": "ʒ",
+      "duration": 0.95,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-h": {
+      "url": "/audio/sound-h_3dd39917_1.mp3",
+      "symbol": "/h/",
+      "input": "h",
+      "duration": 0.775,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-ch": {
+      "url": "/audio/sound-ch_6c08e8d9_1.mp3",
+      "symbol": "/tʃ/",
+      "input": "ʧ",
+      "duration": 0.825,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-jh": {
+      "url": "/audio/sound-jh_d03351f1_1.mp3",
+      "symbol": "/dʒ/",
+      "input": "ʤ",
+      "duration": 0.825,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-m": {
+      "url": "/audio/sound-m_0f872101_1.mp3",
+      "symbol": "/m/",
+      "input": "m",
+      "duration": 0.9,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-n": {
+      "url": "/audio/sound-n_d33ef6c3_1.mp3",
+      "symbol": "/n/",
+      "input": "n",
+      "duration": 0.825,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-ng": {
+      "url": "/audio/sound-ng_6e33591f_1.mp3",
+      "symbol": "/ŋ/",
+      "input": "ŋ",
+      "duration": 0.85,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-l": {
+      "url": "/audio/sound-l_c225d768_1.mp3",
+      "symbol": "/l/",
+      "input": "l",
+      "duration": 0.925,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-r": {
+      "url": "/audio/sound-r_154468c2_1.mp3",
+      "symbol": "/r/",
+      "input": "ɹ",
+      "duration": 0.75,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-w": {
+      "url": "/audio/sound-w_b2c6af89_1.mp3",
+      "symbol": "/w/",
+      "input": "w",
+      "duration": 0.55,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    },
+    "sound-y": {
+      "url": "/audio/sound-y_28d8c7cf_1.mp3",
+      "symbol": "/j/",
+      "input": "j",
+      "duration": 0.775,
+      "kind": "phoneme",
+      "speed": 0.75,
+      "reviewedByHuman": false
+    }
+  },
+  "provenance": {
+    "modelRepository": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "modelSha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+    "voiceSha256": "dd1d8973f4ce4b7d8ae407c77a435f485dabc052081b80ea75c4f30b84f36223",
+    "library": "kokoro==0.9.4",
+    "g2p": "misaki==0.9.4",
+    "phonemeApi": "KPipeline.generate_from_tokens"
+  }
+}

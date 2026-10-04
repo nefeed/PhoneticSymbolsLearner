@@ -1,0 +1,206 @@
+[
+  {
+    "word": "apple",
+    "ipa": "/ˈæpəl/",
+    "meaning": "苹果（可数名词）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "A round fruit that can be red, green, or yellow.", "example": "I eat an apple."}]}]
+  },
+  {
+    "word": "book",
+    "ipa": "/bʊk/",
+    "meaning": "书；预订",
+    "meanings": [
+      {"pos": "noun", "definitions": [{"definition": "Pages with words or pictures that you can read.", "example": "This is my book."}]},
+      {"pos": "verb", "definitions": [{"definition": "To ask for a room or seat to be kept for you.", "example": "I book a room."}]}
+    ]
+  },
+  {
+    "word": "hour",
+    "ipa": "/aʊr/",
+    "meaning": "小时（h 不发音：an hour）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "A period of sixty minutes.", "example": "I read for an hour."}]}]
+  },
+  {
+    "word": "university",
+    "ipa": "/ˌjunəˈvɝsəti/",
+    "meaning": "大学（以 /j/ 开头：a university）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "A place where people study after high school.", "example": "She studies at a university."}]}]
+  },
+  {
+    "word": "cat",
+    "ipa": "/kæt/",
+    "meaning": "猫（复数 cats）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "A small animal with soft hair that people often keep at home.", "example": "The cat is on the bed."}]}]
+  },
+  {
+    "word": "dog",
+    "ipa": "/dɔɡ/; also /dɑɡ/ in some US accents",
+    "meaning": "狗（复数 dogs；美式元音有口音差异）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "An animal people often keep at home or train to help them.", "example": "My dog is small."}]}]
+  },
+  {
+    "word": "ship",
+    "ipa": "/ʃɪp/",
+    "meaning": "船；大船（注意与 sheep 的 /i/ 区分）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "A large boat that carries people or things.", "example": "The ship is on the sea."}]}]
+  },
+  {
+    "word": "sheep",
+    "ipa": "/ʃip/",
+    "meaning": "绵羊（单复数同形：one sheep, two sheep）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "A farm animal with thick hair called wool.", "example": "I see three sheep."}]}]
+  },
+  {
+    "word": "see",
+    "ipa": "/si/",
+    "meaning": "看见；明白（see–saw–seen）",
+    "meanings": [{"pos": "verb", "definitions": [
+      {"definition": "To know something is there by using your eyes.", "example": "I see a red car."},
+      {"definition": "To understand something.", "example": "I see what you mean."}
+    ]}]
+  },
+  {
+    "word": "read",
+    "ipa": "/rid/ present and base form; /rɛd/ past and past participle",
+    "meaning": "读；阅读（原形/现在时 /rid/；过去式与过去分词 /rɛd/，拼写相同）",
+    "meanings": [{"pos": "verb", "definitions": [
+      {"definition": "To look at words and understand them.", "example": "I read every day."},
+      {"definition": "The past form of read has the same spelling but a different sound.", "example": "I read the book yesterday."}
+    ]}]
+  },
+  {
+    "word": "work",
+    "ipa": "/wɝk/",
+    "meaning": "工作；努力做事；工作任务（常为不可数名词）",
+    "meanings": [
+      {"pos": "verb", "definitions": [{"definition": "To do a job or spend time doing something useful.", "example": "I work at a school."}]},
+      {"pos": "noun", "definitions": [{"definition": "Things you do as part of a job or task.", "example": "I have finished my work."}]}
+    ]
+  },
+  {
+    "word": "go",
+    "ipa": "/ɡoʊ/",
+    "meaning": "去；走（go–went–gone）",
+    "meanings": [{"pos": "verb", "definitions": [{"definition": "To move or travel to a place.", "example": "We go to school."}]}]
+  },
+  {
+    "word": "come",
+    "ipa": "/kʌm/",
+    "meaning": "来（come–came–come）",
+    "meanings": [{"pos": "verb", "definitions": [{"definition": "To move toward the speaker or a place being talked about.", "example": "Please come here."}]}]
+  },
+  {
+    "word": "child",
+    "ipa": "/tʃaɪld/",
+    "meaning": "孩子（复数 children）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "A young person who is not yet an adult.", "example": "The child has a book."}]}]
+  },
+  {
+    "word": "person",
+    "ipa": "/ˈpɝsən/",
+    "meaning": "人（常用复数 people）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "One human being.", "example": "She is a kind person."}]}]
+  },
+  {
+    "word": "mouse",
+    "ipa": "/maʊs/",
+    "meaning": "老鼠（动物义复数 mice）；电脑鼠标",
+    "meanings": [{"pos": "noun", "definitions": [
+      {"definition": "A small animal with a long thin tail.", "example": "A mouse is under the box."},
+      {"definition": "A small tool you move with your hand to control a computer.", "example": "I use a mouse with my computer."}
+    ]}]
+  },
+  {
+    "word": "foot",
+    "ipa": "/fʊt/",
+    "meaning": "脚；英尺（复数 feet）",
+    "meanings": [{"pos": "noun", "definitions": [
+      {"definition": "The part at the end of your leg that you stand on.", "example": "My left foot is cold."},
+      {"definition": "A unit of length equal to twelve inches.", "example": "The box is one foot long."}
+    ]}]
+  },
+  {
+    "word": "man",
+    "ipa": "/mæn/",
+    "meaning": "成年男子（复数 men）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "An adult male person.", "example": "The man is my teacher."}]}]
+  },
+  {
+    "word": "woman",
+    "ipa": "/ˈwʊmən/",
+    "meaning": "成年女子（复数 women /ˈwɪmɪn/）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "An adult female person.", "example": "The woman has a red bag."}]}]
+  },
+  {
+    "word": "water",
+    "ipa": "/ˈwɔtɚ/; also /ˈwɑtɚ/ in some US accents",
+    "meaning": "水（物质义通常不可数；美式 t 常为轻拍）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "The clear liquid that people and animals need to drink.", "example": "I want a cup of water."}]}]
+  },
+  {
+    "word": "rice",
+    "ipa": "/raɪs/",
+    "meaning": "大米；米饭（食物义通常不可数）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "Small grains that people cook and eat.", "example": "We eat some rice."}]}]
+  },
+  {
+    "word": "happy",
+    "ipa": "/ˈhæpi/",
+    "meaning": "开心的；高兴的",
+    "meanings": [{"pos": "adjective", "definitions": [{"definition": "Feeling good and pleased.", "example": "The children are happy."}]}]
+  },
+  {
+    "word": "teacher",
+    "ipa": "/ˈtitʃɚ/",
+    "meaning": "教师；老师（teach + -er）",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "A person who helps people learn.", "example": "My teacher is kind."}]}]
+  },
+  {
+    "word": "student",
+    "ipa": "/ˈstudənt/",
+    "meaning": "学生；学习者",
+    "meanings": [{"pos": "noun", "definitions": [{"definition": "A person who studies at a school or another place of learning.", "example": "She is a student."}]}]
+  },
+  {
+    "word": "learn",
+    "ipa": "/lɝn/",
+    "meaning": "学习；学会（常见美式过去式 learned）",
+    "meanings": [{"pos": "verb", "definitions": [{"definition": "To get new knowledge or a new skill by study or practice.", "example": "I learn a little every day."}]}]
+  },
+  {
+    "word": "play",
+    "ipa": "/pleɪ/",
+    "meaning": "玩；参加游戏或运动；演奏",
+    "meanings": [{"pos": "verb", "definitions": [
+      {"definition": "To do something for fun or take part in a game.", "example": "The children play in the park."},
+      {"definition": "To make music with an instrument.", "example": "She can play the piano."}
+    ]}]
+  },
+  {
+    "word": "write",
+    "ipa": "/raɪt/",
+    "meaning": "写；写作（write–wrote–written；w 不发音）",
+    "meanings": [{"pos": "verb", "definitions": [{"definition": "To make words on paper or a screen.", "example": "I write my name."}]}]
+  },
+  {
+    "word": "eat",
+    "ipa": "/it/",
+    "meaning": "吃（eat–ate–eaten）",
+    "meanings": [{"pos": "verb", "definitions": [{"definition": "To put food in your mouth and take it into your body.", "example": "She eats an apple."}]}]
+  },
+  {
+    "word": "hello",
+    "ipa": "/həˈloʊ/",
+    "meaning": "你好；喂（打招呼用语）",
+    "meanings": [{"pos": "interjection", "definitions": [{"definition": "A word you say when you meet someone or start a phone call.", "example": "Hello, my name is Sam."}]}]
+  },
+  {
+    "word": "english",
+    "ipa": "/ˈɪŋɡlɪʃ/",
+    "meaning": "英语；英格兰的（正常书写需大写：English）",
+    "meanings": [
+      {"pos": "noun", "definitions": [{"definition": "The language spoken in England, the US, and many other places.", "example": "I am learning English."}]},
+      {"pos": "adjective", "definitions": [{"definition": "From England, or about its people or language.", "example": "This is an English word."}]}
+    ]
+  }
+]

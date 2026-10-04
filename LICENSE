@@ -1,0 +1,65 @@
+Yinji Source Available Non-Commercial License 1.0
+
+Copyright (c) 2026 the PhoneticSymbolsLearner (音记 / Yinji) contributors.
+
+1. Scope
+
+This license applies to original software, documentation, and learning material
+in this repository, and to other material expressly offered under this license,
+to the extent the contributors hold rights in that material (the "Material").
+It does not apply to third-party material described in section 5.
+
+2. Non-commercial permission
+
+Subject to this license, you may use, study, copy, modify, and redistribute the
+Material, in source or compiled form, solely for non-commercial personal,
+educational, or research purposes. You may operate a free, non-commercial public
+instance for these purposes. You must preserve this license and copyright
+notices, identify material changes, and include this license with redistributed
+copies. Modified versions remain subject to the non-commercial restriction.
+
+3. Commercial use is not permitted
+
+"Commercial use" means use primarily intended for or directed toward commercial
+advantage, monetary compensation, or the operation of a for-profit business.
+Without separate written permission from the relevant rights holders, you may
+not sell, rent, sublicense for payment, or commercially distribute the Material;
+offer it as a paid service or commercial SaaS; use it in a commercial product,
+paid training offering, or business operations; or monetize access or use through
+advertising, subscriptions, or other charges. A free tier of a commercial service
+does not make that service non-commercial. No commercial rights are granted by
+this license.
+
+4. Other rights and termination
+
+No trademark, endorsement, or rights in users' personal data are granted.
+Permission under this license terminates if you violate its terms. Termination
+does not affect the separate licenses applicable to third-party material.
+
+5. Third-party material
+
+Dependencies, fonts, models, voice assets, dictionary data, and other third-party
+material retain their own copyright notices and licenses. This license does not
+replace those licenses, impose new restrictions on material independently
+licensed by its owners, or grant rights the contributors do not possess.
+Consult the applicable upstream license and attribution notices before reuse.
+
+6. No warranty
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE MATERIAL IS PROVIDED "AS IS",
+WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT. IN NO EVENT
+SHALL THE CONTRIBUTORS BE LIABLE FOR CLAIMS, DAMAGES, OR OTHER LIABILITY ARISING
+FROM THE MATERIAL OR ITS USE, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+
+This is a custom source-available license with a non-commercial restriction.
+It is not an OSI-approved open-source license.
+
+中文说明（便于阅读；上方英文条款为许可文本）
+
+本项目允许个人、非商业教育和研究用途，包括学习、修改、保留许可后分发，
+以及免费、非商业的公开部署。禁止出售、商业产品、商业 SaaS、付费培训、
+企业经营使用，以及广告、订阅等商业变现，除非另获相关权利人的书面许可。
+修改后的版本仍须保留非商业限制、版权声明和本许可，并说明重要修改。
+第三方依赖、模型、词典和其他素材仍遵循各自许可；本许可不覆盖这些独立权利。
+本项目公开源码，但并非 OSI 所定义的开源项目；软件和教学内容不提供担保。
