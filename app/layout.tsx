@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./game.css";
 
 export const metadata: Metadata = {
   title: "音记 · Yinji | Hear it. Say it. Keep it.",

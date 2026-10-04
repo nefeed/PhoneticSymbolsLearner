@@ -160,3 +160,7 @@
 首次 GitHub Linux 运行 [37194480295](https://github.com/nefeed/PhoneticSymbolsLearner/actions/runs/37194480295) 为 19/20 通过。WebKit 音频测试的 `waitForResponse` 首先收到 status=0、空 headers 的媒体事件；同一 MP3 在 219ms 后有第二条真实 200 响应，Content-Type 为 audio/mpeg，10028 字节，trace 保留完整内容。失败原因是断言抢先读取第一条媒体网络事件，不是观察到服务端返回 HTTP 0。
 
 修正后的测试保留浏览器原始播放行为，实际等待媒体解码成功、有限时长和播放时间推进；再独立请求同一个 currentSrc，严格验证 HTTP 200、audio MIME 与非空字节，不把 0 当作成功。另验证 JSON 下载中的实际词条和中文笔记。修正后的两浏览器本地测试通过（2 项，6.1 秒），类型检查通过；最终远程结果以对应 SHA 的 Actions 运行记录为准。失败证据下载保留在本地忽略目录 `outputs/ci-37194480295`。
+
+## 12. 闯关界面改版
+
+本地完整验证：类型检查、5 项单元/内容测试、26 项 Chromium/WebKit 浏览器测试通过（39.2 秒）。新增检查覆盖手机菜单隐藏/打开/选择/关闭与焦点恢复、横屏 iPad 三区布局、低分不能解锁/通过后解锁与旧关重练，以及后续章节续学通关后返回真实下一关。设计依据、界面和截图范围见 [闯关改版说明](UX-REDESIGN.md)。远程结果按此版本 SHA 的 Actions 记录核对。

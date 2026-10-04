@@ -5,13 +5,10 @@ import {
   BookOpen,
   Library,
   Flame,
-  Play,
   Sparkles,
   Cloud,
   Globe2,
   Check,
-  ChevronRight,
-  Mic,
   Headphones,
   X,
   Bookmark,
@@ -23,9 +20,10 @@ import {
   RotateCcw,
   HelpCircle,
   Trophy,
-  Lock,
   LoaderCircle,
   CheckCircle2,
+  Menu,
+  Star,
 } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
@@ -55,6 +53,7 @@ import {
 } from "@/lib/learning";
 import { AudioButton, stopAudio } from "./AudioButton";
 import Recorder from "./Recorder";
+import GamePath from "./GamePath";
 const stages = curriculum.stages as Stage[],
   sounds = soundData as Sound[],
   lessons = stages.flatMap((s) => s.lessons),
@@ -76,6 +75,7 @@ type Props = {
 export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
   const [lang, setLang] = useState<Lang>("zh"),
     [tab, setTab] = useState("learn"),
+    [mobileMenu, setMobileMenu] = useState(false),
     [data, setData] = useState<State>(emptyState),
     [stageIndex, setStageIndex] = useState(0),
     [lessonIndex, setLessonIndex] = useState(0),
@@ -104,7 +104,8 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
     [cardIndex, setCardIndex] = useState(0),
     [flipped, setFlipped] = useState(false);
   const pending = useRef<any>(null),
-    stateRef = useRef(data);
+    stateRef = useRef(data),
+    menuButton = useRef<HTMLButtonElement>(null);
   stateRef.current = data;
   const t = useCallback(
     (zh: string, en: string) => (lang === "zh" ? zh : en),
@@ -118,15 +119,22 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
   );
   const review = useMemo(() => reviewItems(data.attempts), [data.attempts]);
   const due = review.filter((r) => r.due);
-  const percent = Math.round((completed.size / lessons.length) * 100);
-  const stage = stages[stageIndex],
-    selected = stage.lessons[lessonIndex] || stage.lessons[0];
-  const unlocked =
-    stageIndex === 0 ||
-    completed.has(
-      stages[stageIndex - 1].lessons[stages[stageIndex - 1].lessons.length - 1]
-        .id,
-    );
+  const available = useMemo(
+    () =>
+      new Set(
+        lessons
+          .filter(
+            (lesson, index) =>
+              completed.has(lesson.id) ||
+              index === 0 ||
+              completed.has(lessons[index - 1].id) ||
+              data.resume?.lessonId === lesson.id,
+          )
+          .map((lesson) => lesson.id),
+      ),
+    [completed, data.resume],
+  );
+  const stage = stages[stageIndex];
   useEffect(() => {
     setHydrated(true);
     if (!user) setReady(true);
@@ -295,6 +303,15 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
       setChoice(saved);
     }
     setResult(null);
+    const chapterIndex = stages.findIndex((chapter) =>
+      chapter.lessons.some((item) => item.id === lesson.id),
+    );
+    if (chapterIndex >= 0) {
+      setStageIndex(chapterIndex);
+      setLessonIndex(
+        stages[chapterIndex].lessons.findIndex((item) => item.id === lesson.id),
+      );
+    }
     setSession(s);
     setTab("learn");
   }
@@ -579,13 +596,35 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
               音记<span>YINJI</span>
             </strong>
           </a>
-          <span className="header-caption">
-            {t(
-              "每天一点，听懂、读准、记牢。",
-              "A little each day. Hear it. Say it. Keep it.",
-            )}
-          </span>
+          <div
+            className="game-stats"
+            aria-label={t("冒险进度", "Your progress")}
+          >
+            <span title={t("学习日", "Study days")}>
+              <Flame className="stat-flame" size={24} />
+              <b>{studyDays(data.attempts)}</b>
+              <small>{t("天", "days")}</small>
+            </span>
+            <span title={t("已通关", "Levels passed")}>
+              <Star className="stat-star" size={25} fill="currentColor" />
+              <b>{completed.size}</b>
+              <small>{t("星", "stars")}</small>
+            </span>
+            <span className="word-stat" title={t("我的单词", "My words")}>
+              <BookOpen className="stat-book" size={23} />
+              <b>{data.words.length}</b>
+            </span>
+          </div>
           <div className="header-actions">
+            <button
+              ref={menuButton}
+              className="mobile-menu-button"
+              aria-label={t("打开菜单", "Open menu")}
+              aria-expanded={mobileMenu}
+              onClick={() => setMobileMenu(true)}
+            >
+              <Menu size={24} />
+            </button>
             <button
               className="lang-button"
               onClick={() => setLang(lang === "zh" ? "en" : "zh")}
@@ -619,7 +658,7 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
         >
           <TabsList className="main-nav">
             <TabsTrigger value="learn">
-              <BookOpen />
+              <Star />
               {t("学习之路", "Learn")}
             </TabsTrigger>
             <TabsTrigger value="sounds">
@@ -1021,10 +1060,17 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
                 <span className="result-icon">
                   <Trophy size={43} />
                 </span>
-                <p className="eyebrow">ONE SMALL STEP FORWARD</p>
+                <div className="result-celebration" aria-hidden="true">
+                  <span>✦</span>
+                  <img src="/sound-buddy.svg" alt="" />
+                  <span>★</span>
+                </div>
                 <h1>
                   {result.score >= 80
-                    ? t("这一小步，做得很好。", "One more step. Well done.")
+                    ? t(
+                        result.review ? "复习挑战完成！" : "闯关成功！",
+                        result.review ? "Review complete!" : "Level complete!",
+                      )
                     : t(
                         "找到薄弱点，就是进步。",
                         "Now you know what to try again.",
@@ -1062,11 +1108,14 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
                     className="primary"
                     onClick={() => {
                       setResult(null);
-                      if (
-                        !result.review &&
-                        lessonIndex < stage.lessons.length - 1
-                      )
-                        setLessonIndex(lessonIndex + 1);
+                      if (!result.review && result.score >= 80) {
+                        if (lessonIndex < stage.lessons.length - 1)
+                          setLessonIndex(lessonIndex + 1);
+                        else if (stageIndex < stages.length - 1) {
+                          setStageIndex(stageIndex + 1);
+                          setLessonIndex(0);
+                        }
+                      }
                     }}
                   >
                     {t("回到学习路线", "Back to my path")}
@@ -1084,24 +1133,9 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
               </section>
             ) : (
               <>
-                <div className="page-heading">
-                  <div>
-                    <p className="eyebrow">YOUR ENGLISH JOURNEY</p>
-                    <h1>{t("从一个声音开始。", "Start with one sound.")}</h1>
-                    <p>
-                      {t(
-                        "从听见差别，到自信地说出完整句子。",
-                        "Hear the change. Build a word. Say a sentence.",
-                      )}
-                    </p>
-                  </div>
-                  <div className="daily-goal">
-                    <Flame />
-                    <span>
-                      <strong>{studyDays(data.attempts)}</strong>{" "}
-                      {t("学习日", "study days")}
-                    </span>
-                  </div>
+                <div className="journey-intro">
+                  <h1>{t("你的声音冒险", "Your sound adventure")}</h1>
+                  <span>{t("7 章 · 42 关", "7 CHAPTERS · 42 LEVELS")}</span>
                 </div>
                 {data.resume && (
                   <div className="resume-banner">
@@ -1125,201 +1159,24 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
                     </button>
                   </div>
                 )}
-                <div className="learning-grid">
-                  <aside className="path-panel">
-                    <div className="section-label">
-                      {t("学习路线", "Your path")}
-                      <span>
-                        {stages.length} {t("个阶段", "stages")}
-                      </span>
-                    </div>
-                    <div className="stage-list">
-                      {stages.map((s, i) => (
-                        <button
-                          key={s.id}
-                          onClick={() => {
-                            setStageIndex(i);
-                            setLessonIndex(0);
-                          }}
-                          className={
-                            "stage-item " + (i === stageIndex ? "active" : "")
-                          }
-                        >
-                          <span className="stage-number">
-                            {s.lessons.every((l) => completed.has(l.id)) ? (
-                              <Check size={16} />
-                            ) : (
-                              String(i + 1).padStart(2, "0")
-                            )}
-                          </span>
-                          <span>
-                            {s.title[lang]}
-                            <small>
-                              {
-                                s.lessons.filter((l) => completed.has(l.id))
-                                  .length
-                              }
-                              /{s.lessons.length}{" "}
-                              {t("课已完成", "lessons done")}
-                            </small>
-                          </span>
-                          {i === stageIndex && <ChevronRight size={17} />}
-                        </button>
-                      ))}
-                    </div>
-                    <div className="path-foot">
-                      <Cloud size={18} />
-                      {user
-                        ? t("进度随账号同步", "Your progress travels with you")
-                        : t(
-                            "登录后，换设备也能接着学",
-                            "Sign in to learn on any device",
-                          )}
-                    </div>
-                  </aside>
-                  <section className="lesson-feature">
-                    <div className="lesson-topline">
-                      <span className="pill blue">
-                        {t(
-                          `第 ${stageIndex + 1} 阶段 · 第 ${lessonIndex + 1} 课`,
-                          `STAGE ${stageIndex + 1} · LESSON ${lessonIndex + 1}`,
-                        )}
-                      </span>
-                      <span>
-                        {selected.duration} {t("分钟", "min")}
-                      </span>
-                    </div>
-                    <h2>{selected.title[lang]}</h2>
-                    <p className="lesson-lead">{selected.description[lang]}</p>
-                    <div className="sound-showcase">
-                      {stageIndex === 0 && lessonIndex === 0 ? (
-                        <>
-                          <div>
-                            <span className="ipa">/ɪ/</span>
-                            <span className="sound-word">ship</span>
-                            <AudioButton
-                              text="ship"
-                              lang={lang}
-                              label={t("听一听", "Listen")}
-                            />
-                          </div>
-                          <div className="sound-divider">
-                            <AudioLines size={35} />
-                            <span>{t("听见差别", "HEAR IT")}</span>
-                          </div>
-                          <div>
-                            <span className="ipa">/i/</span>
-                            <span className="sound-word">sheep</span>
-                            <AudioButton
-                              text="sheep"
-                              lang={lang}
-                              label={t("听一听", "Listen")}
-                            />
-                          </div>
-                        </>
-                      ) : (
-                        <div className="lesson-preview">
-                          <span className="preview-number">
-                            {String(stageIndex + 1).padStart(2, "0")}
-                            <small>
-                              / {String(lessonIndex + 1).padStart(2, "0")}
-                            </small>
-                          </span>
-                          <p>{selected.concepts[0]?.example}</p>
-                          <AudioButton
-                            text={selected.concepts[0]?.audioText || ""}
-                            lang={lang}
-                          />
-                        </div>
-                      )}
-                    </div>
-                    <div className="lesson-steps">
-                      {stage.lessons.map((l, i) => (
-                        <button
-                          key={l.id}
-                          className={i === lessonIndex ? "active" : ""}
-                          onClick={() => setLessonIndex(i)}
-                          aria-label={`${t("第", "Lesson ")}${i + 1}: ${l.title[lang]}`}
-                          title={l.title[lang]}
-                        >
-                          {completed.has(l.id) ? (
-                            <Check size={17} />
-                          ) : l.kind === "checkpoint" ? (
-                            <Trophy size={17} />
-                          ) : (
-                            i + 1
-                          )}
-                        </button>
-                      ))}
-                    </div>
-                    <button
-                      className="primary start-button"
-                      onClick={() => startLesson(selected)}
-                      disabled={busy || !ready || !unlocked}
-                    >
-                      {!unlocked ? (
-                        <Lock size={18} />
-                      ) : selected.kind === "checkpoint" ? (
-                        <Trophy size={18} />
-                      ) : (
-                        <Play size={18} fill="currentColor" />
-                      )}
-                      {!unlocked
-                        ? t(
-                            "通过上一阶段考核后开启",
-                            "Pass the last stage to start",
-                          )
-                        : completed.has(selected.id)
-                          ? t("再练习一次", "Practice again")
-                          : selected.kind === "checkpoint"
-                            ? t("开始阶段考核", "Take the stage check")
-                            : t("开始这一课", "Start this lesson")}
-                    </button>
-                    <p className="tiny-note">
-                      {!unlocked
-                        ? t(
-                            "可自由查看声音图鉴；通过阶段考核后继续课程。",
-                            "Explore Sounds any time. Pass the stage check to move on.",
-                          )
-                        : t(
-                            `${lessons.length} 节连贯课程 · 听、学、练、复习`,
-                            `${lessons.length} lessons · Listen, learn, try, review`,
-                          )}
-                    </p>
-                  </section>
-                  <aside className="journey-side">
-                    <div className="progress-card">
-                      <div className="section-label">
-                        {t("你的成长", "Your growth")}
-                        <Sparkles size={19} />
-                      </div>
-                      <div className="progress-big">
-                        {percent}
-                        <span>%</span>
-                      </div>
-                      <Progress value={percent} />
-                      <p>
-                        {t(
-                          `已完成 ${completed.size}/${lessons.length} 课。每一课，都是一个小进步。`,
-                          `${completed.size} of ${lessons.length} lessons done. One small step at a time.`,
-                        )}
-                      </p>
-                    </div>
-                    <div className="note-card">
-                      <span className="pill">
-                        {t("一个小发现", "GOOD TO KNOW")}
-                      </span>
-                      <h3>{t("先听声音，再看字母。", "Sound comes first.")}</h3>
-                      <p>
-                        {t(
-                          "an apple，a book。用 a 还是 an，取决于后面单词的第一个声音。",
-                          "An apple. A book. The first sound tells you which one to use.",
-                        )}
-                      </p>
-                      <span className="note-example">an /ˈæpəl/</span>
-                    </div>
-                  </aside>
-                </div>
+                <GamePath
+                  stages={stages}
+                  stageIndex={stageIndex}
+                  lessonIndex={lessonIndex}
+                  completed={completed}
+                  available={available}
+                  lang={lang}
+                  busy={busy || !ready}
+                  onStage={(index) => {
+                    setStageIndex(index);
+                    const next = stages[index].lessons.findIndex(
+                      (l) => !completed.has(l.id),
+                    );
+                    setLessonIndex(Math.max(0, next));
+                  }}
+                  onLesson={setLessonIndex}
+                  onStart={(lesson) => void startLesson(lesson)}
+                />
               </>
             )}
           </TabsContent>
@@ -1769,6 +1626,71 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
           </span>
         </footer>
       </div>
+      <Dialog open={mobileMenu} onOpenChange={setMobileMenu}>
+        <DialogContent
+          className="mobile-menu-dialog"
+          onCloseAutoFocus={(event) => {
+            event.preventDefault();
+            menuButton.current?.focus();
+          }}
+        >
+          <DialogTitle>{t("探索音记", "Explore Yinji")}</DialogTitle>
+          <DialogDescription>
+            {t(
+              "选一个地方，继续你的声音冒险。",
+              "Choose a place for your next step.",
+            )}
+          </DialogDescription>
+          <div className="mobile-menu-items">
+            {[
+              { value: "learn", zh: "学习之路", en: "Learn", icon: Star },
+              {
+                value: "sounds",
+                zh: "声音图鉴",
+                en: "Sounds",
+                icon: AudioLines,
+              },
+              { value: "words", zh: "我的单词", en: "Words", icon: Library },
+              { value: "review", zh: "复习册", en: "Review", icon: Headphones },
+            ].map((item) => (
+              <button
+                key={item.value}
+                className={tab === item.value ? "active" : ""}
+                onClick={() => {
+                  stopAudio();
+                  setTab(item.value);
+                  setNotice("");
+                  setMobileMenu(false);
+                }}
+              >
+                <item.icon size={25} />
+                {t(item.zh, item.en)}
+                {item.value === "review" && due.length > 0 && (
+                  <span className="count-badge">{due.length}</span>
+                )}
+              </button>
+            ))}
+          </div>
+          <a
+            className="menu-account"
+            href={user ? signOutUrl : signInUrl}
+            target="_top"
+          >
+            <Cloud size={20} />
+            {user
+              ? `${user.name} · ${t("退出账号", "Sign out")}`
+              : t("登录，保存你的冒险进度", "Sign in and save your progress")}
+          </a>
+          <p className="small muted">
+            {user
+              ? t("进度随账号同步", "Your progress travels with you")
+              : t(
+                  "访客进度仅保留在本次页面",
+                  "Guest progress lasts for this visit",
+                )}
+          </p>
+        </DialogContent>
+      </Dialog>
       <Dialog
         open={!!sound}
         onOpenChange={(open) => {

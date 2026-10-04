@@ -64,11 +64,24 @@ test("sound cards have real audio and words can be saved, edited and exported", 
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.getByRole("button", { name: "听单音", exact: true }).click();
   // Verify real decoding/playback independently of WebKit's media-network events.
-  await expect.poll(() => page.evaluate(() => {
-    const audio = (window as any).__playedMedia.at(-1) as HTMLMediaElement | undefined;
-    return Boolean(audio && !audio.error && Number.isFinite(audio.duration) && audio.duration > 0 && audio.currentTime > 0);
-  })).toBe(true);
-  const audioUrl = await page.evaluate(() => ((window as any).__playedMedia.at(-1) as HTMLMediaElement).currentSrc);
+  await expect
+    .poll(() =>
+      page.evaluate(() => {
+        const audio = (window as any).__playedMedia.at(-1) as
+          HTMLMediaElement | undefined;
+        return Boolean(
+          audio &&
+          !audio.error &&
+          Number.isFinite(audio.duration) &&
+          audio.duration > 0 &&
+          audio.currentTime > 0,
+        );
+      }),
+    )
+    .toBe(true);
+  const audioUrl = await page.evaluate(
+    () => ((window as any).__playedMedia.at(-1) as HTMLMediaElement).currentSrc,
+  );
   expect(audioUrl).toMatch(/\/audio\/.+\.mp3$/);
   const audioResponse = await page.request.get(audioUrl);
   expect(audioResponse.status()).toBe(200);
@@ -342,23 +355,196 @@ test("core dictionary gives a simple meaning, word job, and a saved card without
   await expect(page.locator(".word-card")).toContainText("apple");
 });
 
-test("a resumed word-order exercise supports undo and checks the full sentence", async ({ page }) => {
+test("a resumed word-order exercise supports undo and checks the full sentence", async ({
+  page,
+}) => {
   const orderLesson = curriculum.stages[2].lessons[2];
-  const index = orderLesson.questions.findIndex(q => q.type === "order");
+  const index = orderLesson.questions.findIndex((q) => q.type === "order");
   const question = orderLesson.questions[index];
   await page.goto("/signin-with-chatgpt?return_to=/");
-  const saved = await page.request.post("/api/state", { data: {
-    action: "resume", resume: { lessonId: orderLesson.id, phase: "question", index,
-      answers: {}, runId: crypto.randomUUID() }
-  }});
+  const saved = await page.request.post("/api/state", {
+    data: {
+      action: "resume",
+      resume: {
+        lessonId: orderLesson.id,
+        phase: "question",
+        index,
+        answers: {},
+        runId: crypto.randomUUID(),
+      },
+    },
+  });
   expect(saved.ok()).toBe(true);
   await page.reload();
   await page.getByRole("button", { name: "接着学", exact: true }).click();
-  await page.locator(".word-tiles").getByRole("button", { name: "song.", exact: true }).click();
-  await page.locator(".built-sentence").getByRole("button", { name: "song.", exact: true }).click();
+  await page
+    .locator(".word-tiles")
+    .getByRole("button", { name: "song.", exact: true })
+    .click();
+  await page
+    .locator(".built-sentence")
+    .getByRole("button", { name: "song.", exact: true })
+    .click();
   for (const word of question.answer.split(" ")) {
-    await page.locator(".word-tiles").getByRole("button", { name: word, exact: true }).click();
+    await page
+      .locator(".word-tiles")
+      .getByRole("button", { name: word, exact: true })
+      .click();
   }
   await page.getByRole("button", { name: "检查答案", exact: true }).click();
   await expect(page.locator(".explanation")).toContainText("答对了");
+});
+
+test("phone navigation appears only in a menu, while iPad keeps a side rail", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 402, height: 874 });
+  await page.goto("/");
+  await expect(
+    page.getByRole("button", { name: "开始这一课", exact: true }),
+  ).toBeEnabled();
+  await expect(page.locator(".main-nav")).toBeHidden();
+  await page.locator(".level-node").nth(1).click();
+  const menu = page.getByRole("button", { name: "打开菜单", exact: true });
+  for (const name of ["声音图鉴", "我的单词", "复习册", "学习之路"]) {
+    await menu.click();
+    await page
+      .getByRole("dialog")
+      .getByRole("button", { name, exact: true })
+      .click();
+    await expect(page.getByRole("dialog")).toBeHidden();
+    await expect(menu).toBeFocused();
+    if (name === "声音图鉴")
+      await expect(page.locator(".sound-tile")).toHaveCount(41);
+  }
+  await expect(page.locator(".level-node").nth(1)).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await menu.click();
+  await page.keyboard.press("Escape");
+  await expect(menu).toBeFocused();
+  await page.setViewportSize({ width: 1180, height: 820 });
+  await expect(page.locator(".main-nav")).toBeVisible();
+  await expect(menu).toBeHidden();
+  const rail = await page.locator(".main-nav").boundingBox();
+  const map = await page.locator(".adventure-map").boundingBox();
+  const quest = await page.locator(".quest-card").boundingBox();
+  expect(rail!.x + rail!.width).toBeLessThan(map!.x);
+  expect(map!.x + map!.width).toBeLessThan(quest!.x);
+});
+
+test("levels unlock in order only after a pass, and passed levels stay playable", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator('.level-node[data-status="open"]')).toHaveCount(1);
+  await page.locator(".level-node").nth(1).click();
+  await expect(
+    page.getByRole("button", { name: "先通过前一关", exact: true }),
+  ).toBeDisabled();
+  await page.locator(".level-node").first().click();
+  for (const wrongCount of [2, 0]) {
+    await startQuiz(page);
+    for (const [index, question] of lesson.questions.entries()) {
+      if (question.type === "speak")
+        await page.getByRole("button", { name: "稍后跟读（不计分）" }).click();
+      else {
+        const answer =
+          index < wrongCount
+            ? question.options.find((option) => option !== question.answer)!
+            : question.answer;
+        await page.getByRole("radio", { name: answer, exact: true }).check();
+        await page
+          .getByRole("button", { name: "检查答案", exact: true })
+          .click();
+      }
+      await page.getByRole("button", { name: "继续", exact: true }).click();
+    }
+    await expect(page.locator(".result-score")).toHaveText(
+      wrongCount ? "60%" : "100%",
+    );
+    await page
+      .getByRole("button", { name: "回到学习路线", exact: true })
+      .click();
+    if (wrongCount) {
+      await expect(page.locator('.level-node[data-status="open"]')).toHaveCount(
+        1,
+      );
+      await expect(page.locator(".quest-copy h2")).toHaveText(lesson.title.zh);
+    }
+  }
+  await expect(page.locator(".level-node").first()).toHaveAttribute(
+    "data-status",
+    "passed",
+  );
+  await expect(page.locator(".level-node").nth(1)).toHaveAttribute(
+    "data-status",
+    "open",
+  );
+  await expect(page.locator(".level-node").nth(1)).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await page.locator(".level-node").first().click();
+  await expect(
+    page.getByRole("button", { name: "再练习一次", exact: true }),
+  ).toBeEnabled();
+});
+
+test("finishing a resumed later chapter returns to its actual next level", async ({
+  page,
+}) => {
+  const restored = curriculum.stages[2].lessons[2];
+  const runId = crypto.randomUUID();
+  const answers: Record<string, string> = {};
+  await page.goto("/signin-with-chatgpt?return_to=/");
+  for (const question of restored.questions.filter((q) => q.type !== "speak")) {
+    answers[question.id] = question.answer;
+    expect(
+      (
+        await page.request.post("/api/state", {
+          data: {
+            action: "answer",
+            id: `${runId}:${question.id}`,
+            questionId: question.id,
+            answer: question.answer,
+          },
+        })
+      ).ok(),
+    ).toBe(true);
+  }
+  const index = restored.questions.findIndex((q) => q.type === "speak");
+  expect(
+    (
+      await page.request.post("/api/state", {
+        data: {
+          action: "resume",
+          resume: {
+            lessonId: restored.id,
+            phase: "question",
+            index,
+            answers,
+            runId,
+          },
+        },
+      })
+    ).ok(),
+  ).toBe(true);
+  await page.reload();
+  await page.getByRole("button", { name: "接着学", exact: true }).click();
+  await page.getByRole("button", { name: "稍后跟读（不计分）" }).click();
+  await page.getByRole("button", { name: "继续", exact: true }).click();
+  await expect(page.locator(".result-score")).toHaveText("100%");
+  await page.getByRole("button", { name: "回到学习路线", exact: true }).click();
+  await expect(page.locator(".chapter-banner")).toContainText(
+    curriculum.stages[2].title.zh,
+  );
+  await expect(page.locator(".quest-copy h2")).toHaveText(
+    curriculum.stages[2].lessons[3].title.zh,
+  );
+  await expect(page.locator(".level-node").nth(3)).toHaveAttribute(
+    "data-status",
+    "open",
+  );
 });
