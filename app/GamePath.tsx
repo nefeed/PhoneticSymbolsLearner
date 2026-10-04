@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/dialog";
 import { AudioButton } from "./AudioButton";
 import LiquidIndicator from "./LiquidIndicator";
+import PhonemeMark from "./PhonemeMark";
 import type { Lang, Lesson, Stage } from "@/lib/learning";
 
 type Props = {
@@ -34,12 +35,12 @@ type Props = {
   onStart: (lesson: Lesson) => void;
 };
 const points = [
-  [175, 67],
-  [108, 153],
-  [162, 239],
-  [239, 325],
+  [175, 51],
+  [108, 141],
+  [162, 231],
+  [239, 321],
   [209, 411],
-  [154, 497],
+  [154, 501],
 ];
 
 export default function GamePath({
@@ -115,20 +116,31 @@ export default function GamePath({
             />
             <svg
               className="path-line"
-              viewBox="0 0 360 558"
+              viewBox="0 0 360 568"
               preserveAspectRatio="none"
               aria-hidden="true"
             >
-              <path d="M175 67 C175 112 108 109 108 153 S162 194 162 239 S239 282 239 325 S209 368 209 411 S154 454 154 497" />
+              <defs>
+                <mask id="route-node-gaps">
+                  <rect width="360" height="568" fill="white" />
+                  {points.map(([x, y], index) => (
+                    <circle key={index} cx={x} cy={y} r="32" fill="black" />
+                  ))}
+                </mask>
+              </defs>
+              <path
+                mask="url(#route-node-gaps)"
+                d="M175 51 C175 98 108 94 108 141 S162 184 162 231 S239 274 239 321 S209 364 209 411 S154 454 154 501"
+              />
             </svg>
             <span className="path-decoration note-one" aria-hidden="true">
-              /ʃ/
+              <PhonemeMark sound="sh" />
             </span>
             <span className="path-decoration note-two" aria-hidden="true">
-              /æ/
+              <PhonemeMark sound="ae" />
             </span>
             <span className="map-phoneme" aria-hidden="true">
-              /ɪ/
+              <PhonemeMark sound="ih" />
             </span>
             {stage.lessons.map((lesson, index) => {
               const passed = completed.has(lesson.id),
@@ -162,15 +174,15 @@ export default function GamePath({
                     data-status={state}
                   >
                     {passed ? (
-                      <Star size={30} fill="currentColor" />
+                      <Star size={22} fill="currentColor" />
                     ) : !unlocked ? (
-                      <Lock size={25} />
+                      <Lock size={21} />
                     ) : lesson.kind === "checkpoint" ? (
-                      <Trophy size={29} />
+                      <Trophy size={22} />
                     ) : index % 2 ? (
-                      <Headphones size={29} />
+                      <Headphones size={22} />
                     ) : (
-                      <Star size={30} fill="currentColor" />
+                      <Star size={22} fill="currentColor" />
                     )}
                   </button>
                   <span className="level-title">
@@ -194,9 +206,15 @@ export default function GamePath({
                 : t("从一个声音开始", "ONE SOUND AT A TIME")}
             </span>
             <div className="phoneme-orbs" aria-hidden="true">
-              <span className="phoneme-orb orb-left">/ɪ/</span>
-              <span className="phoneme-orb orb-main">/æ/</span>
-              <span className="phoneme-orb orb-right">/ə/</span>
+              <span className="phoneme-orb orb-left">
+                <PhonemeMark sound="ih" />
+              </span>
+              <span className="phoneme-orb orb-main">
+                <PhonemeMark sound="ae" />
+              </span>
+              <span className="phoneme-orb orb-right">
+                <PhonemeMark sound="schwa" />
+              </span>
             </div>
           </div>
           <div className="quest-copy">

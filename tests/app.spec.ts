@@ -652,3 +652,95 @@ test("reduced motion keeps the glass selection immediate and cancels animation",
   expect(state.duration).toBe("0s");
   expect(state.active).toBe(0);
 });
+
+test("route titles clear every compact node and all vector marks stay centered", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(
+    page.getByRole("button", { name: "开始这一课", exact: true }),
+  ).toBeEnabled();
+  for (const language of ["zh", "en"]) {
+    if (language === "en")
+      await page
+        .getByRole("button", { name: "切换为英文", exact: true })
+        .click();
+    for (const size of [
+      { width: 360, height: 740 },
+      { width: 402, height: 874 },
+      { width: 792, height: 900 },
+      { width: 1180, height: 820 },
+      { width: 1440, height: 900 },
+    ]) {
+      await page.setViewportSize(size);
+      const geometry = await page.locator(".level-path").evaluate((root) => {
+        const buttons = [...root.querySelectorAll(".level-node")].map((el) =>
+          el.getBoundingClientRect(),
+        );
+        const titles = [...root.querySelectorAll(".level-title")].map((el) =>
+          el.getBoundingClientRect(),
+        );
+        const intersects = (a: DOMRect, b: DOMRect) =>
+          a.left < b.right &&
+          a.right > b.left &&
+          a.top < b.bottom &&
+          a.bottom > b.top;
+        const icons = [...root.querySelectorAll(".level-node")].map((el) => {
+          const b = el.getBoundingClientRect(),
+            s = el.querySelector("svg")!.getBoundingClientRect();
+          return Math.max(
+            Math.abs(s.x + s.width / 2 - b.x - b.width / 2),
+            Math.abs(s.y + s.height / 2 - b.y - b.height / 2),
+          );
+        });
+        return {
+          overlaps: titles.flatMap((title, i) =>
+            buttons.flatMap((button, j) =>
+              intersects(title, button) ? [`${i}:${j}`] : [],
+            ),
+          ),
+          min: Math.min(...buttons.map((b) => b.width)),
+          max: Math.max(...buttons.map((b) => b.width)),
+          iconOffset: Math.max(...icons),
+        };
+      });
+      expect(
+        geometry.overlaps,
+        `${language} ${size.width}: title/node overlaps`,
+      ).toEqual([]);
+      expect(geometry.min).toBeGreaterThanOrEqual(44);
+      expect(geometry.max).toBeLessThanOrEqual(50.1);
+      expect(geometry.iconOffset).toBeLessThan(1);
+      expect(
+        await page.evaluate(
+          () => document.documentElement.scrollWidth <= innerWidth + 1,
+        ),
+      ).toBe(true);
+    }
+  }
+  const marks = await page
+    .locator(".map-phoneme, .phoneme-orb")
+    .evaluateAll((elements) =>
+      elements.map((el) => {
+        const symbol = el.querySelector("svg")!;
+        const b = el.getBoundingClientRect(),
+          s = symbol.getBoundingClientRect();
+        return {
+          text: el.textContent!.trim(),
+          svg: !!symbol,
+          offset: Math.max(
+            Math.abs(s.x + s.width / 2 - b.x - b.width / 2),
+            Math.abs(s.y + s.height / 2 - b.y - b.height / 2),
+          ),
+        };
+      }),
+    );
+  for (const mark of marks) {
+    expect(mark.text).toBe("");
+    expect(mark.svg).toBe(true);
+    expect(mark.offset).toBeLessThan(1);
+  }
+  await page.screenshot({
+    path: `outputs/ae-layout-${test.info().project.name}.png`,
+  });
+});
