@@ -54,6 +54,7 @@ import {
 import { AudioButton, stopAudio } from "./AudioButton";
 import Recorder from "./Recorder";
 import GamePath from "./GamePath";
+import LiquidIndicator from "./LiquidIndicator";
 const stages = curriculum.stages as Stage[],
   sounds = soundData as Sound[],
   lessons = stages.flatMap((s) => s.lessons),
@@ -105,7 +106,14 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
     [flipped, setFlipped] = useState(false);
   const pending = useRef<any>(null),
     stateRef = useRef(data),
-    menuButton = useRef<HTMLButtonElement>(null);
+    menuButton = useRef<HTMLButtonElement>(null),
+    menuClose = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(
+    () => () => {
+      if (menuClose.current) clearTimeout(menuClose.current);
+    },
+    [],
+  );
   stateRef.current = data;
   const t = useCallback(
     (zh: string, en: string) => (lang === "zh" ? zh : en),
@@ -589,8 +597,8 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
       >
         <header className="topbar">
           <a className="brand" href="/" aria-label="音记 Yinji">
-            <span className="brand-mark">
-              <AudioLines size={25} />
+            <span className="brand-mark" aria-hidden="true">
+              <img src="/yinji-mark.svg" alt="" />
             </span>
             <strong>
               音记<span>YINJI</span>
@@ -656,7 +664,8 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
             setNotice("");
           }}
         >
-          <TabsList className="main-nav">
+          <TabsList className="main-nav liquid-group">
+            <LiquidIndicator activeKey={tab} />
             <TabsTrigger value="learn">
               <Star />
               {t("学习之路", "Learn")}
@@ -850,11 +859,17 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
                           {activeQuestion.type === "choice" ||
                           activeQuestion.type === "listen" ? (
                             <RadioGroup
-                              className="answer-options"
+                              className="answer-options liquid-group"
                               value={choice}
                               onValueChange={setChoice}
                               disabled={submitted !== null}
                             >
+                              {submitted === null && (
+                                <LiquidIndicator
+                                  activeKey={choice}
+                                  selector=".answer-option.selected"
+                                />
+                              )}
                               {activeQuestion.options.map((option, i) => (
                                 <label
                                   key={i}
@@ -1197,7 +1212,8 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
               </span>
             </div>
             <Tabs value={soundFilter} onValueChange={setSoundFilter}>
-              <TabsList className="filter-tabs">
+              <TabsList className="filter-tabs liquid-group">
+                <LiquidIndicator activeKey={soundFilter} />
                 {[
                   ["all", "全部", "All"],
                   ["vowel", "元音", "Vowels"],
@@ -1626,7 +1642,13 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
           </span>
         </footer>
       </div>
-      <Dialog open={mobileMenu} onOpenChange={setMobileMenu}>
+      <Dialog
+        open={mobileMenu}
+        onOpenChange={(open) => {
+          if (menuClose.current) clearTimeout(menuClose.current);
+          setMobileMenu(open);
+        }}
+      >
         <DialogContent
           className="mobile-menu-dialog"
           onCloseAutoFocus={(event) => {
@@ -1641,7 +1663,8 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
               "Choose a place for your next step.",
             )}
           </DialogDescription>
-          <div className="mobile-menu-items">
+          <div className="mobile-menu-items liquid-group">
+            <LiquidIndicator activeKey={tab} selector="button.active" />
             {[
               { value: "learn", zh: "学习之路", en: "Learn", icon: Star },
               {
@@ -1656,11 +1679,19 @@ export default function LearningApp({ user, signInUrl, signOutUrl }: Props) {
               <button
                 key={item.value}
                 className={tab === item.value ? "active" : ""}
+                aria-pressed={tab === item.value}
                 onClick={() => {
                   stopAudio();
                   setTab(item.value);
                   setNotice("");
-                  setMobileMenu(false);
+                  if (menuClose.current) clearTimeout(menuClose.current);
+                  menuClose.current = setTimeout(
+                    () => setMobileMenu(false),
+                    window.matchMedia("(prefers-reduced-motion: reduce)")
+                      .matches
+                      ? 0
+                      : 220,
+                  );
                 }}
               >
                 <item.icon size={25} />

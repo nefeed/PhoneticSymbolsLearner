@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   BookOpen,
   Check,
@@ -18,6 +18,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { AudioButton } from "./AudioButton";
+import LiquidIndicator from "./LiquidIndicator";
 import type { Lang, Lesson, Stage } from "@/lib/learning";
 
 type Props = {
@@ -54,6 +55,14 @@ export default function GamePath({
   onStart,
 }: Props) {
   const [chapters, setChapters] = useState(false);
+  const chapterClose = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const chapterButton = useRef<HTMLButtonElement>(null);
+  useEffect(
+    () => () => {
+      if (chapterClose.current) clearTimeout(chapterClose.current);
+    },
+    [],
+  );
   const t = (zh: string, en: string) => (lang === "zh" ? zh : en);
   const stage = stages[stageIndex];
   const selected = stage.lessons[lessonIndex];
@@ -67,12 +76,13 @@ export default function GamePath({
           aria-label={t("闯关地图", "Level map")}
         >
           <button
+            ref={chapterButton}
             className="chapter-banner"
             onClick={() => setChapters(true)}
             aria-label={t("切换章节", "Choose a chapter")}
           >
             <span className="chapter-emblem">
-              <Headphones size={27} />
+              <img src="/yinji-mark.svg" alt="" aria-hidden="true" />
             </span>
             <span>
               <small>
@@ -98,7 +108,11 @@ export default function GamePath({
               ))}
             </span>
           </div>
-          <div className="level-path">
+          <div className="level-path liquid-group">
+            <LiquidIndicator
+              activeKey={selected.id}
+              selector=".level-stop.selected .level-node"
+            />
             <svg
               className="path-line"
               viewBox="0 0 360 558"
@@ -108,17 +122,14 @@ export default function GamePath({
               <path d="M175 67 C175 112 108 109 108 153 S162 194 162 239 S239 282 239 325 S209 368 209 411 S154 454 154 497" />
             </svg>
             <span className="path-decoration note-one" aria-hidden="true">
-              ♪
+              /ʃ/
             </span>
             <span className="path-decoration note-two" aria-hidden="true">
-              ♫
+              /æ/
             </span>
-            <img
-              className="map-buddy"
-              src="/sound-buddy.svg"
-              alt=""
-              aria-hidden="true"
-            />
+            <span className="map-phoneme" aria-hidden="true">
+              /ɪ/
+            </span>
             {stage.lessons.map((lesson, index) => {
               const passed = completed.has(lesson.id),
                 unlocked = available.has(lesson.id),
@@ -180,15 +191,13 @@ export default function GamePath({
             <span className="quest-tag">
               {selected.kind === "checkpoint"
                 ? t("准备好挑战了吗？", "READY FOR A CHECK?")
-                : t("小音陪你闯关", "LET’S LEARN TOGETHER")}
+                : t("从一个声音开始", "ONE SOUND AT A TIME")}
             </span>
-            <img
-              src="/sound-buddy.svg"
-              alt={t(
-                "戴耳机的小音精灵",
-                "A little sound friend with headphones",
-              )}
-            />
+            <div className="phoneme-orbs" aria-hidden="true">
+              <span className="phoneme-orb orb-left">/ɪ/</span>
+              <span className="phoneme-orb orb-main">/æ/</span>
+              <span className="phoneme-orb orb-right">/ə/</span>
+            </div>
           </div>
           <div className="quest-copy">
             <p className="quest-kicker">
@@ -271,8 +280,20 @@ export default function GamePath({
           </div>
         </aside>
       </div>
-      <Dialog open={chapters} onOpenChange={setChapters}>
-        <DialogContent className="chapter-dialog">
+      <Dialog
+        open={chapters}
+        onOpenChange={(open) => {
+          if (chapterClose.current) clearTimeout(chapterClose.current);
+          setChapters(open);
+        }}
+      >
+        <DialogContent
+          className="chapter-dialog"
+          onCloseAutoFocus={(event) => {
+            event.preventDefault();
+            chapterButton.current?.focus();
+          }}
+        >
           <DialogTitle>{t("选择冒险章节", "Choose your chapter")}</DialogTitle>
           <DialogDescription>
             {t(
@@ -280,14 +301,23 @@ export default function GamePath({
               "Six levels in each chapter. Take one step at a time.",
             )}
           </DialogDescription>
-          <div className="chapter-choices">
+          <div className="chapter-choices liquid-group">
+            <LiquidIndicator activeKey={stageIndex} selector="button.current" />
             {stages.map((s, i) => (
               <button
                 key={s.id}
                 className={i === stageIndex ? "current" : ""}
+                aria-pressed={i === stageIndex}
                 onClick={() => {
                   onStage(i);
-                  setChapters(false);
+                  if (chapterClose.current) clearTimeout(chapterClose.current);
+                  chapterClose.current = setTimeout(
+                    () => setChapters(false),
+                    window.matchMedia("(prefers-reduced-motion: reduce)")
+                      .matches
+                      ? 0
+                      : 220,
+                  );
                 }}
               >
                 <span className="chapter-choice-number">{i + 1}</span>

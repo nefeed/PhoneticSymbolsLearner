@@ -548,3 +548,107 @@ test("finishing a resumed later chapter returns to its actual next level", async
     "open",
   );
 });
+
+test("glass selection moves as one lens and stays aligned after filtering and resizing", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1180, height: 820 });
+  await page.goto("/");
+  await page.locator(".level-node").nth(1).click();
+  await aligned(".level-path", ".level-stop.selected .level-node");
+  await expect(
+    page.getByRole("button", { name: "先通过前一关", exact: true }),
+  ).toBeDisabled();
+  const rail = page.locator(".main-nav");
+  await expect(rail.locator(".liquid-indicator")).toHaveAttribute(
+    "data-visible",
+    "true",
+  );
+  const before = await rail.locator(".liquid-indicator").boundingBox();
+  await page.getByRole("tab", { name: "声音图鉴", exact: true }).click();
+  await expect
+    .poll(() =>
+      rail
+        .locator(".liquid-lens")
+        .evaluate((el) =>
+          el.getAnimations().some((a) => a.playState === "running"),
+        ),
+    )
+    .toBe(true);
+  async function aligned(group: string, selected: string) {
+    await expect
+      .poll(() =>
+        page.locator(group).evaluate((el, selector) => {
+          const lens = el
+            .querySelector(".liquid-indicator")!
+            .getBoundingClientRect();
+          const target = el.querySelector(selector)!.getBoundingClientRect();
+          return Math.max(
+            Math.abs(lens.x - target.x),
+            Math.abs(lens.y - target.y),
+            Math.abs(lens.width - target.width),
+            Math.abs(lens.height - target.height),
+          );
+        }, selected),
+      )
+      .toBeLessThan(1);
+  }
+  await aligned(".main-nav", '[data-state="active"]');
+  const after = await rail.locator(".liquid-indicator").boundingBox();
+  expect(after!.y).toBeGreaterThan(before!.y + 20);
+  const filter = page.locator(".filter-tabs");
+  await expect(filter.locator(".liquid-indicator")).toHaveAttribute(
+    "data-visible",
+    "true",
+  );
+  await filter.getByRole("tab", { name: "元音", exact: true }).click();
+  await expect
+    .poll(() =>
+      filter
+        .locator(".liquid-lens")
+        .evaluate((el) =>
+          el.getAnimations().some((a) => a.playState === "running"),
+        ),
+    )
+    .toBe(true);
+  await aligned(".filter-tabs", '[data-state="active"]');
+  expect(await page.locator(".sound-tile").count()).toBeLessThan(41);
+  await filter
+    .getByRole("tab", { name: "元音", exact: true })
+    .press("ArrowRight");
+  await expect(
+    filter.getByRole("tab", { name: "双元音", exact: true }),
+  ).toHaveAttribute("data-state", "active");
+  await aligned(".filter-tabs", '[data-state="active"]');
+  await page.setViewportSize({ width: 402, height: 874 });
+  await aligned(".filter-tabs", '[data-state="active"]');
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth + 1,
+    ),
+  ).toBe(true);
+  await page.screenshot({
+    path: `outputs/liquid-sounds-${test.info().project.name}.png`,
+  });
+});
+
+test("reduced motion keeps the glass selection immediate and cancels animation", async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/");
+  await page.getByRole("tab", { name: "声音图鉴", exact: true }).click();
+  const filter = page.locator(".filter-tabs");
+  await filter.getByRole("tab", { name: "辅音", exact: true }).click();
+  await expect(
+    filter.getByRole("tab", { name: "辅音", exact: true }),
+  ).toHaveAttribute("data-state", "active");
+  const state = await filter.locator(".liquid-indicator").evaluate((el) => ({
+    duration: getComputedStyle(el).transitionDuration,
+    active: el
+      .getAnimations({ subtree: true })
+      .filter((a) => a.playState === "running").length,
+  }));
+  expect(state.duration).toBe("0s");
+  expect(state.active).toBe(0);
+});
